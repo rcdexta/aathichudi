@@ -28,6 +28,8 @@ GEM
       activemodel (= 3.0.0)
       activesupport (= 3.0.0)
     activesupport (3.0.0)
+    acts_as_versioned (0.6.0)
+      activerecord (~> 3.0.0.beta4)
     arel (1.0.1)
       activesupport (~> 3.0.0)
     builder (2.1.2)
@@ -129,6 +131,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  acts_as_versioned
   capybara
   cucumber-rails
   haml (>= 3.0.0)
