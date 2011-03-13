@@ -1,8 +1,12 @@
-.paadal
+.paadal.inline
   = @wiki.paadal
+%span.float_right.margin_right_10.margin_top_10
+  %a{:href=> edit_wiki_path(params[:id])}
+    %button தொகுக்க/edit
 .hline
 .paadal_english
   = @wiki.paadal_english
+
 
 .container
   = @wiki.tamil_short_desc

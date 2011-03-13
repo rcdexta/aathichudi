@@ -4,6 +4,7 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "fancy-buttons";
 
 /* reset */
 body,div,dl,dt,dd,ul,ol,li,pre,form,fieldset,input,textarea,blockquote,th,td {
@@ -248,4 +249,28 @@ hr {
   margin-left: -15px;
   color: black;
   // text-shadow: black 0px 0.5px 0, #000 0 -0.5px 0; 
+}
+
+button {
+  @include fancy-button-colors(#261c1e, adjust-hue(#261c1e, -120), darken(adjust-hue(#261c1e, -120), 6));
+}
+
+.button {
+  @include fancy-button-colors(#261c1e, adjust-hue(#261c1e, -120), darken(adjust-hue(#261c1e, -120), 6));
+}
+
+.float_right{
+  float: right;
+}
+
+.margin_right_10{
+  margin-right: 10px;
+}
+
+.margin_top_10 {
+  margin-top: 10px;
+}
+
+.inline {
+  display: inline;
 }
