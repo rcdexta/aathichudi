@@ -1,0 +1,9 @@
+= render :partial => 'common/indic'
+
+= simple_form_for @wiki do |w|
+  = w.input :paadal
+  = w.input :paadal_english, :label => "ஆங்கில எழுத்து பிரிதி", :inputhtml => {"MicrosoftILITWebAttach" => "false"}
+  = w.input :tamil_short_desc, :label => "பாடலின் விளக்கம்"
+  = w.input :english_short_desc, :label => "பாடலின் விளக்கம் (ஆங்கிலத்தில்)"
+  = w.input :tamil_long_desc, :as => :text, :label => "பொருளுரை"
+  = w.button :submit

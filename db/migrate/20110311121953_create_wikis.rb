@@ -6,7 +6,6 @@ class CreateWikis < ActiveRecord::Migration
       t.string :english_short_desc
       t.string :tamil_short_desc
       t.text :tamil_long_desc
-      t.boolean :head
       t.string :state
       t.integer :version
 
