@@ -11,11 +11,9 @@ class CreateWikis < ActiveRecord::Migration
 
       t.timestamps
     end
-    Wiki.create_versioned_table
   end
 
   def self.down
     drop_table :wikis
-    Wiki.drop_versioned_table
   end
 end
