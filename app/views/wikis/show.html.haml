@@ -1,3 +1,6 @@
+- unless flash[:notice].blank?
+  .notice= flash[:notice]
+
 %span.edit_button
   %a{:href=> edit_wiki_path(params[:id])}
     %button திருத்து
@@ -17,6 +20,6 @@
   %i
     = @wiki.tamil_long_desc
 
-%button
-  %a{:href=> root_path}
+%a{:href=> root_path}
+  %button
     %span.back_button முதற்பக்கம்

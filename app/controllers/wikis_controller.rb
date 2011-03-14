@@ -5,6 +5,7 @@ class WikisController < ApplicationController
   def update
     wiki = Wiki.find(params[:id])
     wiki.update_attributes(params[:wiki])
+    flash[:notice] = t(:saved)
     redirect_to :action => :show
   end
 
