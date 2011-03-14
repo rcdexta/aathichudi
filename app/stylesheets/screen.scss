@@ -12,6 +12,21 @@ body,div,dl,dt,dd,ul,ol,li,pre,form,fieldset,input,textarea,blockquote,th,td {
     padding:0;
     line-height:200%;
     font-size: 16px;
+    vertical-align: top;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+}
+
+input[type="text"] {
+    margin-bottom: 15px;
+    width: 500px;
+}
+
+textarea {
+    padding: 3px;
 }
 
 fieldset,img {
@@ -35,11 +50,19 @@ body {
 a {
     color:#222;
     text-decoration:none;
+    text-shadow: 0px 2px 3px #555;
 }
 
 a:hover {
-    color:#008cff;
-    text-decoration:underline;
+    font-weight: bold;
+    /*color:#008cff;*/
+    /*text-decoration:underline;*/
+}
+
+a:hover h2 {
+    font-weight: bold;
+    /*color:#008cff;*/
+    /*text-decoration:underline;*/
 }
 /* page setup */
 
@@ -47,6 +70,9 @@ h2, h3 {
   display: inline;
 }
 
+h2 {
+    font-size: 175%;
+}
 
 
 body {
@@ -57,10 +83,10 @@ body {
     font-size:20px;
 }
 
-#content p:first-letter
-{
-  font-size:170%;
-}
+/*#content p:first-letter*/
+/*{*/
+  /*font-size:170%;*/
+/*}*/
 
 p{
   text-shadow: 0px 2px 3px #555;
@@ -204,9 +230,9 @@ div.menu {
   font-size: 150%;
 }
 
-.paadal:first-letter {
-  font-size: 175%;
-}
+/*.paadal:first-letter {*/
+  /*font-size: 175%;*/
+/*}*/
 
 .paadal_english {
   font-family: 'Georgia, Tahoma, Arial';
@@ -233,6 +259,7 @@ hr {
   line-height:150%;
   font-weight:bold;
 }
+
 .heading {
   text-shadow:#fff 0px 1px 0, #000 0 -1px 0;
   line-height:150%;
@@ -241,22 +268,33 @@ hr {
   color:#98989;
 }
 
-.container {
-  margin-top: 5px;
-  background:url(../../images/brown-paper.jpg);
-  margin-right: 3px;
+.desc_container {
+  background-color: #c7bb90;
   padding: 5px 15px;
-  margin-left: -15px;
+  margin-right: 15px;
+}
+
+.container {
+  margin-top: 15px;
+  background:url(../../images/paper_bg.png);
+  margin-right: 15px;
+  line-height: 38px !important;
+  padding: 5px 4px;
   color: black;
   // text-shadow: black 0px 0.5px 0, #000 0 -0.5px 0; 
 }
 
 button {
   @include fancy-button-colors(#261c1e, adjust-hue(#261c1e, -120), darken(adjust-hue(#261c1e, -120), 6));
+  cursor: pointer;
 }
 
-.button {
+.save_button {
   @include fancy-button-colors(#261c1e, adjust-hue(#261c1e, -120), darken(adjust-hue(#261c1e, -120), 6));
+  margin: 10px 26px;
+  float: right;
+  padding: 1px 5px;
+  cursor: pointer;
 }
 
 .float_right{
@@ -273,4 +311,25 @@ button {
 
 .inline {
   display: inline;
+}
+
+.edit_button {
+  float: right;
+  margin-right: 10px;
+  margin-top: -16px;
+
+}
+
+.back_button {
+    background: url(../../images/back.png) 1px no-repeat;
+    float: left;
+    padding-left: 30px;
+}
+
+button a {
+    color: white;
+}
+
+button a:hover {
+    font-weight: normal;
 }

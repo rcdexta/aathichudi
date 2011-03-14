@@ -1,18 +1,22 @@
-.paadal.inline
-  = @wiki.paadal
-%span.float_right.margin_right_10.margin_top_10
+%span.edit_button
   %a{:href=> edit_wiki_path(params[:id])}
-    %button தொகுக்க/edit
+    %button திருத்து
+
+.paadal
+  = @wiki.paadal
 .hline
 .paadal_english
   = @wiki.paadal_english
 
-
-.container
+.desc_container
   = @wiki.tamil_short_desc
   %br
   = @wiki.english_short_desc
-  %br
-  .hline
+
+.container
   %i
-    = @wiki.tamil_long_desc * 10
+    = @wiki.tamil_long_desc
+
+%button
+  %a{:href=> root_path}
+    %span.back_button முதற்பக்கம்
