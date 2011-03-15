@@ -83,11 +83,6 @@ body {
     font-size:20px;
 }
 
-/*#content p:first-letter*/
-/*{*/
-  /*font-size:170%;*/
-/*}*/
-
 p{
   text-shadow: 0px 2px 3px #555;
 }
@@ -98,7 +93,7 @@ p{
 }
 
 #logo-container {
-  background:url(../../images/content-heading.jpg) 222px 5px no-repeat;
+  background:url(../../images/content-heading.jpg) 125px 5px no-repeat;
   height: 150px;
   text-align: center;
 }
@@ -108,7 +103,6 @@ p{
   font-size: 60px;
   text-shadow:ivory 0px 1px 0, white 0 -1px 0;
   position: relative;
-  margin-left: 100px;
   font-weight:bold;
   padding-top: 13px;
 }
@@ -130,9 +124,14 @@ p{
   font-size: 15px;
 }
 
+
+#page{
+    text-align: center;
+}
 /* wrapper setup */
 div.rapidxwpr {
-    margin: 0px 180px;
+    margin-left: auto;
+    margin-right: auto;
     width:860px;
     background:url(../../images/wrapper-bg.png) 0 0 no-repeat;
 }
@@ -165,7 +164,7 @@ div#left {
 div#main {
     width:auto;
     background:url(../../images/content-top.jpg) 0 50px no-repeat;
-    margin:0px -10px 0px 222px;
+    margin:0px -10px 0px 125px;
     padding:99px 0 0 0;
     z-index:100;
     top: -35px;
@@ -175,6 +174,7 @@ div#main {
 div#main_container {
     background:url(../../images/content-bottom.jpg) 0 100% no-repeat;
     padding:0 0 59px 0;
+    text-align: left;
 }
 
 div#mainmiddle {
