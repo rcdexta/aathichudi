@@ -1,6 +1,7 @@
 class WikisController < ApplicationController
 
   before_filter :find_latest_active_wiki, :only => [:show, :edit]
+  cache_sweeper :wiki_sweeper
 
   def update
     wiki = Wiki.find(params[:id])
