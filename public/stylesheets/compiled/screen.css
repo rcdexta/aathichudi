@@ -533,8 +533,8 @@ button:active, button:active:visited {
 /* line 313, ../../../app/stylesheets/screen.scss */
 .edit_button {
   float: right;
-  margin-right: 10px;
-  margin-top: -16px;
+  margin-right: 16px;
+  margin-top: -18px;
 }
 
 /* line 320, ../../../app/stylesheets/screen.scss */
