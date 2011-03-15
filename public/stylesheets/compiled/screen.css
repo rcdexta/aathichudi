@@ -193,7 +193,7 @@ p {
 
 /* line 100, ../../../app/stylesheets/screen.scss */
 #logo-container {
-  background: url(../../images/content-heading.png) 222px 5px no-repeat;
+  background: url(../../images/content-heading.jpg) 222px 5px no-repeat;
   height: 150px;
   text-align: center;
 }
@@ -266,9 +266,9 @@ div#left {
 /* line 165, ../../../app/stylesheets/screen.scss */
 div#main {
   width: auto;
-  background: url(../../images/content-top.png) 0 50px no-repeat;
+  background: url(../../images/content-top.jpg) 0 50px no-repeat;
   margin: 0px -10px 0px 222px;
-  padding: 109px 0 0 0;
+  padding: 99px 0 0 0;
   z-index: 100;
   top: -35px;
   position: relative;
@@ -276,25 +276,19 @@ div#main {
 
 /* line 175, ../../../app/stylesheets/screen.scss */
 div#main_container {
-  background: url(../../images/content-bottom.png) 0 100% no-repeat;
+  background: url(../../images/content-bottom.jpg) 0 100% no-repeat;
   padding: 0 0 59px 0;
 }
 
 /* line 180, ../../../app/stylesheets/screen.scss */
-div#main_container_new {
-  background: url(../../images/content-bottom-new.png) 0 100% no-repeat;
-  padding: 0 0 59px 0;
-}
-
-/* line 184, ../../../app/stylesheets/screen.scss */
 div#mainmiddle {
   margin: 0px 0px 0px 0px;
-  background: url(../../images/content-bg.png) 0 0 repeat-y;
+  background: url(../../images/content-bg.jpg) 0 0 repeat-y;
   padding: 10px 59px 0 59px;
 }
 
 /* footer */
-/* line 191, ../../../app/stylesheets/screen.scss */
+/* line 187, ../../../app/stylesheets/screen.scss */
 div#footer {
   margin: 0 180;
   clear: both;
@@ -303,18 +297,18 @@ div#footer {
   font-size: 12px;
 }
 
-/* line 199, ../../../app/stylesheets/screen.scss */
+/* line 195, ../../../app/stylesheets/screen.scss */
 div#footer a {
   color: #baac7e;
   text-decoration: none;
 }
 
-/* line 204, ../../../app/stylesheets/screen.scss */
+/* line 200, ../../../app/stylesheets/screen.scss */
 div#footer a:hover {
   text-decoration: underline;
 }
 
-/* line 208, ../../../app/stylesheets/screen.scss */
+/* line 204, ../../../app/stylesheets/screen.scss */
 .clearingfix:after {
   content: ".";
   display: block;
@@ -323,23 +317,23 @@ div#footer a:hover {
   visibility: hidden;
 }
 
-/* line 216, ../../../app/stylesheets/screen.scss */
+/* line 212, ../../../app/stylesheets/screen.scss */
 .clearingfix {
   display: block;
 }
 
-/* line 220, ../../../app/stylesheets/screen.scss */
+/* line 216, ../../../app/stylesheets/screen.scss */
 .floatbox {
   overflow: hidden;
 }
 
-/* line 224, ../../../app/stylesheets/screen.scss */
+/* line 220, ../../../app/stylesheets/screen.scss */
 div.menu {
   margin: 30px 0 0 0;
 }
 
 /* show page */
-/* line 230, ../../../app/stylesheets/screen.scss */
+/* line 226, ../../../app/stylesheets/screen.scss */
 .paadal {
   font-size: 150%;
 }
@@ -347,13 +341,13 @@ div.menu {
 /*.paadal:first-letter {*/
 /*font-size: 175%;*/
 /*}*/
-/* line 238, ../../../app/stylesheets/screen.scss */
+/* line 234, ../../../app/stylesheets/screen.scss */
 .paadal_english {
   font-family: 'Georgia, Tahoma, Arial';
   font-size: 165%;
 }
 
-/* line 243, ../../../app/stylesheets/screen.scss */
+/* line 239, ../../../app/stylesheets/screen.scss */
 .hline {
   border-bottom: solid black;
   border-bottom-width: 1px;
@@ -361,7 +355,7 @@ div.menu {
   padding-top: 2px;
 }
 
-/* line 250, ../../../app/stylesheets/screen.scss */
+/* line 246, ../../../app/stylesheets/screen.scss */
 hr {
   color: red;
   background-color: red;
@@ -369,7 +363,7 @@ hr {
   margin-right: 15px;
 }
 
-/* line 257, ../../../app/stylesheets/screen.scss */
+/* line 253, ../../../app/stylesheets/screen.scss */
 .show_heading {
   font-size: 150%;
   text-shadow: white 0px 1px 0, black 0 -1px 0;
@@ -377,7 +371,7 @@ hr {
   font-weight: bold;
 }
 
-/* line 264, ../../../app/stylesheets/screen.scss */
+/* line 260, ../../../app/stylesheets/screen.scss */
 .heading {
   text-shadow: white 0px 1px 0, black 0 -1px 0;
   line-height: 150%;
@@ -386,14 +380,14 @@ hr {
   color: #98989;
 }
 
-/* line 272, ../../../app/stylesheets/screen.scss */
+/* line 268, ../../../app/stylesheets/screen.scss */
 .desc_container {
   background-color: #c7bb90;
   padding: 5px 15px;
   margin-right: 15px;
 }
 
-/* line 278, ../../../app/stylesheets/screen.scss */
+/* line 274, ../../../app/stylesheets/screen.scss */
 .container {
   margin-top: 15px;
   background: url(../../images/paper_bg.png);
@@ -403,7 +397,7 @@ hr {
   color: black;
 }
 
-/* line 288, ../../../app/stylesheets/screen.scss */
+/* line 284, ../../../app/stylesheets/screen.scss */
 button {
   background-color: #330f16;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #87636a), color-stop(10%, #523c41), color-stop(50%, #1d1617), color-stop(50%, #140f10), color-stop(100%, #322527));
@@ -458,7 +452,7 @@ button:active, button:active:visited {
   color: white;
 }
 
-/* line 293, ../../../app/stylesheets/screen.scss */
+/* line 289, ../../../app/stylesheets/screen.scss */
 .save_button {
   background-color: #330f16;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #87636a), color-stop(10%, #523c41), color-stop(50%, #1d1617), color-stop(50%, #140f10), color-stop(100%, #322527));
@@ -516,51 +510,51 @@ button:active, button:active:visited {
   color: white;
 }
 
-/* line 301, ../../../app/stylesheets/screen.scss */
+/* line 297, ../../../app/stylesheets/screen.scss */
 .float_right {
   float: right;
 }
 
-/* line 305, ../../../app/stylesheets/screen.scss */
+/* line 301, ../../../app/stylesheets/screen.scss */
 .margin_right_10 {
   margin-right: 10px;
 }
 
-/* line 309, ../../../app/stylesheets/screen.scss */
+/* line 305, ../../../app/stylesheets/screen.scss */
 .margin_top_10 {
   margin-top: 10px;
 }
 
-/* line 313, ../../../app/stylesheets/screen.scss */
+/* line 309, ../../../app/stylesheets/screen.scss */
 .inline {
   display: inline;
 }
 
-/* line 317, ../../../app/stylesheets/screen.scss */
+/* line 313, ../../../app/stylesheets/screen.scss */
 .edit_button {
   float: right;
   margin-right: 10px;
   margin-top: -16px;
 }
 
-/* line 324, ../../../app/stylesheets/screen.scss */
+/* line 320, ../../../app/stylesheets/screen.scss */
 .back_button {
   background: url(../../images/back.png) 1px no-repeat;
   float: left;
   padding-left: 30px;
 }
 
-/* line 330, ../../../app/stylesheets/screen.scss */
+/* line 326, ../../../app/stylesheets/screen.scss */
 button a {
   color: white;
 }
 
-/* line 334, ../../../app/stylesheets/screen.scss */
+/* line 330, ../../../app/stylesheets/screen.scss */
 button a:hover {
   font-weight: normal;
 }
 
-/* line 338, ../../../app/stylesheets/screen.scss */
+/* line 334, ../../../app/stylesheets/screen.scss */
 div.notice {
   background: #e9967a;
   padding: 5px;
@@ -568,7 +562,7 @@ div.notice {
   display: inline;
 }
 
-/* line 345, ../../../app/stylesheets/screen.scss */
+/* line 341, ../../../app/stylesheets/screen.scss */
 .tooltip {
   display: none;
   background: transparent url(/tools/img/tooltip/black_arrow.png);
