@@ -174,27 +174,28 @@ body {
   line-height: 140%;
   color: #000;
   font-size: 20px;
+  height: 100%;
 }
 
-/* line 86, ../../../app/stylesheets/screen.scss */
+/* line 87, ../../../app/stylesheets/screen.scss */
 p {
   text-shadow: 0px 2px 3px #555;
 }
 
-/* line 90, ../../../app/stylesheets/screen.scss */
+/* line 91, ../../../app/stylesheets/screen.scss */
 .prayer {
   text-shadow: 0px 2px 3px #555;
   padding-top: 10px;
 }
 
-/* line 95, ../../../app/stylesheets/screen.scss */
+/* line 96, ../../../app/stylesheets/screen.scss */
 #logo-container {
   background: url(../../images/content-heading.jpg) 125px 5px no-repeat;
   height: 150px;
   text-align: center;
 }
 
-/* line 101, ../../../app/stylesheets/screen.scss */
+/* line 102, ../../../app/stylesheets/screen.scss */
 .logo {
   color: #261C1E;
   font-size: 60px;
@@ -204,7 +205,7 @@ p {
   padding-top: 13px;
 }
 
-/* line 111, ../../../app/stylesheets/screen.scss */
+/* line 112, ../../../app/stylesheets/screen.scss */
 .heading {
   text-shadow: white 0px 1px 0, black 0 -1px 0;
   line-height: 150%;
@@ -214,7 +215,7 @@ p {
   margin-top: 10px;
 }
 
-/* line 120, ../../../app/stylesheets/screen.scss */
+/* line 121, ../../../app/stylesheets/screen.scss */
 .side-text {
   margin-left: 10px;
   margin-top: 170px;
@@ -222,13 +223,13 @@ p {
   font-size: 15px;
 }
 
-/* line 128, ../../../app/stylesheets/screen.scss */
+/* line 129, ../../../app/stylesheets/screen.scss */
 #page {
   text-align: center;
 }
 
 /* wrapper setup */
-/* line 132, ../../../app/stylesheets/screen.scss */
+/* line 133, ../../../app/stylesheets/screen.scss */
 div.rapidxwpr {
   margin-left: auto;
   margin-right: auto;
@@ -237,7 +238,7 @@ div.rapidxwpr {
 }
 
 /* header */
-/* line 140, ../../../app/stylesheets/screen.scss */
+/* line 141, ../../../app/stylesheets/screen.scss */
 div#header {
   position: relative;
   height: 150px;
@@ -246,7 +247,7 @@ div#header {
 }
 
 /* main body setup */
-/* line 148, ../../../app/stylesheets/screen.scss */
+/* line 149, ../../../app/stylesheets/screen.scss */
 div#middle {
   width: auto;
   margin: 0px 0px 0px 0px;
@@ -254,7 +255,7 @@ div#middle {
 }
 
 /* left column */
-/* line 155, ../../../app/stylesheets/screen.scss */
+/* line 156, ../../../app/stylesheets/screen.scss */
 div#left {
   width: 222px;
   position: relative;
@@ -264,7 +265,7 @@ div#left {
 }
 
 /* content column */
-/* line 164, ../../../app/stylesheets/screen.scss */
+/* line 165, ../../../app/stylesheets/screen.scss */
 div#main {
   width: auto;
   background: url(../../images/content-top.jpg) 0 50px no-repeat;
@@ -275,14 +276,14 @@ div#main {
   position: relative;
 }
 
-/* line 174, ../../../app/stylesheets/screen.scss */
+/* line 175, ../../../app/stylesheets/screen.scss */
 div#main_container {
   background: url(../../images/content-bottom.jpg) 0 100% no-repeat;
   padding: 0 0 53px 0;
   text-align: left;
 }
 
-/* line 180, ../../../app/stylesheets/screen.scss */
+/* line 181, ../../../app/stylesheets/screen.scss */
 div#mainmiddle {
   margin: 0px 0px 0px 0px;
   background: url(../../images/content-bg.jpg) 0 0 repeat-y;
@@ -290,7 +291,7 @@ div#mainmiddle {
 }
 
 /* footer */
-/* line 187, ../../../app/stylesheets/screen.scss */
+/* line 188, ../../../app/stylesheets/screen.scss */
 div#footer {
   margin-top: -10px;
   padding-bottom: 10px;
