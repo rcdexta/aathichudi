@@ -173,7 +173,7 @@ div#main {
 
 div#main_container {
     background:url(../../images/content-bottom.jpg) 0 100% no-repeat;
-    padding:0 0 59px 0;
+    padding:0 0 53px 0;
     text-align: left;
 }
 
@@ -185,12 +185,13 @@ div#mainmiddle {
 
 /* footer */
 div#footer {
-    margin: 0 180;
+    margin-top: -10px;
+    padding-bottom: 10px;
     clear:both;
     color:#baac7e;
     text-align:center;
     font-size:12px;
-    margin-left: 195px;
+    // margin-left: 195px;
 }
 
 div#footer a {
