@@ -395,10 +395,23 @@ div.notice {
 
 #mugavurai_content p {
     padding: 10px 5px;
-    text-shadow: none;
 }
 
 #mugavurai_content p span.lead{
     display: inline;
     font-size: 45px;
+}
+
+#about_site_content {
+    font-size: 14px;
+    text-align: justify;
+}
+
+#about_site_content p {
+    padding: 10px 5px;
+}
+
+
+.login_container{
+    text-align: center;
 }

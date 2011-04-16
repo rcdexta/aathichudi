@@ -631,11 +631,26 @@ div.notice {
 /* line 396, ../../../app/stylesheets/screen.scss */
 #mugavurai_content p {
   padding: 10px 5px;
-  text-shadow: none;
 }
 
-/* line 401, ../../../app/stylesheets/screen.scss */
+/* line 400, ../../../app/stylesheets/screen.scss */
 #mugavurai_content p span.lead {
   display: inline;
   font-size: 45px;
+}
+
+/* line 405, ../../../app/stylesheets/screen.scss */
+#about_site_content {
+  font-size: 14px;
+  text-align: justify;
+}
+
+/* line 410, ../../../app/stylesheets/screen.scss */
+#about_site_content p {
+  padding: 10px 5px;
+}
+
+/* line 415, ../../../app/stylesheets/screen.scss */
+.login_container {
+  text-align: center;
 }

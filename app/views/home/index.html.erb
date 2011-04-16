@@ -51,7 +51,7 @@ gradient: true
               <li>
                 |
               </li>
-              <li>
+              <li id='about_site'>
                 <img src='images/about.png' />
                 இணையதளத்தை பற்றி
               </li>
@@ -65,7 +65,7 @@ gradient: true
                         <span title='<%= current_user.email %>'><%= current_user.email.truncate(20) %></span>
                     </a>
                 <%- else %>
-                    <%= link_to_rpx "நுழைக", root_url %>
+                    <%= link_to_rpx "உள்நுழைக", root_url %>
                 <%- end %>
               </li>
 
@@ -268,5 +268,6 @@ gradient: true
 </body>
 
 <%= render :partial => 'common/mugavurai' %>
+<%= render :partial => 'common/about_site' %>
 
 </html>
