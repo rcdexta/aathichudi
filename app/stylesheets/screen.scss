@@ -374,10 +374,31 @@ div.notice {
     font-weight: bold;
     display: inline;
     margin-right: 3px;
+    cursor: pointer;
 }
 
 .logo ul li img{
     width: 24px;
     height: 24px;
     vertical-align: middle;
+}
+
+.hidden {
+ display: none;
+}
+
+#mugavurai_content {
+    font-size: 14px;
+    text-align: justify;
+}
+
+#mugavurai_content p {
+    padding: 10px 5px;
+    text-shadow: none;
+    font-weight: bold;
+}
+
+#mugavurai_content p span.lead{
+    display: inline;
+    font-size: 45px;
 }

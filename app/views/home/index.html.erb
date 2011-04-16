@@ -14,6 +14,9 @@
 
       <script type="text/javascript" src="javascripts/jquery.tipsy.js"></script>
       <script type="text/javascript" src="javascripts/tooltip.js"></script>
+
+      <script type="text/javascript" src="javascripts/menu.js"></script>
+
       <!--[if IE 6]>
       <script type="text/javascript" src="javascripts/ie6pngfix.js"></script>
       <script type="text/javascript">
@@ -36,26 +39,12 @@ gradient: true
       <!-- main body -->
       <div id="middle">
 
-        <!--&lt;!&ndash; left column &ndash;&gt;-->
-        <!--<div id="left" class="clearingfix">-->
-
-          <!--&lt;!&ndash; menu &ndash;&gt;-->
-          <!--<div class="side-text">-->
-             <!--ஆத்திசூடி சங்க காலத்தில் வாழ்ந்த பெண் புலவர் ஆன ஒளவையாரால் இயற்ற பட்டது.-->
-          <!--</div>-->
-          <!--&lt;!&ndash; / menu &ndash;&gt;-->
-
-        <!--</div>-->
-        <!--&lt;!&ndash; / left column &ndash;&gt;-->
-
-        <!-- content column -->
-
         <div id='logo-container'>
 
           <div class='logo'>
 
             <ul>
-              <li>
+              <li id='mugavurai'>
                 <img src='images/mugavurai.png' />
                 முகவுரை
               </li>
@@ -277,4 +266,7 @@ gradient: true
     <%= javascript_include_rpx(user_session_url) %>
 
 </body>
+
+<%= render :partial => 'common/mugavurai' %>
+
 </html>

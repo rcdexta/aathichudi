@@ -606,11 +606,36 @@ div.notice {
   font-weight: bold;
   display: inline;
   margin-right: 3px;
+  cursor: pointer;
 }
 
-/* line 379, ../../../app/stylesheets/screen.scss */
+/* line 380, ../../../app/stylesheets/screen.scss */
 .logo ul li img {
   width: 24px;
   height: 24px;
   vertical-align: middle;
+}
+
+/* line 386, ../../../app/stylesheets/screen.scss */
+.hidden {
+  display: none;
+}
+
+/* line 390, ../../../app/stylesheets/screen.scss */
+#mugavurai_content {
+  font-size: 14px;
+  text-align: justify;
+}
+
+/* line 395, ../../../app/stylesheets/screen.scss */
+#mugavurai_content p {
+  padding: 10px 5px;
+  text-shadow: none;
+  font-weight: bold;
+}
+
+/* line 401, ../../../app/stylesheets/screen.scss */
+#mugavurai_content p span.lead {
+  display: inline;
+  font-size: 45px;
 }
