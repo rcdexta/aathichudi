@@ -625,15 +625,16 @@ div.notice {
 #mugavurai_content {
   font-size: 14px;
   text-align: justify;
+  background: url(../../images/avvaiyar.jpg);
 }
 
-/* line 395, ../../../app/stylesheets/screen.scss */
+/* line 396, ../../../app/stylesheets/screen.scss */
 #mugavurai_content p {
   padding: 10px 5px;
   text-shadow: none;
 }
 
-/* line 400, ../../../app/stylesheets/screen.scss */
+/* line 401, ../../../app/stylesheets/screen.scss */
 #mugavurai_content p span.lead {
   display: inline;
   font-size: 45px;
