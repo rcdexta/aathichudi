@@ -94,18 +94,22 @@ p{
 }
 
 #logo-container {
-  background:url(../../images/content-heading.jpg) 125px 5px no-repeat;
-  height: 150px;
+  background:url(../../images/content-heading_with_title.jpg) 125px 5px no-repeat;
+  height: 191px;
   text-align: center;
 }
 
 .logo {
-  color: #261C1E;
-  font-size: 60px;
-  text-shadow:ivory 0px 1px 0, white 0 -1px 0;
   position: relative;
+  padding-top: 30px;
+  width: 81%;
+}
+
+#title {
+  color: #261C1E;
+  font-size: 30px;
+  text-shadow:ivory 0px 1px 0, white 0 -1px 0;
   font-weight:bold;
-  padding-top: 13px;
 }
 
 
@@ -348,4 +352,32 @@ div.notice {
 	width:160px;
 	padding:25px;
 	color:#fff;
+}
+
+#sign_in {
+ float: right;
+ font-weight: bold;
+ margin-right: 135px;
+ margin-top: -10px;
+}
+
+#sign_in a{
+ z-index: 1000;
+}
+
+.logo ul {
+    margin-left: 168px;
+    margin-top: 87px;
+}
+
+.logo ul li{
+    font-weight: bold;
+    display: inline;
+    margin-right: 3px;
+}
+
+.logo ul li img{
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
 }

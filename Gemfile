@@ -9,6 +9,10 @@ gem 'fancy-buttons'
 gem 'acts_as_versioned'
 gem 'state_machine'
 gem 'simple_form'
+gem 'devise'
+gem 'devise_rpx_connectable'
+gem 'hpricot'
+gem 'ruby_parser'
 
 group :test do
   gem "rspec-rails", ">= 2.0.1", :group => [:development, :test]

@@ -1,5 +1,6 @@
 class WikisController < ApplicationController
 
+  before_filter :authenticate_user!, :only => [:edit, :update]
   before_filter :find_latest_active_wiki, :only => [:show, :edit]
   cache_sweeper :wiki_sweeper
 

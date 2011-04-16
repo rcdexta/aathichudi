@@ -6,3 +6,8 @@ end
 Factory.define :active_wiki, :parent => :wiki do |f|
   f.state 'active'
 end
+
+Factory.define :user do |u|
+  u.email 'a@b.com'
+  u.password 'password'
+end
