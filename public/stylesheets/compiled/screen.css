@@ -631,10 +631,9 @@ div.notice {
 #mugavurai_content p {
   padding: 10px 5px;
   text-shadow: none;
-  font-weight: bold;
 }
 
-/* line 401, ../../../app/stylesheets/screen.scss */
+/* line 400, ../../../app/stylesheets/screen.scss */
 #mugavurai_content p span.lead {
   display: inline;
   font-size: 45px;
