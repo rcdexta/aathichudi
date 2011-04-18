@@ -3,7 +3,7 @@
 
 %span.edit_button
   %a{:href=> edit_wiki_path(params[:id])}
-    %button திருத்து
+    %img.edit{:src => '/images/edit.png'}
 
 .paadal
   = @wiki.paadal
@@ -16,10 +16,11 @@
   %br
   = @wiki.english_short_desc
 
-.container
-  %i
-    = @wiki.tamil_long_desc
+- unless @wiki.tamil_long_desc.blank?
+  .wiki_container
+    %i= @wiki.tamil_long_desc
 
-%a{:href=> root_path}
-  %button
-    %span.back_button முதற்பக்கம்
+.home_link
+  %a{:href=> root_path}
+    %img.home{:src => '/images/home.png'}
+    முதற்பக்கம்

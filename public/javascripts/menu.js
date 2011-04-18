@@ -10,10 +10,12 @@ $(document).ready(function(){
 
     $('#about_site').click(function(){
         $('#about_site_content').dialog({
-            minWidth: 700,
+            minWidth: 850,
             maxHeight: 700,
             modal: true,
             show: 'fade'
         });
     })
+
+    $('#about_site').click();
 });

@@ -245,7 +245,7 @@ div.menu {
 .hline {
   border-bottom: solid black;
   border-bottom-width: 1px;
-  width: 531px;
+  width: 525px;
   padding-top: 2px;
 }
 
@@ -402,6 +402,11 @@ div.notice {
     font-size: 45px;
 }
 
+#about_site_content p span.lead{
+    display: inline;
+    font-size: 25px;
+}
+
 #about_site_content {
     font-size: 14px;
     text-align: justify;
@@ -414,4 +419,29 @@ div.notice {
 
 .login_container{
     text-align: center;
+}
+
+img.edit {
+    width: 52px;
+    margin-top: 9px;
+}
+
+img.home{
+    width: 32px;
+    margin-right: -8px;
+    vertical-align: middle;
+}
+
+
+.wiki_container{
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    margin-bottom: 15px;
+    margin-top: 18px;
+    padding: 0 10px;
+    width: 503px;
+}
+
+.home_link{
+    margin-top: 8px;
 }

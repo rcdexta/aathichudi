@@ -360,7 +360,7 @@ div.menu {
 .hline {
   border-bottom: solid black;
   border-bottom-width: 1px;
-  width: 531px;
+  width: 525px;
   padding-top: 2px;
 }
 
@@ -640,17 +640,51 @@ div.notice {
 }
 
 /* line 405, ../../../app/stylesheets/screen.scss */
+#about_site_content p span.lead {
+  display: inline;
+  font-size: 25px;
+}
+
+/* line 410, ../../../app/stylesheets/screen.scss */
 #about_site_content {
   font-size: 14px;
   text-align: justify;
 }
 
-/* line 410, ../../../app/stylesheets/screen.scss */
+/* line 415, ../../../app/stylesheets/screen.scss */
 #about_site_content p {
   padding: 10px 5px;
 }
 
-/* line 415, ../../../app/stylesheets/screen.scss */
+/* line 420, ../../../app/stylesheets/screen.scss */
 .login_container {
   text-align: center;
+}
+
+/* line 424, ../../../app/stylesheets/screen.scss */
+img.edit {
+  width: 52px;
+  margin-top: 9px;
+}
+
+/* line 429, ../../../app/stylesheets/screen.scss */
+img.home {
+  width: 32px;
+  margin-right: -8px;
+  vertical-align: middle;
+}
+
+/* line 436, ../../../app/stylesheets/screen.scss */
+.wiki_container {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  margin-bottom: 15px;
+  margin-top: 18px;
+  padding: 0 10px;
+  width: 503px;
+}
+
+/* line 445, ../../../app/stylesheets/screen.scss */
+.home_link {
+  margin-top: 8px;
 }
