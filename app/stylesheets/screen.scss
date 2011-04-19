@@ -295,6 +295,7 @@ button {
 .save_button {
   @include fancy-button-colors(#261c1e, adjust-hue(#261c1e, -120), darken(adjust-hue(#261c1e, -120), 6));
   margin: 10px 21px 0px 0px;
+  font-size: 12px;
   float: right;
   padding: 1px 5px;
   cursor: pointer;
@@ -338,8 +339,8 @@ button a:hover {
 }
 
 div.notice {
-	background: #e9967a;
-    padding: 5px;
+	background: url(../../images/success.png) no-repeat scroll 4px 4px #e9967a;
+    padding: 5px 5px 5px 32px;
     width: 50%;
     display: inline;
 }
@@ -444,4 +445,8 @@ img.home{
 
 .home_link{
     margin-top: 8px;
+}
+
+.clear{
+    clear: both;
 }

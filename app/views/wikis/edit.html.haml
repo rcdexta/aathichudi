@@ -2,9 +2,11 @@
 = render :partial => 'common/indic'
 
 = simple_form_for @wiki do |w|
+  = w.button :submit, :class => 'save_button', :value => 'மாற்றத்தை சேமி'
+  .clear
   = w.input :paadal, :label => 'பாடல்'
   = w.input :paadal_english, :label => "ஆங்கில எழுத்து பிரிதி", :input_html => {"MicrosoftILITWebAttach" => "false"}
   = w.input :tamil_short_desc, :label => "பாடலின் விளக்கம்"
   = w.input :english_short_desc, :label => "பாடலின் விளக்கம் (ஆங்கிலத்தில்)", :input_html => {"MicrosoftILITWebAttach" => "false"}
   = w.input :tamil_long_desc, :as => :text, :label => "விளக்கம்", :input_html => {:cols => 50}
-  = w.button :submit, :class => 'save_button', :value => 'சேமி'
+  = w.button :submit, :class => 'save_button', :value => 'மாற்றத்தை சேமி'

@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 14, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 14, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -22,48 +22,48 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   vertical-align: baseline;
 }
 
-/* line 17, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
   color: black;
   background: white;
 }
 
-/* line 19, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 19, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 21, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 21, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: separate;
   border-spacing: 0;
   vertical-align: middle;
 }
 
-/* line 23, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 23, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 25, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 25, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: "" "";
 }
-/* line 96, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 96, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
 }
 
-/* line 27, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 27, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
 /* incase an inverted custom gradient isn't specified */
-/* line 177, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+/* line 177, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 .fancy-button-reset-base-class {
   font-family: "Lucida Grande", Lucida, Arial, sans-serif;
   background: url('/images/button_bg.png?1302962285') repeat-x bottom left;
@@ -76,12 +76,12 @@ a img {
   border-style: solid;
   font-weight: bold;
 }
-/* line 165, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+/* line 165, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 .fancy-button-reset-base-class::-moz-focus-inner {
   border: none;
   padding: 0;
 }
-/* line 168, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+/* line 168, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 .fancy-button-reset-base-class:focus {
   outline: none;
 }
@@ -426,11 +426,11 @@ button {
   background-clip: padding-box;
   cursor: pointer;
 }
-/* line 116, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+/* line 116, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 button, button:visited {
   color: white;
 }
-/* line 31, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+/* line 31, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 button:hover, button:focus {
   background-color: #0f1633;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #636a87), color-stop(10%, #3c4152), color-stop(50%, #16171d), color-stop(50%, #0f1014), color-stop(100%, #252732));
@@ -439,11 +439,11 @@ button:hover, button:focus {
   border-color: black;
   text-shadow: black 0px 1px 1px;
 }
-/* line 116, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+/* line 116, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 button:hover, button:hover:visited, button:focus, button:focus:visited {
   color: white;
 }
-/* line 36, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+/* line 36, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 button:active {
   background-color: #080c1b;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #0f1014), color-stop(30%, #13151a), color-stop(50%, #0b0b0f), color-stop(50%, #040406), color-stop(100%, #20232c));
@@ -456,7 +456,7 @@ button:active {
   -o-box-shadow: black 0 0.08em 0.1em 1px inset;
   box-shadow: black 0 0.08em 0.1em 1px inset;
 }
-/* line 116, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+/* line 116, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 button:active, button:active:visited {
   color: white;
 }
@@ -480,15 +480,16 @@ button:active, button:active:visited {
   -khtml-background-clip: padding-box;
   background-clip: padding-box;
   margin: 10px 21px 0px 0px;
+  font-size: 12px;
   float: right;
   padding: 1px 5px;
   cursor: pointer;
 }
-/* line 116, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+/* line 116, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 .save_button, .save_button:visited {
   color: white;
 }
-/* line 31, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+/* line 31, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 .save_button:hover, .save_button:focus {
   background-color: #0f1633;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #636a87), color-stop(10%, #3c4152), color-stop(50%, #16171d), color-stop(50%, #0f1014), color-stop(100%, #252732));
@@ -497,11 +498,11 @@ button:active, button:active:visited {
   border-color: black;
   text-shadow: black 0px 1px 1px;
 }
-/* line 116, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+/* line 116, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 .save_button:hover, .save_button:hover:visited, .save_button:focus, .save_button:focus:visited {
   color: white;
 }
-/* line 36, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+/* line 36, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 .save_button:active {
   background-color: #080c1b;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #0f1014), color-stop(30%, #13151a), color-stop(50%, #0b0b0f), color-stop(50%, #040406), color-stop(100%, #20232c));
@@ -514,64 +515,64 @@ button:active, button:active:visited {
   -o-box-shadow: black 0 0.08em 0.1em 1px inset;
   box-shadow: black 0 0.08em 0.1em 1px inset;
 }
-/* line 116, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+/* line 116, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 .save_button:active, .save_button:active:visited {
   color: white;
 }
 
-/* line 303, ../../../app/stylesheets/screen.scss */
+/* line 304, ../../../app/stylesheets/screen.scss */
 .float_right {
   float: right;
 }
 
-/* line 307, ../../../app/stylesheets/screen.scss */
+/* line 308, ../../../app/stylesheets/screen.scss */
 .margin_right_10 {
   margin-right: 10px;
 }
 
-/* line 311, ../../../app/stylesheets/screen.scss */
+/* line 312, ../../../app/stylesheets/screen.scss */
 .margin_top_10 {
   margin-top: 10px;
 }
 
-/* line 315, ../../../app/stylesheets/screen.scss */
+/* line 316, ../../../app/stylesheets/screen.scss */
 .inline {
   display: inline;
 }
 
-/* line 319, ../../../app/stylesheets/screen.scss */
+/* line 320, ../../../app/stylesheets/screen.scss */
 .edit_button {
   float: right;
   margin-right: 21px;
   margin-top: -8px;
 }
 
-/* line 326, ../../../app/stylesheets/screen.scss */
+/* line 327, ../../../app/stylesheets/screen.scss */
 .back_button {
   background: url(../../images/back.png) 1px no-repeat;
   float: left;
   padding-left: 30px;
 }
 
-/* line 332, ../../../app/stylesheets/screen.scss */
+/* line 333, ../../../app/stylesheets/screen.scss */
 button a {
   color: white;
 }
 
-/* line 336, ../../../app/stylesheets/screen.scss */
+/* line 337, ../../../app/stylesheets/screen.scss */
 button a:hover {
   font-weight: normal;
 }
 
-/* line 340, ../../../app/stylesheets/screen.scss */
+/* line 341, ../../../app/stylesheets/screen.scss */
 div.notice {
-  background: #e9967a;
-  padding: 5px;
+  background: url(../../images/success.png) no-repeat scroll 4px 4px #e9967a;
+  padding: 5px 5px 5px 32px;
   width: 50%;
   display: inline;
 }
 
-/* line 347, ../../../app/stylesheets/screen.scss */
+/* line 348, ../../../app/stylesheets/screen.scss */
 .tooltip {
   display: none;
   background: transparent url(/tools/img/tooltip/black_arrow.png);
@@ -582,7 +583,7 @@ div.notice {
   color: #fff;
 }
 
-/* line 357, ../../../app/stylesheets/screen.scss */
+/* line 358, ../../../app/stylesheets/screen.scss */
 #sign_in {
   float: right;
   font-weight: bold;
@@ -590,18 +591,18 @@ div.notice {
   margin-top: -10px;
 }
 
-/* line 364, ../../../app/stylesheets/screen.scss */
+/* line 365, ../../../app/stylesheets/screen.scss */
 #sign_in a {
   z-index: 1000;
 }
 
-/* line 368, ../../../app/stylesheets/screen.scss */
+/* line 369, ../../../app/stylesheets/screen.scss */
 .logo ul {
   margin-left: 168px;
   margin-top: 87px;
 }
 
-/* line 373, ../../../app/stylesheets/screen.scss */
+/* line 374, ../../../app/stylesheets/screen.scss */
 .logo ul li {
   font-weight: bold;
   display: inline;
@@ -609,72 +610,72 @@ div.notice {
   cursor: pointer;
 }
 
-/* line 380, ../../../app/stylesheets/screen.scss */
+/* line 381, ../../../app/stylesheets/screen.scss */
 .logo ul li img {
   width: 24px;
   height: 24px;
   vertical-align: middle;
 }
 
-/* line 386, ../../../app/stylesheets/screen.scss */
+/* line 387, ../../../app/stylesheets/screen.scss */
 .hidden {
   display: none;
 }
 
-/* line 390, ../../../app/stylesheets/screen.scss */
+/* line 391, ../../../app/stylesheets/screen.scss */
 #mugavurai_content {
   font-size: 14px;
   text-align: justify;
   background: url(../../images/avvaiyar.jpg);
 }
 
-/* line 396, ../../../app/stylesheets/screen.scss */
+/* line 397, ../../../app/stylesheets/screen.scss */
 #mugavurai_content p {
   padding: 10px 5px;
 }
 
-/* line 400, ../../../app/stylesheets/screen.scss */
+/* line 401, ../../../app/stylesheets/screen.scss */
 #mugavurai_content p span.lead {
   display: inline;
   font-size: 45px;
 }
 
-/* line 405, ../../../app/stylesheets/screen.scss */
+/* line 406, ../../../app/stylesheets/screen.scss */
 #about_site_content p span.lead {
   display: inline;
   font-size: 25px;
 }
 
-/* line 410, ../../../app/stylesheets/screen.scss */
+/* line 411, ../../../app/stylesheets/screen.scss */
 #about_site_content {
   font-size: 14px;
   text-align: justify;
 }
 
-/* line 415, ../../../app/stylesheets/screen.scss */
+/* line 416, ../../../app/stylesheets/screen.scss */
 #about_site_content p {
   padding: 10px 5px;
 }
 
-/* line 420, ../../../app/stylesheets/screen.scss */
+/* line 421, ../../../app/stylesheets/screen.scss */
 .login_container {
   text-align: center;
 }
 
-/* line 424, ../../../app/stylesheets/screen.scss */
+/* line 425, ../../../app/stylesheets/screen.scss */
 img.edit {
   width: 52px;
   margin-top: 9px;
 }
 
-/* line 429, ../../../app/stylesheets/screen.scss */
+/* line 430, ../../../app/stylesheets/screen.scss */
 img.home {
   width: 32px;
   margin-right: -8px;
   vertical-align: middle;
 }
 
-/* line 436, ../../../app/stylesheets/screen.scss */
+/* line 437, ../../../app/stylesheets/screen.scss */
 .wiki_container {
   border-bottom: 1px solid;
   border-top: 1px solid;
@@ -684,7 +685,12 @@ img.home {
   width: 503px;
 }
 
-/* line 445, ../../../app/stylesheets/screen.scss */
+/* line 446, ../../../app/stylesheets/screen.scss */
 .home_link {
   margin-top: 8px;
+}
+
+/* line 450, ../../../app/stylesheets/screen.scss */
+.clear {
+  clear: both;
 }
