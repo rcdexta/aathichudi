@@ -1,14 +1,20 @@
 require 'spec_helper'
 
 describe WikisController do
+
   it "should resolve routes for #edit" do
     should route(:get, '/wikis/1/edit').to(:controller => 'wikis', :action => 'edit', :id => 1)
   end
 
+  before :each do
+    user = Factory(:user)
+    sign_in user
+  end
+
   describe "#edit" do
 
-    it "should fetch the latest wiki with state as active" do
-      wiki = Factory(:active_wiki)
+    it "should fetch the latest wiki" do
+      wiki = Factory(:wiki)
       get :edit, :id => wiki.id
       assigns[:wiki].should == wiki
     end
@@ -17,8 +23,8 @@ describe WikisController do
 
   describe "#show" do
 
-    it "should fetch the latest wiki with state as active" do
-      wiki = Factory(:active_wiki)
+    it "should fetch the latest wiki" do
+      wiki = Factory(:wiki)
       get :edit, :id => wiki.id
       assigns[:wiki].should == wiki
     end

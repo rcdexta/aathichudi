@@ -14,7 +14,6 @@ class WikisController < ApplicationController
   private
 
   def find_latest_active_wiki
-    wiki = Wiki.find params[:id]
-    @wiki = wiki.latest_active
+    @wiki = Wiki.find params[:id]
   end
 end

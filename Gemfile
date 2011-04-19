@@ -6,7 +6,6 @@ gem "haml", ">= 3.0.0"
 gem "haml-rails"
 gem 'compass'
 gem 'fancy-buttons'
-gem 'acts_as_versioned'
 gem 'state_machine'
 gem 'simple_form'
 gem 'devise'
