@@ -6,7 +6,7 @@ $(document).ready(function(){
             modal: true,
             show: 'fade'
         });
-    })
+    });
 
     $('#about_site').click(function(){
         $('#about_site_content').dialog({
@@ -15,7 +15,6 @@ $(document).ready(function(){
             modal: true,
             show: 'fade'
         });
-    })
+    });
 
-    $('#about_site').click();
 });
