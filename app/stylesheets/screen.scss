@@ -339,10 +339,17 @@ button a:hover {
 }
 
 div.notice {
-	background: url(../../images/success.png) no-repeat scroll 4px 4px #e9967a;
+	background: url("../../images/success.png") no-repeat scroll 4px 9px #E9967A;
+    margin-right: 20px;
     padding: 5px 5px 5px 32px;
-    width: 50%;
-    display: inline;
+    width: auto;
+}
+
+div.alert {
+	background: url(../../images/alert.png) no-repeat scroll 4px 9px #e9967a;
+    padding: 5px 5px 5px 32px;
+    width: auto;
+    margin-right: 20px;
 }
 
 .tooltip {

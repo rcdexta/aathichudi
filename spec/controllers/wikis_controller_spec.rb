@@ -7,8 +7,8 @@ describe WikisController do
   end
 
   before :each do
-    user = Factory(:user)
-    sign_in user
+    @user = Factory(:user)
+    sign_in @user
   end
 
   describe "#edit" do
@@ -29,16 +29,28 @@ describe WikisController do
 
   describe "#update" do
 
-    it "should not populate flash message if no attribute has been changed" do
+    it "should display alert message if no changes are present" do
       wiki = Factory(:wiki)
-      get :update, :id => wiki.id, :wiki => wiki
+      put :update, :id => wiki.id, :wiki => wiki
       flash[:notice].should be_blank
+      flash[:alert].should be_present
+      response.should redirect_to :action => :edit
     end
-#
-#    it "should create a new revision if no draft present" do
-#      wiki = Factory(:wiki)
-#      get :update, :id => wiki.id, :wiki => wiki
-#    end
+
+    it "should create a new revision" do
+      wiki = Factory(:wiki)
+      wiki.paadal = "new paadal"
+
+      put :update, :id => wiki.id, :wiki => wiki
+
+      wiki_version = WikiVersion.last
+      wiki_version.should_not be_blank
+
+      wiki_version.version.should == 2
+      wiki_version.paadal.should == "new paadal"
+      wiki_version.user.should == @user
+      wiki_version.should be_draft
+    end
 
   end
 

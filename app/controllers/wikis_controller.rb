@@ -4,16 +4,24 @@ class WikisController < ApplicationController
   before_filter :find_latest_active_wiki, :only => [:show, :edit]
   cache_sweeper :wiki_sweeper
 
-  def update
-    wiki = Wiki.find(params[:id])
-    wiki.attributes = params[:wiki]
-
-    if wiki.changed?
-      wiki.save!
-      flash[:notice] = t(:saved)
+  def edit
+    draft_version =  WikiVersion.draft_version(@wiki, current_user)
+    if draft_version.present?
+      @wiki.attributes = draft_version.first.wiki_attributes
+      @draft = true
     end
+  end
 
-    redirect_to :action => :show
+  def update
+    wiki = params[:wiki]
+    if wiki.changed?
+      WikiVersion.create_or_update_next_version_for(wiki, current_user)
+      flash[:notice] = t(:saved_for_approval)
+      redirect_to :action => :show
+    else
+      flash[:alert] = t(:unchanged)
+      redirect_to :action => :edit
+    end
   end
 
   private

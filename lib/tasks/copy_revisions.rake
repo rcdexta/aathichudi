@@ -5,7 +5,7 @@ namespace :aathichudi do
     user = User.find_by_email('aramseyavirumbu@gmail.com')
     WikiVersion.destroy_all
     Wiki.all.each do |wiki|
-      WikiVersion.create(wiki.attributes.merge(:user => user, :wiki => wiki, :version => 1))
+      WikiVersion.create(wiki.attributes.merge(:user => user, :wiki => wiki, :version => 1, :state => 'active'))
     end
   end
 

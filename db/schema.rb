@@ -33,17 +33,17 @@ ActiveRecord::Schema.define(:version => 20110419150633) do
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
 
   create_table "wiki_versions", :force => true do |t|
-    t.integer  "wiki_id"
-    t.integer  "version"
-    t.string   "paadal"
-    t.string   "paadal_english"
-    t.string   "english_short_desc"
-    t.string   "tamil_short_desc"
-    t.text     "tamil_long_desc"
-    t.string   "state"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "user_id"
+    t.integer   "wiki_id"
+    t.integer   "version"
+    t.string    "paadal"
+    t.string    "paadal_english"
+    t.string    "english_short_desc"
+    t.string    "tamil_short_desc"
+    t.text      "tamil_long_desc"
+    t.string    "state"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
+    t.integer   "user_id"
   end
 
   add_index "wiki_versions", ["user_id"], :name => "wiki_versions_by_user"
