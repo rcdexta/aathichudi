@@ -1,0 +1,20 @@
+#logo-container
+  .logo
+    %ul
+      %li#mugavurai
+        %img{:src => '/images/mugavurai.png'}
+        வரலாறு
+      %li
+        |
+      %li#about_site
+        %img{:src => '/images/about.png'}
+        இணையதளத்தை பற்றி
+      %li
+        |
+      %li#user_login
+        %img{:src => '/images/user.png'}
+        - if anybody_signed_in?
+          %a{:href => "#{destroy_user_session_path}"}
+          %span{:title => "${current_user.email}"}= current_user.email.truncate(20)
+        - else
+          = link_to_rpx "உள்நுழைக", root_url

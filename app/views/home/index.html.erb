@@ -12,14 +12,7 @@
 
       <%= render :partial => 'common/header' %>
 
-      <script type="text/javascript" src="javascripts/jquery.tipsy.js"></script>
-      <script type="text/javascript" src="javascripts/tooltip.js"></script>
-      <script type="text/javascript" src="javascripts/jquery.cookie.js"></script>
-
-      <script type="text/javascript" src="javascripts/menu.js"></script>
-      <script type="text/javascript" src="javascripts/intro_pop_up.js"></script>
-
-
+      <%= javascript_include_tag 'intro_pop_up' %>
 
       <!--[if IE 6]>
       <script type="text/javascript" src="javascripts/ie6pngfix.js"></script>
@@ -43,41 +36,7 @@ gradient: true
       <!-- main body -->
       <div id="middle">
 
-        <div id='logo-container'>
-
-          <div class='logo'>
-
-            <ul>
-              <li id='mugavurai'>
-                <img src='images/mugavurai.png' />
-                வரலாறு
-              </li>
-              <li>
-                |
-              </li>
-              <li id='about_site'>
-                <img src='images/about.png' />
-                இணையதளத்தை பற்றி
-              </li>
-              <li>
-                |
-               </li>
-              <li>
-                <img src='images/user.png' />
-                <%- if anybody_signed_in? %>
-                    <a href='<%= destroy_user_session_path %>'>
-                        <span title='<%= current_user.email %>'><%= current_user.email.truncate(20) %></span>
-                    </a>
-                <%- else %>
-                    <%= link_to_rpx "உள்நுழைக", root_url %>
-                <%- end %>
-              </li>
-
-            </ul>
-
-          </div>
-
-        </div>
+        <%= render :partial => 'common/menu' %>
 
         <div id="main">
 
