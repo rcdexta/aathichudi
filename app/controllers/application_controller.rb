@@ -3,8 +3,10 @@ class ApplicationController < ActionController::Base
   include TooltipHelper
 
   def after_sign_in_path_for(resource)
-    p "-"*50
-    p resource
-    super
+    if resource.email == AppConfig.admin
+       admin_dashboard_path
+    else
+      super
+    end
   end
 end

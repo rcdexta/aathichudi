@@ -20,5 +20,6 @@ group :test do
   gem 'shoulda'
   gem 'mocha'
   gem 'factory_girl_rails'
+  gem 'timecop'
 end
 

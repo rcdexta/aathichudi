@@ -20,4 +20,5 @@ Factory.define :wiki_version do |wv|
   wv.association :user
   wv.association :wiki
   wv.version 1
+  wv.state "draft"
 end

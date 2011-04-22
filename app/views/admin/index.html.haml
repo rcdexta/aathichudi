@@ -1,0 +1,9 @@
+= stylesheet_link_tag 'compiled/admin'
+
+.dashboard_title
+  தளப் பொறுப்பாளரின் முகப்பு பக்கம்
+
+- @draft_wikis.each do |draft_wiki|
+  %p
+    = draft_wiki.paadal
+    = draft_wiki.user.email

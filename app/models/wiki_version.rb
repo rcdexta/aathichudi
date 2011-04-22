@@ -5,6 +5,7 @@ class WikiVersion < ActiveRecord::Base
 
   scope :draft, where(:state => 'draft')
   scope :active, where(:state => 'active')
+
   scope :draft_version, lambda {|wiki, user| where("state = ? and wiki_id = ? and user_id = ?", 'draft', wiki.id, user.id)}
 
   state_machine :state, :initial => :draft do
