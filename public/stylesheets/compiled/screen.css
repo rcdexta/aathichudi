@@ -581,6 +581,14 @@ div.alert {
 }
 
 /* line 355, ../../../app/stylesheets/screen.scss */
+div.error {
+  background: url("../../images/error.png") no-repeat scroll 4px 6px #e9967a;
+  margin-right: 20px;
+  padding: 5px 5px 5px 39px;
+  width: auto;
+}
+
+/* line 363, ../../../app/stylesheets/screen.scss */
 .tooltip {
   display: none;
   background: transparent url(/tools/img/tooltip/black_arrow.png);
@@ -591,7 +599,7 @@ div.alert {
   color: #fff;
 }
 
-/* line 365, ../../../app/stylesheets/screen.scss */
+/* line 373, ../../../app/stylesheets/screen.scss */
 #sign_in {
   float: right;
   font-weight: bold;
@@ -599,18 +607,18 @@ div.alert {
   margin-top: -10px;
 }
 
-/* line 372, ../../../app/stylesheets/screen.scss */
+/* line 380, ../../../app/stylesheets/screen.scss */
 #sign_in a {
   z-index: 1000;
 }
 
-/* line 376, ../../../app/stylesheets/screen.scss */
+/* line 384, ../../../app/stylesheets/screen.scss */
 .logo ul {
   margin-left: 168px;
   margin-top: 87px;
 }
 
-/* line 381, ../../../app/stylesheets/screen.scss */
+/* line 389, ../../../app/stylesheets/screen.scss */
 .logo ul li {
   font-weight: bold;
   display: inline;
@@ -618,72 +626,72 @@ div.alert {
   cursor: pointer;
 }
 
-/* line 388, ../../../app/stylesheets/screen.scss */
+/* line 396, ../../../app/stylesheets/screen.scss */
 .logo ul li img {
   width: 24px;
   height: 24px;
   vertical-align: middle;
 }
 
-/* line 394, ../../../app/stylesheets/screen.scss */
+/* line 402, ../../../app/stylesheets/screen.scss */
 .hidden {
   display: none;
 }
 
-/* line 398, ../../../app/stylesheets/screen.scss */
+/* line 406, ../../../app/stylesheets/screen.scss */
 #mugavurai_content {
   font-size: 14px;
   text-align: justify;
   background: url(../../images/avvaiyar.jpg);
 }
 
-/* line 404, ../../../app/stylesheets/screen.scss */
+/* line 412, ../../../app/stylesheets/screen.scss */
 #mugavurai_content p {
   padding: 10px 5px;
 }
 
-/* line 408, ../../../app/stylesheets/screen.scss */
+/* line 416, ../../../app/stylesheets/screen.scss */
 #mugavurai_content p span.lead {
   display: inline;
   font-size: 45px;
 }
 
-/* line 413, ../../../app/stylesheets/screen.scss */
+/* line 421, ../../../app/stylesheets/screen.scss */
 #about_site_content p span.lead {
   display: inline;
   font-size: 25px;
 }
 
-/* line 418, ../../../app/stylesheets/screen.scss */
+/* line 426, ../../../app/stylesheets/screen.scss */
 #about_site_content {
   font-size: 14px;
   text-align: justify;
 }
 
-/* line 423, ../../../app/stylesheets/screen.scss */
+/* line 431, ../../../app/stylesheets/screen.scss */
 #about_site_content p {
   padding: 10px 5px;
 }
 
-/* line 428, ../../../app/stylesheets/screen.scss */
+/* line 436, ../../../app/stylesheets/screen.scss */
 .login_container {
   text-align: center;
 }
 
-/* line 432, ../../../app/stylesheets/screen.scss */
+/* line 440, ../../../app/stylesheets/screen.scss */
 img.edit {
   width: 52px;
   margin-top: 9px;
 }
 
-/* line 437, ../../../app/stylesheets/screen.scss */
+/* line 445, ../../../app/stylesheets/screen.scss */
 img.home {
   width: 32px;
   margin-right: -8px;
   vertical-align: middle;
 }
 
-/* line 444, ../../../app/stylesheets/screen.scss */
+/* line 452, ../../../app/stylesheets/screen.scss */
 .wiki_container {
   border-bottom: 1px solid;
   border-top: 1px solid;
@@ -693,12 +701,12 @@ img.home {
   width: 503px;
 }
 
-/* line 453, ../../../app/stylesheets/screen.scss */
+/* line 461, ../../../app/stylesheets/screen.scss */
 .home_link {
   margin-top: 8px;
 }
 
-/* line 457, ../../../app/stylesheets/screen.scss */
+/* line 465, ../../../app/stylesheets/screen.scss */
 .clear {
   clear: both;
 }

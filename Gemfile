@@ -12,6 +12,7 @@ gem 'devise'
 gem 'devise_rpx_connectable'
 gem 'hpricot'
 gem 'ruby_parser'
+gem 'differ'
 
 group :test do
   gem "rspec-rails", ">= 2.0.1", :group => [:development, :test]

@@ -352,6 +352,14 @@ div.alert {
     margin-right: 20px;
 }
 
+div.error {
+	background: url("../../images/error.png") no-repeat scroll 4px 6px #E9967A;
+    margin-right: 20px;
+    padding: 5px 5px 5px 39px;
+    width: auto;
+}
+
+
 .tooltip {
 	display:none;
 	background:transparent url(/tools/img/tooltip/black_arrow.png);

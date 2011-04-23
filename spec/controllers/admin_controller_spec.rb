@@ -2,8 +2,9 @@ require 'spec_helper'
 
 describe AdminController do
 
-  it "should resolve routes for #edit" do
+  it "should resolve routes" do
     should route(:get, '/admin/dashboard').to(:controller => 'admin', :action => 'index')
+    should route(:get, '/admin/review/2').to(:controller => 'admin', :action => 'edit', :wiki_version_id => 2)
   end
 
   describe "#index" do
@@ -24,5 +25,29 @@ describe AdminController do
 
   end
 
+  describe "#edit" do
+
+    before :each do
+      @user = Factory(:user)
+      @wiki = Factory(:wiki)
+      sign_in @user
+    end
+
+    it "should get the wiki revision and the active wiki" do
+      wiki_version = Factory(:wiki_version, :user => @user, :wiki => @wiki)
+      get :edit, :wiki_version_id => wiki_version.id
+
+      assigns[:wiki_version] = @wiki_version
+    end
+
+    it "should return an error message for invalid wiki version id" do
+      wiki_version = Factory(:wiki_version, :user => @user, :wiki => @wiki, :state => 'active')
+      get :edit, :wiki_version_id => wiki_version.id
+
+      assigns[:wiki_version].should be_blank
+      flash.now[:error].should be_present
+    end
+
+  end
 
 end
