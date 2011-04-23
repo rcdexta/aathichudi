@@ -6,3 +6,5 @@
   - else
     = wiki_form.text_area attribute, :html => {"MicrosoftILITWebAttach" => "#{attribute.to_s =~ /english/? 'false' : 'true'}"}
 - else
+  = label(:wiki_version, attribute)
+  = wiki_version.send(attribute)

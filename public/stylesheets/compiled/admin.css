@@ -152,3 +152,14 @@ span.alert {
   width: auto;
   margin-right: 20px;
 }
+
+/* line 134, ../../../app/stylesheets/admin.scss */
+p.wiki_revision_attribute {
+  margin: 15px 0px;
+}
+
+/* line 138, ../../../app/stylesheets/admin.scss */
+.revision_user_info {
+  border-bottom: 1px solid;
+  margin-right: 19px;
+}

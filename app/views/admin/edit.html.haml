@@ -4,28 +4,18 @@
 - unless flash.now[:error].blank?
   .error= flash.now[:error]
 - else
+  .revision_user_info
+    .sub_heading கீழ்கண்ட மாற்றங்களை முன்வைத்தவர்
+    மின்னஞ்சல்
+    = @wiki_version.user.email
   = form_for @wiki_version, :url => admin_update_wiki_path(@wiki_version) do |wiki_form|
     -#= w.button :submit, :class => 'save_button', :value => 'மாற்றத்தை சேமி'
     .clear
 
-    - @wiki_version.attributes.keys.each do |attribute|
-      = render :partial => 'edit_with_diff', :locals => {:wiki_version => @wiki_version, :attribute => attribute.to_sym,
+    - @wiki_version.wiki_attributes.keys.each do |attribute|
+      %p.wiki_revision_attribute
+        = render :partial => 'edit_with_diff', :locals => {:wiki_version => @wiki_version, :attribute => attribute.to_sym,
                                              :changed_attributes => @changed_attributes, :wiki_form => wiki_form}
 
-  -#= label(:wiki_version, :paadal_english)
-  -##differ= raw generate_diff(@wiki_version.paadal_english, @wiki_version.wiki.paadal_english)
-  -#= w.text_field :paadal_english, :html => {"MicrosoftILITWebAttach" => "false"}
-  -#
-  -#= label(:wiki_version, :tamil_short_desc)
-  -##differ= raw generate_diff(@wiki_version.tamil_short_desc, @wiki_version.wiki.tamil_short_desc)
-  -#= w.text_field :tamil_short_desc
-  -#
-  -#= label(:wiki_version, :english_short_desc)
-  -##differ= raw generate_diff(@wiki_version.english_short_desc, @wiki_version.wiki.english_short_desc)
-  -#= w.text_field :english_short_desc, :html => {"MicrosoftILITWebAttach" => "false"}
-  -#
-  -#= label(:wiki_version, :tamil_long_desc)
-  -##differ= raw generate_diff(@wiki_version.tamil_long_desc, @wiki_version.wiki.tamil_long_desc)
-  -#= w.text_area :tamil_long_desc, :as => :text, :label => "விளக்கம்", :rows => 10
 
   -#= w.button :submit, :class => 'save_button', :value => 'மாற்றத்தை சேமி'

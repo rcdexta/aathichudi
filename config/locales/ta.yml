@@ -25,6 +25,7 @@ ta:
   helpers:
     label:
       wiki_version:
+        paadal: "பாடல்"
         paadal_english: "ஆங்கில எழுத்து பிரிதி"
         tamil_short_desc: "பாடலின் விளக்கம்"
         english_short_desc: "பாடலின் விளக்கம் (ஆங்கிலத்தில்)"

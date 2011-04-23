@@ -31,8 +31,11 @@ class WikiVersion < ActiveRecord::Base
   end
 
   def wiki_attributes
-    {"english_short_desc" => english_short_desc,  "paadal" => paadal, "paadal_english" => paadal_english,
-     "tamil_long_desc" => tamil_long_desc, "tamil_short_desc" => tamil_short_desc}
+    {"paadal" => paadal,
+     "paadal_english" => paadal_english,
+     "tamil_long_desc" => tamil_long_desc,
+     "english_short_desc" => english_short_desc,
+     "tamil_short_desc" => tamil_short_desc}
   end
 
 end
