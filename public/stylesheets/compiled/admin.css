@@ -108,7 +108,7 @@ img.review {
 
 /* line 94, ../../../app/stylesheets/admin.scss */
 #differ {
-  background: none repeat scroll 0 0 #FFFBD0;
+  background: none repeat scroll 0 0 #FFFF00;
   margin-bottom: 5px;
   padding: 0 5px;
   width: 672px;
@@ -128,16 +128,18 @@ ins.differ {
 input[type='text'] {
   margin-bottom: 15px;
   width: 677px;
+  background: #FFFBD0;
 }
 
-/* line 114, ../../../app/stylesheets/admin.scss */
+/* line 115, ../../../app/stylesheets/admin.scss */
 textarea {
   padding: 3px;
   width: 674px;
   display: block;
+  background: #FFFBD0;
 }
 
-/* line 120, ../../../app/stylesheets/admin.scss */
+/* line 122, ../../../app/stylesheets/admin.scss */
 div.error {
   background: url("../../images/error.png") no-repeat scroll 4px 6px #e9967a;
   margin-right: 20px;
@@ -145,7 +147,7 @@ div.error {
   width: 642px;
 }
 
-/* line 127, ../../../app/stylesheets/admin.scss */
+/* line 129, ../../../app/stylesheets/admin.scss */
 span.alert {
   background: url(../../images/alert.png) no-repeat scroll 4px 2px #e9967a;
   padding: 5px 5px 5px 32px;
@@ -153,13 +155,37 @@ span.alert {
   margin-right: 20px;
 }
 
-/* line 134, ../../../app/stylesheets/admin.scss */
+/* line 136, ../../../app/stylesheets/admin.scss */
 p.wiki_revision_attribute {
   margin: 15px 0px;
 }
 
-/* line 138, ../../../app/stylesheets/admin.scss */
+/* line 140, ../../../app/stylesheets/admin.scss */
 .revision_user_info {
-  border-bottom: 1px solid;
-  margin-right: 19px;
+  border: 1px solid;
+  margin-right: 18px;
+  margin-top: 6px;
+  padding: 0 5px;
+  background: AntiqueWhite;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+/* line 150, ../../../app/stylesheets/admin.scss */
+.profile_photo {
+  background: none repeat scroll 0 0 cyan;
+  border: 2px solid red;
+  height: 64px;
+  width: 64px;
+}
+
+/* line 157, ../../../app/stylesheets/admin.scss */
+span.photo {
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 162, ../../../app/stylesheets/admin.scss */
+.user_details {
+  margin-top: -7px;
 }

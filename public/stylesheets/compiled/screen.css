@@ -64,7 +64,7 @@ a img {
 
 /* incase an inverted custom gradient isn't specified */
 /* line 177, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.fancy-button-reset-base-class {
+.fancy-button-reset-base-class, .save_button, .reject_button {
   font-family: "Lucida Grande", Lucida, Arial, sans-serif;
   background: url('/images/button_bg.png?1302962285') repeat-x bottom left;
   margin: 0;
@@ -77,12 +77,12 @@ a img {
   font-weight: bold;
 }
 /* line 165, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.fancy-button-reset-base-class::-moz-focus-inner {
+.fancy-button-reset-base-class::-moz-focus-inner, .save_button::-moz-focus-inner, .reject_button::-moz-focus-inner {
   border: none;
   padding: 0;
 }
 /* line 168, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.fancy-button-reset-base-class:focus {
+.fancy-button-reset-base-class:focus, .save_button:focus, .reject_button:focus {
   outline: none;
 }
 
@@ -105,50 +105,52 @@ label {
 input[type="text"] {
   margin-bottom: 15px;
   width: 520px;
+  background: #F7DCB4;
 }
 
-/* line 27, ../../../app/stylesheets/screen.scss */
+/* line 28, ../../../app/stylesheets/screen.scss */
 textarea {
   padding: 3px;
+  background: #F7DCB4;
 }
 
-/* line 31, ../../../app/stylesheets/screen.scss */
+/* line 33, ../../../app/stylesheets/screen.scss */
 fieldset, img {
   border: 0;
 }
 
-/* line 35, ../../../app/stylesheets/screen.scss */
+/* line 37, ../../../app/stylesheets/screen.scss */
 html {
   height: 100%;
   margin-bottom: 1px;
 }
 
-/* line 40, ../../../app/stylesheets/screen.scss */
+/* line 42, ../../../app/stylesheets/screen.scss */
 body {
   position: relative;
 }
 
-/* line 44, ../../../app/stylesheets/screen.scss */
+/* line 46, ../../../app/stylesheets/screen.scss */
 :focus {
   outline: none;
 }
 
 /* links */
-/* line 49, ../../../app/stylesheets/screen.scss */
+/* line 51, ../../../app/stylesheets/screen.scss */
 a {
   color: #222;
   text-decoration: none;
   text-shadow: 0px 2px 3px #555;
 }
 
-/* line 55, ../../../app/stylesheets/screen.scss */
+/* line 57, ../../../app/stylesheets/screen.scss */
 a:hover {
   font-weight: bold;
   /*color:#008cff;*/
   /*text-decoration:underline;*/
 }
 
-/* line 61, ../../../app/stylesheets/screen.scss */
+/* line 63, ../../../app/stylesheets/screen.scss */
 a:hover h2 {
   font-weight: bold;
   /*color:#008cff;*/
@@ -156,17 +158,17 @@ a:hover h2 {
 }
 
 /* page setup */
-/* line 68, ../../../app/stylesheets/screen.scss */
+/* line 70, ../../../app/stylesheets/screen.scss */
 h2, h3 {
   display: inline;
 }
 
-/* line 72, ../../../app/stylesheets/screen.scss */
+/* line 74, ../../../app/stylesheets/screen.scss */
 h2 {
   font-size: 175%;
 }
 
-/* line 77, ../../../app/stylesheets/screen.scss */
+/* line 79, ../../../app/stylesheets/screen.scss */
 body {
   background: url(../../images/page_bg.jpg);
   font-family: Arial, Helvetica, sans-serif;
@@ -176,32 +178,32 @@ body {
   height: 100%;
 }
 
-/* line 86, ../../../app/stylesheets/screen.scss */
+/* line 88, ../../../app/stylesheets/screen.scss */
 p {
   text-shadow: 0px 2px 3px #555;
 }
 
-/* line 90, ../../../app/stylesheets/screen.scss */
+/* line 92, ../../../app/stylesheets/screen.scss */
 .prayer {
   text-shadow: 0px 2px 3px #555;
   padding-top: 10px;
 }
 
-/* line 95, ../../../app/stylesheets/screen.scss */
+/* line 97, ../../../app/stylesheets/screen.scss */
 #logo-container {
   background: url(../../images/content-heading_with_title.jpg) 125px 5px no-repeat;
   height: 191px;
   text-align: center;
 }
 
-/* line 101, ../../../app/stylesheets/screen.scss */
+/* line 103, ../../../app/stylesheets/screen.scss */
 .logo {
   position: relative;
   padding-top: 30px;
   width: 81%;
 }
 
-/* line 107, ../../../app/stylesheets/screen.scss */
+/* line 109, ../../../app/stylesheets/screen.scss */
 #title {
   color: #261C1E;
   font-size: 30px;
@@ -209,7 +211,7 @@ p {
   font-weight: bold;
 }
 
-/* line 115, ../../../app/stylesheets/screen.scss */
+/* line 117, ../../../app/stylesheets/screen.scss */
 .heading {
   text-shadow: white 0px 1px 0, black 0 -1px 0;
   line-height: 150%;
@@ -219,7 +221,7 @@ p {
   margin-top: 10px;
 }
 
-/* line 124, ../../../app/stylesheets/screen.scss */
+/* line 126, ../../../app/stylesheets/screen.scss */
 .side-text {
   margin-left: 10px;
   margin-top: 170px;
@@ -227,13 +229,13 @@ p {
   font-size: 15px;
 }
 
-/* line 132, ../../../app/stylesheets/screen.scss */
+/* line 134, ../../../app/stylesheets/screen.scss */
 #page {
   text-align: center;
 }
 
 /* wrapper setup */
-/* line 136, ../../../app/stylesheets/screen.scss */
+/* line 138, ../../../app/stylesheets/screen.scss */
 div.rapidxwpr {
   margin-left: auto;
   margin-right: auto;
@@ -242,7 +244,7 @@ div.rapidxwpr {
 }
 
 /* header */
-/* line 144, ../../../app/stylesheets/screen.scss */
+/* line 146, ../../../app/stylesheets/screen.scss */
 div#header {
   position: relative;
   height: 150px;
@@ -251,7 +253,7 @@ div#header {
 }
 
 /* main body setup */
-/* line 152, ../../../app/stylesheets/screen.scss */
+/* line 154, ../../../app/stylesheets/screen.scss */
 div#middle {
   width: auto;
   margin: 0px 0px 0px 0px;
@@ -259,7 +261,7 @@ div#middle {
 }
 
 /* left column */
-/* line 159, ../../../app/stylesheets/screen.scss */
+/* line 161, ../../../app/stylesheets/screen.scss */
 div#left {
   width: 222px;
   position: relative;
@@ -269,7 +271,7 @@ div#left {
 }
 
 /* content column */
-/* line 168, ../../../app/stylesheets/screen.scss */
+/* line 170, ../../../app/stylesheets/screen.scss */
 div#main {
   width: auto;
   background: url(../../images/content-top.jpg) 0 50px no-repeat;
@@ -280,14 +282,14 @@ div#main {
   position: relative;
 }
 
-/* line 178, ../../../app/stylesheets/screen.scss */
+/* line 180, ../../../app/stylesheets/screen.scss */
 div#main_container {
   background: url(../../images/content-bottom.jpg) 0 100% no-repeat;
   padding: 0 0 53px 0;
   text-align: left;
 }
 
-/* line 184, ../../../app/stylesheets/screen.scss */
+/* line 186, ../../../app/stylesheets/screen.scss */
 div#mainmiddle {
   margin: 0px 0px 0px 0px;
   background: url(../../images/content-bg.jpg) 0 0 repeat-y;
@@ -296,7 +298,7 @@ div#mainmiddle {
 }
 
 /* footer */
-/* line 192, ../../../app/stylesheets/screen.scss */
+/* line 194, ../../../app/stylesheets/screen.scss */
 div#footer {
   margin-top: -10px;
   padding-bottom: 10px;
@@ -306,18 +308,18 @@ div#footer {
   font-size: 12px;
 }
 
-/* line 201, ../../../app/stylesheets/screen.scss */
+/* line 203, ../../../app/stylesheets/screen.scss */
 div#footer a {
   color: #baac7e;
   text-decoration: none;
 }
 
-/* line 206, ../../../app/stylesheets/screen.scss */
+/* line 208, ../../../app/stylesheets/screen.scss */
 div#footer a:hover {
   text-decoration: underline;
 }
 
-/* line 210, ../../../app/stylesheets/screen.scss */
+/* line 212, ../../../app/stylesheets/screen.scss */
 .clearingfix:after {
   content: ".";
   display: block;
@@ -326,35 +328,35 @@ div#footer a:hover {
   visibility: hidden;
 }
 
-/* line 218, ../../../app/stylesheets/screen.scss */
+/* line 220, ../../../app/stylesheets/screen.scss */
 .clearingfix {
   display: block;
 }
 
-/* line 222, ../../../app/stylesheets/screen.scss */
+/* line 224, ../../../app/stylesheets/screen.scss */
 .floatbox {
   overflow: hidden;
 }
 
-/* line 226, ../../../app/stylesheets/screen.scss */
+/* line 228, ../../../app/stylesheets/screen.scss */
 div.menu {
   margin: 30px 0 0 0;
 }
 
 /* show page */
-/* line 232, ../../../app/stylesheets/screen.scss */
+/* line 234, ../../../app/stylesheets/screen.scss */
 .paadal {
   font-size: 150%;
   margin-top: -40px;
 }
 
-/* line 237, ../../../app/stylesheets/screen.scss */
+/* line 239, ../../../app/stylesheets/screen.scss */
 .paadal_english {
   font-family: 'Georgia, Tahoma, Arial';
   font-size: 165%;
 }
 
-/* line 242, ../../../app/stylesheets/screen.scss */
+/* line 244, ../../../app/stylesheets/screen.scss */
 .hline {
   border-bottom: solid black;
   border-bottom-width: 1px;
@@ -362,7 +364,7 @@ div.menu {
   padding-top: 2px;
 }
 
-/* line 249, ../../../app/stylesheets/screen.scss */
+/* line 251, ../../../app/stylesheets/screen.scss */
 hr {
   color: red;
   background-color: red;
@@ -370,7 +372,7 @@ hr {
   margin-right: 15px;
 }
 
-/* line 256, ../../../app/stylesheets/screen.scss */
+/* line 258, ../../../app/stylesheets/screen.scss */
 .show_heading {
   font-size: 150%;
   text-shadow: white 0px 1px 0, black 0 -1px 0;
@@ -378,7 +380,7 @@ hr {
   font-weight: bold;
 }
 
-/* line 263, ../../../app/stylesheets/screen.scss */
+/* line 265, ../../../app/stylesheets/screen.scss */
 .heading {
   text-shadow: white 0px 1px 0, black 0 -1px 0;
   line-height: 150%;
@@ -387,7 +389,7 @@ hr {
   color: #98989;
 }
 
-/* line 271, ../../../app/stylesheets/screen.scss */
+/* line 273, ../../../app/stylesheets/screen.scss */
 .desc_container {
   background-color: #c7bb90;
   padding: 5px 5px;
@@ -395,7 +397,7 @@ hr {
   margin-top: 10px;
 }
 
-/* line 278, ../../../app/stylesheets/screen.scss */
+/* line 280, ../../../app/stylesheets/screen.scss */
 .container {
   margin-top: 15px;
   background: url(../../images/paper_bg.png);
@@ -405,7 +407,7 @@ hr {
   color: black;
 }
 
-/* line 288, ../../../app/stylesheets/screen.scss */
+/* line 290, ../../../app/stylesheets/screen.scss */
 button {
   background-color: #330f16;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #87636a), color-stop(10%, #523c41), color-stop(50%, #1d1617), color-stop(50%, #140f10), color-stop(100%, #322527));
@@ -460,18 +462,98 @@ button:active, button:active:visited {
   color: white;
 }
 
-/* line 293, ../../../app/stylesheets/screen.scss */
+/* line 295, ../../../app/stylesheets/screen.scss */
 .save_button {
-  background-color: #330f16;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #87636a), color-stop(10%, #523c41), color-stop(50%, #1d1617), color-stop(50%, #140f10), color-stop(100%, #322527));
-  background-image: -moz-linear-gradient(top, #87636a 0%, #523c41 10%, #1d1617 50%, #140f10 50%, #322527 100%);
-  background-image: linear-gradient(top, #87636a 0%, #523c41 10%, #1d1617 50%, #140f10 50%, #322527 100%);
-  border-color: black;
-  text-shadow: black 0px 1px 1px;
-  -moz-box-shadow: rgba(255, 255, 255, 0.129) 0 0 0.1em 1px inset;
-  -webkit-box-shadow: rgba(255, 255, 255, 0.129) 0 0 0.1em 1px inset;
-  -o-box-shadow: rgba(255, 255, 255, 0.129) 0 0 0.1em 1px inset;
-  box-shadow: rgba(255, 255, 255, 0.129) 0 0 0.1em 1px inset;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 15px;
+  line-height: 1.2em;
+  padding: 0.3em 1em;
+  border-width: 2px;
+  background-color: #990033;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ff4281), color-stop(10%, #e6004c), color-stop(50%, #8a002e), color-stop(50%, #7a0029), color-stop(100%, #ad003a));
+  background-image: -moz-linear-gradient(top, #ff4281 0%, #e6004c 10%, #8a002e 50%, #7a0029 50%, #ad003a 100%);
+  background-image: linear-gradient(top, #ff4281 0%, #e6004c 10%, #8a002e 50%, #7a0029 50%, #ad003a 100%);
+  border-color: #4d0019;
+  text-shadow: #1a0008 0px 1px 1px;
+  -moz-box-shadow: rgba(255, 255, 255, 0.3) 0 0 0.1em 1px inset;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.3) 0 0 0.1em 1px inset;
+  -o-box-shadow: rgba(255, 255, 255, 0.3) 0 0 0.1em 1px inset;
+  box-shadow: rgba(255, 255, 255, 0.3) 0 0 0.1em 1px inset;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  -o-background-clip: padding-box;
+  -ms-background-clip: padding-box;
+  -khtml-background-clip: padding-box;
+  background-clip: padding-box;
+  margin: 10px 21px 0px 0px;
+  font-size: 12px;
+  float: right;
+  padding: 1px 5px;
+  cursor: pointer;
+  color: black;
+}
+/* line 116, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+.save_button, .save_button:visited {
+  color: white;
+}
+/* line 31, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+.save_button:hover, .save_button:focus {
+  background-color: #8a002e;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ff3377), color-stop(10%, #d60047), color-stop(50%, #7a0029), color-stop(50%, #6b0024), color-stop(100%, #9e0035));
+  background-image: -moz-linear-gradient(top, #ff3377 0%, #d60047 10%, #7a0029 50%, #6b0024 50%, #9e0035 100%);
+  background-image: linear-gradient(top, #ff3377 0%, #d60047 10%, #7a0029 50%, #6b0024 50%, #9e0035 100%);
+  border-color: #3d0014;
+  text-shadow: #0a0003 0px 1px 1px;
+}
+/* line 116, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+.save_button:hover, .save_button:hover:visited, .save_button:focus, .save_button:focus:visited {
+  color: white;
+}
+/* line 36, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+.save_button:active {
+  background-color: #7a0029;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #7a0029), color-stop(30%, #85002c), color-stop(50%, #700025), color-stop(50%, #610020), color-stop(100%, #a30036));
+  background-image: -moz-linear-gradient(top, #7a0029 0%, #85002c 30%, #700025 50%, #610020 50%, #a30036 100%);
+  background-image: linear-gradient(top, #7a0029 0%, #85002c 30%, #700025 50%, #610020 50%, #a30036 100%);
+  border-color: #2e000f;
+  text-shadow: black 0px -1px -1px;
+  -moz-box-shadow: #4d0019 0 0.08em 0.1em 1px inset;
+  -webkit-box-shadow: #4d0019 0 0.08em 0.1em 1px inset;
+  -o-box-shadow: #4d0019 0 0.08em 0.1em 1px inset;
+  box-shadow: #4d0019 0 0.08em 0.1em 1px inset;
+}
+/* line 116, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+.save_button:active, .save_button:active:visited {
+  color: white;
+}
+
+/* line 305, ../../../app/stylesheets/screen.scss */
+.reject_button {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 15px;
+  line-height: 1.2em;
+  padding: 0.3em 1em;
+  border-width: 2px;
+  background-color: #ff11ff;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffb9ff), color-stop(10%, #ff5eff), color-stop(50%, #ff02ff), color-stop(50%, #f100f1), color-stop(100%, #ff25ff));
+  background-image: -moz-linear-gradient(top, #ffb9ff 0%, #ff5eff 10%, #ff02ff 50%, #f100f1 50%, #ff25ff 100%);
+  background-image: linear-gradient(top, #ffb9ff 0%, #ff5eff 10%, #ff02ff 50%, #f100f1 50%, #ff25ff 100%);
+  border-color: #c400c3;
+  text-shadow: #910091 0px 1px 1px;
+  -moz-box-shadow: rgba(255, 255, 255, 0.533) 0 0 0.1em 1px inset;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.533) 0 0 0.1em 1px inset;
+  -o-box-shadow: rgba(255, 255, 255, 0.533) 0 0 0.1em 1px inset;
+  box-shadow: rgba(255, 255, 255, 0.533) 0 0 0.1em 1px inset;
   -moz-background-clip: padding;
   -webkit-background-clip: padding;
   -o-background-clip: padding-box;
@@ -485,85 +567,85 @@ button:active, button:active:visited {
   cursor: pointer;
 }
 /* line 116, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.save_button, .save_button:visited {
+.reject_button, .reject_button:visited {
   color: white;
 }
 /* line 31, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.save_button:hover, .save_button:focus {
-  background-color: #0f1633;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #636a87), color-stop(10%, #3c4152), color-stop(50%, #16171d), color-stop(50%, #0f1014), color-stop(100%, #252732));
-  background-image: -moz-linear-gradient(top, #636a87 0%, #3c4152 10%, #16171d 50%, #0f1014 50%, #252732 100%);
-  background-image: linear-gradient(top, #636a87 0%, #3c4152 10%, #16171d 50%, #0f1014 50%, #252732 100%);
-  border-color: black;
-  text-shadow: black 0px 1px 1px;
+.reject_button:hover, .reject_button:focus {
+  background-color: #ff02ff;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffaaff), color-stop(10%, #ff4eff), color-stop(50%, #f100f1), color-stop(50%, #e200e2), color-stop(100%, #ff16ff));
+  background-image: -moz-linear-gradient(top, #ffaaff 0%, #ff4eff 10%, #f100f1 50%, #e200e2 50%, #ff16ff 100%);
+  background-image: linear-gradient(top, #ffaaff 0%, #ff4eff 10%, #f100f1 50%, #e200e2 50%, #ff16ff 100%);
+  border-color: #b400b4;
+  text-shadow: #810081 0px 1px 1px;
 }
 /* line 116, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.save_button:hover, .save_button:hover:visited, .save_button:focus, .save_button:focus:visited {
+.reject_button:hover, .reject_button:hover:visited, .reject_button:focus, .reject_button:focus:visited {
   color: white;
 }
 /* line 36, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.save_button:active {
-  background-color: #080c1b;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #0f1014), color-stop(30%, #13151a), color-stop(50%, #0b0b0f), color-stop(50%, #040406), color-stop(100%, #20232c));
-  background-image: -moz-linear-gradient(top, #0f1014 0%, #13151a 30%, #0b0b0f 50%, #040406 50%, #20232c 100%);
-  background-image: linear-gradient(top, #0f1014 0%, #13151a 30%, #0b0b0f 50%, #040406 50%, #20232c 100%);
-  border-color: black;
-  text-shadow: black 0px -1px -1px;
-  -moz-box-shadow: black 0 0.08em 0.1em 1px inset;
-  -webkit-box-shadow: black 0 0.08em 0.1em 1px inset;
-  -o-box-shadow: black 0 0.08em 0.1em 1px inset;
-  box-shadow: black 0 0.08em 0.1em 1px inset;
+.reject_button:active {
+  background-color: #f100f1;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #f100f1), color-stop(30%, #fc00fc), color-stop(50%, #e700e7), color-stop(50%, #d800d8), color-stop(100%, #ff1bff));
+  background-image: -moz-linear-gradient(top, #f100f1 0%, #fc00fc 30%, #e700e7 50%, #d800d8 50%, #ff1bff 100%);
+  background-image: linear-gradient(top, #f100f1 0%, #fc00fc 30%, #e700e7 50%, #d800d8 50%, #ff1bff 100%);
+  border-color: #a500a5;
+  text-shadow: #720072 0px -1px -1px;
+  -moz-box-shadow: #c400c3 0 0.08em 0.1em 1px inset;
+  -webkit-box-shadow: #c400c3 0 0.08em 0.1em 1px inset;
+  -o-box-shadow: #c400c3 0 0.08em 0.1em 1px inset;
+  box-shadow: #c400c3 0 0.08em 0.1em 1px inset;
 }
 /* line 116, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.save_button:active, .save_button:active:visited {
+.reject_button:active, .reject_button:active:visited {
   color: white;
 }
 
-/* line 302, ../../../app/stylesheets/screen.scss */
+/* line 315, ../../../app/stylesheets/screen.scss */
 .float_right {
   float: right;
 }
 
-/* line 306, ../../../app/stylesheets/screen.scss */
+/* line 319, ../../../app/stylesheets/screen.scss */
 .margin_right_10 {
   margin-right: 10px;
 }
 
-/* line 310, ../../../app/stylesheets/screen.scss */
+/* line 323, ../../../app/stylesheets/screen.scss */
 .margin_top_10 {
   margin-top: 10px;
 }
 
-/* line 314, ../../../app/stylesheets/screen.scss */
+/* line 327, ../../../app/stylesheets/screen.scss */
 .inline {
   display: inline;
 }
 
-/* line 318, ../../../app/stylesheets/screen.scss */
+/* line 331, ../../../app/stylesheets/screen.scss */
 .edit_button {
   float: right;
   margin-right: 21px;
   margin-top: -8px;
 }
 
-/* line 325, ../../../app/stylesheets/screen.scss */
+/* line 338, ../../../app/stylesheets/screen.scss */
 .back_button {
   background: url(../../images/back.png) 1px no-repeat;
   float: left;
   padding-left: 30px;
 }
 
-/* line 331, ../../../app/stylesheets/screen.scss */
+/* line 344, ../../../app/stylesheets/screen.scss */
 button a {
   color: white;
 }
 
-/* line 335, ../../../app/stylesheets/screen.scss */
+/* line 348, ../../../app/stylesheets/screen.scss */
 button a:hover {
   font-weight: normal;
 }
 
-/* line 339, ../../../app/stylesheets/screen.scss */
+/* line 352, ../../../app/stylesheets/screen.scss */
 div.notice {
   background: url("../../images/success.png") no-repeat scroll 4px 9px #e9967a;
   margin-right: 20px;
@@ -571,7 +653,7 @@ div.notice {
   width: auto;
 }
 
-/* line 346, ../../../app/stylesheets/screen.scss */
+/* line 359, ../../../app/stylesheets/screen.scss */
 div.alert {
   background: url(../../images/alert.png) no-repeat scroll 4px 9px #e9967a;
   padding: 5px 5px 5px 32px;
@@ -579,7 +661,7 @@ div.alert {
   margin-right: 20px;
 }
 
-/* line 353, ../../../app/stylesheets/screen.scss */
+/* line 366, ../../../app/stylesheets/screen.scss */
 div.error {
   background: url("../../images/error.png") no-repeat scroll 4px 6px #e9967a;
   margin-right: 20px;
@@ -587,7 +669,7 @@ div.error {
   width: auto;
 }
 
-/* line 361, ../../../app/stylesheets/screen.scss */
+/* line 374, ../../../app/stylesheets/screen.scss */
 .tooltip {
   display: none;
   background: transparent url(/tools/img/tooltip/black_arrow.png);
@@ -598,7 +680,7 @@ div.error {
   color: #fff;
 }
 
-/* line 371, ../../../app/stylesheets/screen.scss */
+/* line 384, ../../../app/stylesheets/screen.scss */
 #sign_in {
   float: right;
   font-weight: bold;
@@ -606,18 +688,18 @@ div.error {
   margin-top: -10px;
 }
 
-/* line 378, ../../../app/stylesheets/screen.scss */
+/* line 391, ../../../app/stylesheets/screen.scss */
 #sign_in a {
   z-index: 1000;
 }
 
-/* line 382, ../../../app/stylesheets/screen.scss */
+/* line 395, ../../../app/stylesheets/screen.scss */
 .logo ul {
   margin-left: 168px;
   margin-top: 87px;
 }
 
-/* line 387, ../../../app/stylesheets/screen.scss */
+/* line 400, ../../../app/stylesheets/screen.scss */
 .logo ul li {
   font-weight: bold;
   display: inline;
@@ -625,72 +707,72 @@ div.error {
   cursor: pointer;
 }
 
-/* line 394, ../../../app/stylesheets/screen.scss */
+/* line 407, ../../../app/stylesheets/screen.scss */
 .logo ul li img {
   width: 24px;
   height: 24px;
   vertical-align: middle;
 }
 
-/* line 400, ../../../app/stylesheets/screen.scss */
+/* line 413, ../../../app/stylesheets/screen.scss */
 .hidden {
   display: none;
 }
 
-/* line 404, ../../../app/stylesheets/screen.scss */
+/* line 417, ../../../app/stylesheets/screen.scss */
 #mugavurai_content {
   font-size: 14px;
   text-align: justify;
   background: url(../../images/avvaiyar.jpg);
 }
 
-/* line 410, ../../../app/stylesheets/screen.scss */
+/* line 423, ../../../app/stylesheets/screen.scss */
 #mugavurai_content p {
   padding: 10px 5px;
 }
 
-/* line 414, ../../../app/stylesheets/screen.scss */
+/* line 427, ../../../app/stylesheets/screen.scss */
 #mugavurai_content p span.lead {
   display: inline;
   font-size: 45px;
 }
 
-/* line 419, ../../../app/stylesheets/screen.scss */
+/* line 432, ../../../app/stylesheets/screen.scss */
 #about_site_content p span.lead {
   display: inline;
   font-size: 25px;
 }
 
-/* line 424, ../../../app/stylesheets/screen.scss */
+/* line 437, ../../../app/stylesheets/screen.scss */
 #about_site_content {
   font-size: 14px;
   text-align: justify;
 }
 
-/* line 429, ../../../app/stylesheets/screen.scss */
+/* line 442, ../../../app/stylesheets/screen.scss */
 #about_site_content p {
   padding: 10px 5px;
 }
 
-/* line 434, ../../../app/stylesheets/screen.scss */
+/* line 447, ../../../app/stylesheets/screen.scss */
 .login_container {
   text-align: center;
 }
 
-/* line 438, ../../../app/stylesheets/screen.scss */
+/* line 451, ../../../app/stylesheets/screen.scss */
 img.edit {
   width: 52px;
   margin-top: 9px;
 }
 
-/* line 443, ../../../app/stylesheets/screen.scss */
+/* line 456, ../../../app/stylesheets/screen.scss */
 img.home {
   width: 32px;
   margin-right: -8px;
   vertical-align: middle;
 }
 
-/* line 450, ../../../app/stylesheets/screen.scss */
+/* line 463, ../../../app/stylesheets/screen.scss */
 .wiki_container {
   border-bottom: 1px solid;
   border-top: 1px solid;
@@ -700,12 +782,12 @@ img.home {
   width: 503px;
 }
 
-/* line 459, ../../../app/stylesheets/screen.scss */
+/* line 472, ../../../app/stylesheets/screen.scss */
 .home_link {
   margin-top: 8px;
 }
 
-/* line 463, ../../../app/stylesheets/screen.scss */
+/* line 476, ../../../app/stylesheets/screen.scss */
 .clear {
   clear: both;
 }

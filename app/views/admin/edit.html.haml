@@ -6,16 +6,31 @@
 - else
   .revision_user_info
     .sub_heading கீழ்கண்ட மாற்றங்களை முன்வைத்தவர்
-    மின்னஞ்சல்
-    = @wiki_version.user.email
+    %span.photo
+      %img.profile_photo{:src => "#{@wiki_version.user.photo || '/images/default_photo.png' }"}
+    .user_details
+      %ul
+        %li
+          %b
+            = @wiki_version.user.name
+            = "| #{@wiki_version.user.email}" if @wiki_version.user.email.present?
+        %li
+          ஏற்றுக்கொண்ட திருத்தங்கள்:
+          = @wiki_version.user.accepted_count
+        %li
+          மறுக்கப்பட்ட திருத்தங்கள்:
+          = @wiki_version.user.rejected_count
+  .clear
   = form_for @wiki_version, :url => admin_update_wiki_path(@wiki_version) do |wiki_form|
-    -#= w.button :submit, :class => 'save_button', :value => 'மாற்றத்தை சேமி'
-    .clear
 
-    - @wiki_version.wiki_attributes.keys.each do |attribute|
+    = submit_tag 'மாற்றத்தை சேமி', :class => 'save_button'
+    = submit_tag 'மாற்றத்தை மறு', :class => 'reject_button'
+
+    - [:paadal, :paadal_english, :english_short_desc, :tamil_short_desc, :tamil_long_desc].each do |attribute|
       %p.wiki_revision_attribute
         = render :partial => 'edit_with_diff', :locals => {:wiki_version => @wiki_version, :attribute => attribute.to_sym,
                                              :changed_attributes => @changed_attributes, :wiki_form => wiki_form}
 
+    = submit_tag 'மாற்றத்தை சேமி', :class => 'save_button'
+    = submit_tag 'மாற்றத்தை மறு', :class => 'reject_button'
 
-  -#= w.button :submit, :class => 'save_button', :value => 'மாற்றத்தை சேமி'

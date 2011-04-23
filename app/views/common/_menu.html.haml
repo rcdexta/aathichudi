@@ -15,6 +15,6 @@
         %img{:src => '/images/user.png'}
         - if anybody_signed_in?
           %a{:href => "#{destroy_user_session_path}"}
-            %span{:title => "${current_user.email}"}= current_user.email.truncate(20)
+            %span வெளியேறவும்
         - else
           = link_to_rpx "உள்நுழைக", root_url

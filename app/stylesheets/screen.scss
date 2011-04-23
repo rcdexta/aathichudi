@@ -22,10 +22,12 @@ label {
 input[type="text"] {
     margin-bottom: 15px;
     width: 520px;
+    background: #F7DCB4;
 }
 
 textarea {
     padding: 3px;
+    background: #F7DCB4;
 }
 
 fieldset,img {
@@ -291,13 +293,24 @@ button {
 }
 
 .save_button {
-  @include fancy-button-colors(#261c1e, adjust-hue(#261c1e, -120), darken(adjust-hue(#261c1e, -120), 6));
+  @include fancy-button(#990033, 15px, 5px, 2px);
+  margin: 10px 21px 0px 0px;
+  font-size: 12px;
+  float: right;
+  padding: 1px 5px;
+  cursor: pointer;
+  color: black;
+}
+
+.reject_button {
+  @include fancy-button(#ff11ff, 15px, 5px, 2px);
   margin: 10px 21px 0px 0px;
   font-size: 12px;
   float: right;
   padding: 1px 5px;
   cursor: pointer;
 }
+
 
 .float_right{
   float: right;

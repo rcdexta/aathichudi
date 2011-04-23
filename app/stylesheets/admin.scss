@@ -92,7 +92,7 @@ img.review{
 }
 
 #differ{
-    background: none repeat scroll 0 0 #FFFBD0;
+    background: none repeat scroll 0 0 #FFFF00;
     margin-bottom: 5px;
     padding: 0 5px;
     width: 672px;
@@ -109,12 +109,14 @@ ins.differ{
 input[type='text'] {
     margin-bottom: 15px;
     width: 677px;
+    background: #FFFBD0;
 }
 
 textarea{
     padding: 3px;
     width: 674px;
     display: block;
+    background: #FFFBD0;
 }
 
 div.error{
@@ -136,6 +138,27 @@ p.wiki_revision_attribute{
 }
 
 .revision_user_info {
-    border-bottom: 1px solid;
-    margin-right: 19px;
+    border: 1px solid;
+    margin-right: 18px;
+    margin-top: 6px;
+    padding: 0 5px;
+    background: AntiqueWhite;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.profile_photo{
+    background: none repeat scroll 0 0 cyan;
+    border: 2px solid red;
+    height: 64px;
+    width: 64px;
+}
+
+span.photo{
+    float:left;
+    margin-right: 10px;
+}
+
+.user_details{
+    margin-top: -7px;
 }
