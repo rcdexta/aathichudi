@@ -3,3 +3,6 @@
 
 en:
   hello: "Hello world"
+
+  date:
+    month_names: [~, January, February, March, ஏப்ரல், May, June, July, August, September, October, November, December]

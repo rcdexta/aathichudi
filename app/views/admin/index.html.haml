@@ -1,9 +1,25 @@
 = stylesheet_link_tag 'compiled/admin'
+= stylesheet_link_tag 'admin_table'
+
 
 .dashboard_title
-  தளப் பொறுப்பாளரின் முகப்பு பக்கம்
+  %span.sub_title தளப் பொறுப்பாளரின் முகப்பு பக்கம்
 
-- @draft_wikis.each do |draft_wiki|
-  %p
-    = draft_wiki.paadal
-    = draft_wiki.user.email
+.sub_heading
+  அண்மையில் சமர்பித்த திருத்தங்கள்
+
+%table#drafts
+  %thead
+    %tr
+      %th{:scope => 'col'} நேரம்
+      %th{:scope => 'col'} பாடல்
+      %th{:scope => 'col'} முன்வைத்தவர்
+      %th{:scope => 'col'} ஆய்வு செய்க
+  %tbody
+    - @draft_wikis.each do |draft_wiki|
+      %tr{:class => "#{cycle("", "odd")}"}
+        %td.time= l draft_wiki.created_at, :format => :short
+        %td.paadal= draft_wiki.paadal
+        %td.user= draft_wiki.user.email.truncate(30)
+        %td.view
+          %img.review{:src => '/images/review.png'}

@@ -1,6 +1,106 @@
 /* line 1, ../../../app/stylesheets/admin.scss */
+div.rapidxwpr {
+  background: url("../../images/wrapper-bg.png") no-repeat scroll 0 0 transparent;
+  margin-left: auto;
+  margin-right: auto;
+  width: 950px;
+}
+
+/* line 8, ../../../app/stylesheets/admin.scss */
+div#main {
+  width: auto;
+  background: url(../../images/content-top-big.jpg) 0 50px no-repeat;
+  margin: 0px -10px 0px 125px;
+  padding: 99px 0 0 0;
+  z-index: 100;
+  top: -35px;
+  position: relative;
+  width: 800px;
+}
+
+/* line 19, ../../../app/stylesheets/admin.scss */
+div#main_container {
+  background: url(../../images/content-bottom-big.jpg) 0 100% no-repeat;
+  padding: 0 0 53px 0;
+  text-align: left;
+  width: 800px;
+}
+
+/* line 26, ../../../app/stylesheets/admin.scss */
+div#mainmiddle {
+  margin: 0px 0px 0px 0px;
+  background: url(../../images/content-bg-big.jpg) 0 0 repeat-y;
+  padding: 0px 160px 0 55px;
+  width: 800px;
+}
+
+/* line 33, ../../../app/stylesheets/admin.scss */
 .dashboard_title {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
+  margin-left: -57px;
+}
+
+/* line 40, ../../../app/stylesheets/admin.scss */
+.dashboard_title .sub_title {
+  background: none repeat scroll 0 0 DarkSalmon;
+  padding: 5px 8px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* line 47, ../../../app/stylesheets/admin.scss */
+.sub_heading {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 150%;
+  text-shadow: 0 1px 0 white, 0 -1px 0 black;
+  margin: 10px 0px;
+}
+
+/* line 55, ../../../app/stylesheets/admin.scss */
+#drafts {
+  width: 685px;
+}
+
+/* line 59, ../../../app/stylesheets/admin.scss */
+table#drafts thead tr td {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* line 65, ../../../app/stylesheets/admin.scss */
+table#drafts tbody tr td {
+  font-size: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* line 71, ../../../app/stylesheets/admin.scss */
+table#drafts tbody tr td.time {
+  width: 90px;
+}
+
+/* line 75, ../../../app/stylesheets/admin.scss */
+table#drafts tbody tr td.paadal {
+  width: 180px;
+}
+
+/* line 79, ../../../app/stylesheets/admin.scss */
+table#drafts tbody tr td.user {
+  width: 80px;
+}
+
+/* line 83, ../../../app/stylesheets/admin.scss */
+table#drafts tbody tr td.view {
+  width: 60px;
+}
+
+/* line 87, ../../../app/stylesheets/admin.scss */
+img.review {
+  height: 24px;
+  vertical-align: middle;
+  width: 24px;
 }

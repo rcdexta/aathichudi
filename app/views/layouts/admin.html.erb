@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <title>ஆத்திசூடி</title>
+    <%= render :partial => 'common/header' %>
+    <%= csrf_meta_tag %>
+  </head>
+
+  <body id="page">
+
+    <!-- wrapper -->
+    <div class="rapidxwpr floatholder">
+
+      <!-- main body -->
+      <div id="middle">
+
+        <div id='main'>
+          <div id="main_container" class="clearingfix">
+            <div id="mainmiddle" class="floatbox withright">
+              <%= yield %>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- footer -->
+    <div id="footer">
+      &copy; 2011 | <a href="http://kanaiyaazhi.wordpress.com/">கணையாழி</a>
+    </div>
+    <!-- / footer -->
+
+    <%= javascript_include_rpx(user_session_url) %>
+
+    <%= render :partial => 'common/mugavurai' %>
+    <%= render :partial => 'common/about_site' %>
+
+
+  </body>
+
+</html>
