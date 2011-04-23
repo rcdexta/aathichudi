@@ -1,0 +1,8 @@
+- if changed_attributes.include? attribute
+  = label(:wiki_version, attribute)
+  #differ= raw generate_diff(wiki_version.send(attribute), wiki_version.wiki.send(attribute))
+  - unless attribute == :tamil_long_desc
+    = wiki_form.text_field attribute, :html => {"MicrosoftILITWebAttach" => "#{attribute.to_s =~ /english/? 'false' : 'true'}"}
+  - else
+    = wiki_form.text_area attribute, :html => {"MicrosoftILITWebAttach" => "#{attribute.to_s =~ /english/? 'false' : 'true'}"}
+- else

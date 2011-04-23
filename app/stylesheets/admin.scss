@@ -27,14 +27,15 @@ div#mainmiddle {
     margin:0px 0px 0px 0px;
     background:url(../../images/content-bg-big.jpg) 0 0 repeat-y;
     padding:0px 160px 0 55px;
-    width: 800px;
+    width: 710px;
 }
 
 .dashboard_title {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    margin-left: -57px;
+    margin-left: -50px;
+    margin-bottom: 10px;
 }
 
 .dashboard_title .sub_title{
@@ -88,4 +89,44 @@ img.review{
     height: 24px;
     vertical-align: middle;
     width: 24px;
+}
+
+#differ{
+    background: none repeat scroll 0 0 #FFFBD0;
+    margin-bottom: 5px;
+    padding: 0 5px;
+    width: 672px;
+}
+
+del.differ{
+    color: #CC0000;
+}
+
+ins.differ{
+    color: #000080;
+}
+
+input[type='text'] {
+    margin-bottom: 15px;
+    width: 677px;
+}
+
+textarea{
+    padding: 3px;
+    width: 674px;
+    display: block;
+}
+
+div.error{
+    background: url("../../images/error.png") no-repeat scroll 4px 6px #E9967A;
+    margin-right: 20px;
+    padding: 5px 5px 5px 39px;
+    width: 642px;
+}
+
+span.alert {
+	background: url(../../images/alert.png) no-repeat scroll 4px 2px #e9967a;
+    padding: 5px 5px 5px 32px;
+    width: auto;
+    margin-right: 20px;
 }

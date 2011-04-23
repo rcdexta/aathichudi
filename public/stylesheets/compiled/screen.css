@@ -91,65 +91,64 @@ a img {
 body, div, dl, dt, dd, ul, ol, li, pre, form, fieldset, input, textarea, blockquote, th, td {
   margin: 0;
   padding: 0;
-  line-height: 200%;
   font-size: 16px;
   vertical-align: top;
 }
 
-/* line 18, ../../../app/stylesheets/screen.scss */
+/* line 17, ../../../app/stylesheets/screen.scss */
 label {
   font-weight: bold;
   display: block;
 }
 
-/* line 23, ../../../app/stylesheets/screen.scss */
+/* line 22, ../../../app/stylesheets/screen.scss */
 input[type="text"] {
   margin-bottom: 15px;
   width: 520px;
 }
 
-/* line 28, ../../../app/stylesheets/screen.scss */
+/* line 27, ../../../app/stylesheets/screen.scss */
 textarea {
   padding: 3px;
 }
 
-/* line 32, ../../../app/stylesheets/screen.scss */
+/* line 31, ../../../app/stylesheets/screen.scss */
 fieldset, img {
   border: 0;
 }
 
-/* line 36, ../../../app/stylesheets/screen.scss */
+/* line 35, ../../../app/stylesheets/screen.scss */
 html {
   height: 100%;
   margin-bottom: 1px;
 }
 
-/* line 41, ../../../app/stylesheets/screen.scss */
+/* line 40, ../../../app/stylesheets/screen.scss */
 body {
   position: relative;
 }
 
-/* line 45, ../../../app/stylesheets/screen.scss */
+/* line 44, ../../../app/stylesheets/screen.scss */
 :focus {
   outline: none;
 }
 
 /* links */
-/* line 50, ../../../app/stylesheets/screen.scss */
+/* line 49, ../../../app/stylesheets/screen.scss */
 a {
   color: #222;
   text-decoration: none;
   text-shadow: 0px 2px 3px #555;
 }
 
-/* line 56, ../../../app/stylesheets/screen.scss */
+/* line 55, ../../../app/stylesheets/screen.scss */
 a:hover {
   font-weight: bold;
   /*color:#008cff;*/
   /*text-decoration:underline;*/
 }
 
-/* line 62, ../../../app/stylesheets/screen.scss */
+/* line 61, ../../../app/stylesheets/screen.scss */
 a:hover h2 {
   font-weight: bold;
   /*color:#008cff;*/
@@ -157,17 +156,17 @@ a:hover h2 {
 }
 
 /* page setup */
-/* line 69, ../../../app/stylesheets/screen.scss */
+/* line 68, ../../../app/stylesheets/screen.scss */
 h2, h3 {
   display: inline;
 }
 
-/* line 73, ../../../app/stylesheets/screen.scss */
+/* line 72, ../../../app/stylesheets/screen.scss */
 h2 {
   font-size: 175%;
 }
 
-/* line 78, ../../../app/stylesheets/screen.scss */
+/* line 77, ../../../app/stylesheets/screen.scss */
 body {
   background: url(../../images/page_bg.jpg);
   font-family: Arial, Helvetica, sans-serif;
@@ -177,32 +176,32 @@ body {
   height: 100%;
 }
 
-/* line 87, ../../../app/stylesheets/screen.scss */
+/* line 86, ../../../app/stylesheets/screen.scss */
 p {
   text-shadow: 0px 2px 3px #555;
 }
 
-/* line 91, ../../../app/stylesheets/screen.scss */
+/* line 90, ../../../app/stylesheets/screen.scss */
 .prayer {
   text-shadow: 0px 2px 3px #555;
   padding-top: 10px;
 }
 
-/* line 96, ../../../app/stylesheets/screen.scss */
+/* line 95, ../../../app/stylesheets/screen.scss */
 #logo-container {
   background: url(../../images/content-heading_with_title.jpg) 125px 5px no-repeat;
   height: 191px;
   text-align: center;
 }
 
-/* line 102, ../../../app/stylesheets/screen.scss */
+/* line 101, ../../../app/stylesheets/screen.scss */
 .logo {
   position: relative;
   padding-top: 30px;
   width: 81%;
 }
 
-/* line 108, ../../../app/stylesheets/screen.scss */
+/* line 107, ../../../app/stylesheets/screen.scss */
 #title {
   color: #261C1E;
   font-size: 30px;
@@ -210,7 +209,7 @@ p {
   font-weight: bold;
 }
 
-/* line 116, ../../../app/stylesheets/screen.scss */
+/* line 115, ../../../app/stylesheets/screen.scss */
 .heading {
   text-shadow: white 0px 1px 0, black 0 -1px 0;
   line-height: 150%;
@@ -220,7 +219,7 @@ p {
   margin-top: 10px;
 }
 
-/* line 125, ../../../app/stylesheets/screen.scss */
+/* line 124, ../../../app/stylesheets/screen.scss */
 .side-text {
   margin-left: 10px;
   margin-top: 170px;
@@ -228,13 +227,13 @@ p {
   font-size: 15px;
 }
 
-/* line 133, ../../../app/stylesheets/screen.scss */
+/* line 132, ../../../app/stylesheets/screen.scss */
 #page {
   text-align: center;
 }
 
 /* wrapper setup */
-/* line 137, ../../../app/stylesheets/screen.scss */
+/* line 136, ../../../app/stylesheets/screen.scss */
 div.rapidxwpr {
   margin-left: auto;
   margin-right: auto;
@@ -243,7 +242,7 @@ div.rapidxwpr {
 }
 
 /* header */
-/* line 145, ../../../app/stylesheets/screen.scss */
+/* line 144, ../../../app/stylesheets/screen.scss */
 div#header {
   position: relative;
   height: 150px;
@@ -252,7 +251,7 @@ div#header {
 }
 
 /* main body setup */
-/* line 153, ../../../app/stylesheets/screen.scss */
+/* line 152, ../../../app/stylesheets/screen.scss */
 div#middle {
   width: auto;
   margin: 0px 0px 0px 0px;
@@ -260,7 +259,7 @@ div#middle {
 }
 
 /* left column */
-/* line 160, ../../../app/stylesheets/screen.scss */
+/* line 159, ../../../app/stylesheets/screen.scss */
 div#left {
   width: 222px;
   position: relative;
@@ -270,7 +269,7 @@ div#left {
 }
 
 /* content column */
-/* line 169, ../../../app/stylesheets/screen.scss */
+/* line 168, ../../../app/stylesheets/screen.scss */
 div#main {
   width: auto;
   background: url(../../images/content-top.jpg) 0 50px no-repeat;
@@ -281,18 +280,19 @@ div#main {
   position: relative;
 }
 
-/* line 179, ../../../app/stylesheets/screen.scss */
+/* line 178, ../../../app/stylesheets/screen.scss */
 div#main_container {
   background: url(../../images/content-bottom.jpg) 0 100% no-repeat;
   padding: 0 0 53px 0;
   text-align: left;
 }
 
-/* line 185, ../../../app/stylesheets/screen.scss */
+/* line 184, ../../../app/stylesheets/screen.scss */
 div#mainmiddle {
   margin: 0px 0px 0px 0px;
   background: url(../../images/content-bg.jpg) 0 0 repeat-y;
   padding: 0px 160px 0 45px;
+  width: 540px;
 }
 
 /* footer */

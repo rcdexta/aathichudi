@@ -5,22 +5,26 @@
 .dashboard_title
   %span.sub_title தளப் பொறுப்பாளரின் முகப்பு பக்கம்
 
-.sub_heading
-  அண்மையில் சமர்பித்த திருத்தங்கள்
+- if @draft_wikis.blank?
+  %span.alert
+    = t(:no_new_wiki_versions)
+- else
+  .sub_heading
+    அண்மையில் சமர்பித்த திருத்தங்கள்
 
-%table#drafts
-  %thead
-    %tr
-      %th{:scope => 'col'} நேரம்
-      %th{:scope => 'col'} பாடல்
-      %th{:scope => 'col'} முன்வைத்தவர்
-      %th{:scope => 'col'} ஆய்வு செய்க
-  %tbody
-    - @draft_wikis.each do |draft_wiki|
-      %tr{:class => "#{cycle("", "odd")}"}
-        %td.time= l draft_wiki.created_at, :format => :short
-        %td.paadal= draft_wiki.paadal
-        %td.user= draft_wiki.user.email.truncate(30)
-        %td.view
-          %a{:href => admin_review_wiki_path(draft_wiki)}
-            %img.review{:src => '/images/review.png'}
+  %table#drafts
+    %thead
+      %tr
+        %th{:scope => 'col'} நேரம்
+        %th{:scope => 'col'} பாடல்
+        %th{:scope => 'col'} முன்வைத்தவர்
+        %th{:scope => 'col'} ஆய்வு செய்க
+    %tbody
+      - @draft_wikis.each do |draft_wiki|
+        %tr{:class => "#{cycle("", "odd")}"}
+          %td.time= l draft_wiki.created_at, :format => :short
+          %td.paadal= draft_wiki.paadal
+          %td.user= draft_wiki.user.email.truncate(30)
+          %td.view
+            %a{:href => admin_review_wiki_path(draft_wiki)}
+              %img.review{:src => '/images/review.png'}

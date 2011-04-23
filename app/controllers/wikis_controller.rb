@@ -13,7 +13,10 @@ class WikisController < ApplicationController
   end
 
   def update
-    wiki = params[:wiki]
+    wiki = Wiki.find(params[:id])
+    wiki.attributes_for_versioning.keys.each do |attribute|
+      wiki.send("#{attribute}=", params[:wiki][attribute])
+    end
     if wiki.changed?
       WikiVersion.create_or_update_next_version_for(wiki, current_user)
       flash[:notice] = t(:saved_for_approval)

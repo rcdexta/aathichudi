@@ -10,7 +10,6 @@
 body,div,dl,dt,dd,ul,ol,li,pre,form,fieldset,input,textarea,blockquote,th,td {
     margin:0;
     padding:0;
-    line-height:200%;
     font-size: 16px;
     vertical-align: top;
 }
@@ -186,6 +185,7 @@ div#mainmiddle {
     margin:0px 0px 0px 0px;
     background:url(../../images/content-bg.jpg) 0 0 repeat-y;
     padding:0px 160px 0 45px;
+    width: 540px;
 }
 
 /* footer */

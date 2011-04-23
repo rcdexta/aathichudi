@@ -48,6 +48,14 @@ describe AdminController do
       flash.now[:error].should be_present
     end
 
+    it "should return an hash containing attributes that have changed" do
+      wiki_version = Factory(:wiki_version, :user => @user, :wiki => @wiki,
+                             :paadal_english => 'changed version', :tamil_long_desc => 'new long tamil version')
+
+      get :edit, :wiki_version_id => wiki_version.id
+
+      assigns[:changed_attributes].should == [:paadal_english, :tamil_long_desc]
+    end
   end
 
 end
