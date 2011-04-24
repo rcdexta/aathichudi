@@ -332,7 +332,17 @@ button {
   float: right;
   margin-right: 21px;
   margin-top: -8px;
+}
 
+.history_button {
+  float: right;
+  margin-right: 21px;
+  margin-top: -2px;
+}
+
+img.history{
+    margin-top: 4px;
+    width: 61px;
 }
 
 .back_button {
@@ -468,6 +478,7 @@ img.home{
     padding: 0 10px;
     width: 503px;
 }
+                                                                   0
 
 .home_link{
     margin-top: 8px;
@@ -478,14 +489,16 @@ img.home{
 }
 
 img.loading{
-    margin-top: 15px;
+    margin-top: 5px;
+    margin-left: 12.5px;
     width: 48px;
 }
 
 .history_info {
     border: 1px solid;
     margin-right: 18px;
-    margin-top: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 0 5px;
     background: AntiqueWhite;
     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
@@ -520,4 +533,64 @@ span.history_user{
 span.history_diff{
     background: url("../../images/embed/history_diff.png") no-repeat scroll 0 0 transparent;
     padding-left: 19px;
+    text-decoration: underline;
+}
+
+span.first_version{
+    background: url("../../images/embed/first_version.png") no-repeat scroll 0 0 transparent;
+    padding-left: 19px;
+}
+
+#differ{
+    background: none repeat scroll 0 0 #11FF99;
+    margin-bottom: 5px;
+    padding: 0 5px;
+    width: 512px;
+}
+
+del.differ{
+    color: #CC0000;
+}
+
+ins.differ{
+    color: #000080;
+}
+
+.revision_user_info {
+    border: 1px solid;
+    margin-right: 18px;
+    margin-top: 6px;
+    padding: 0 5px;
+    background: AntiqueWhite;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    margin-bottom: 10px;
+}
+
+.profile_photo{
+    background: none repeat scroll 0 0 cyan;
+    border: 2px solid red;
+    height: 64px;
+    width: 64px;
+}
+
+span.photo{
+    float:left;
+    margin-right: 10px;
+}
+
+.user_details{
+    margin-top: -7px;
+}
+
+.sub_heading{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 150%;
+    text-shadow: 0 1px 0 white, 0 0px 0 black;
+    margin: 10px 0px;
+}
+
+.home_link {
+    margin-top: 10px;
 }

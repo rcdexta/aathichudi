@@ -1,0 +1,15 @@
+.history_info
+  .history_sub_heading காலவரிசைப்படி இந்த பாடலுக்கான திருத்தங்கள் இதுவரை...
+  .history_data
+    - @wiki_versions.each do |wiki_version|
+      %p
+        %span.history_time ##{wiki_version.version}
+        = l wiki_version.created_at, :format => :long
+        |
+        %span.history_user= wiki_version.user.name || wiki_version.user.email
+        |
+        - if wiki_version.version == 1
+          %span.first_version முதல் வடிவுறு
+        - else
+          %a{:href => wiki_version_diff_path(wiki_version, wiki_version.version)}
+            %span.history_diff வேற்றுமைகள்

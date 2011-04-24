@@ -3,9 +3,9 @@
 - unless flash[:notice].blank?
   .notice= flash[:notice]
 
-%span.edit_button
-  %a{:href => wikis_history_path(params[:id]), :id  => 'history_button'}
-    %img.edit{:src => '/images/history.png'}
+%span.history_button
+  %a{:href => wiki_version_history_path(params[:id]), :id  => 'history_button'}
+    %img.history{:src => '/images/view_versions.png'}
 
 %span.edit_button
   %a{:href=> edit_wiki_path(params[:id])}
@@ -33,5 +33,3 @@
   %a{:href=> root_path}
     %img.home{:src => '/images/home.png'}
     முதற்பக்கம்
-
-

@@ -25,7 +25,7 @@
 
     = render :partial => 'action_buttons'
 
-    - [:paadal, :paadal_english, :english_short_desc, :tamil_short_desc, :tamil_long_desc].each do |attribute|
+    - Wiki.essential_attribute_names.each do |attribute|
       %p.wiki_revision_attribute
         = render :partial => 'edit_with_diff', :locals => {:wiki_version => @wiki_version, :attribute => attribute.to_sym,
                                              :changed_attributes => @changed_attributes, :wiki_form => wiki_form}
