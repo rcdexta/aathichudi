@@ -36,7 +36,17 @@ describe WikiVersion do
       active_version = Factory(:wiki_version, :state => 'active', :user => user, :wiki => wiki)
       draft_version = Factory(:wiki_version, :user => user, :wiki => wiki)
 
-      WikiVersion.draft_version(wiki, user).first.should == draft_version
+      WikiVersion.draft_version_for(wiki, user).first.should == draft_version
+    end
+  end
+
+  context "active_version scope" do
+    it "should return the active version for a wiki" do
+      wiki = Factory(:wiki)
+      user = Factory(:user)
+      draft_version = Factory(:wiki_version, :user => user, :wiki => wiki)
+
+      WikiVersion.active_version_for(wiki).first.should == WikiVersion.first
     end
   end
 
@@ -66,6 +76,17 @@ describe WikiVersion do
       wiki.versions.should have(2).things
 
       wiki.versions.last.paadal.should == "new version paadal"
+    end
+  end
+
+  describe "#copy_attributes_to_wiki!" do
+    it "should copy attribute values to wiki" do
+      wiki = Factory(:wiki)
+      user = Factory(:user)
+      wiki_version = Factory(:wiki_version, :wiki => wiki, :user => user, :paadal => 'he he he')
+      wiki_version.copy_attributes_to_wiki!
+      wiki.reload.paadal.should == 'he he he'
+
     end
   end
 

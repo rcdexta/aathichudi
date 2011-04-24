@@ -5,6 +5,9 @@
 .dashboard_title
   %span.sub_title தளப் பொறுப்பாளரின் முகப்பு பக்கம்
 
+- unless flash[:notice].blank?
+  .notice= flash[:notice]
+
 - if @draft_wikis.blank?
   %span.alert
     = t(:no_new_wiki_versions)

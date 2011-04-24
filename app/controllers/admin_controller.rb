@@ -16,6 +16,23 @@ class AdminController < ApplicationController
     end
   end
 
+  def update
+    wiki_version = WikiVersion.find(params[:wiki_version_id])
+    if params[:commit] == t(:save_button)
+      if wiki_version.update_attributes(params[:wiki_version])
+        archive_and_activate(wiki_version)
+        wiki_version.copy_attributes_to_wiki!
+        wiki_version.user.increment!(:accepted_count)
+        flash[:notice] = t(:approval_saved)
+      end
+    else
+      wiki_version.user.increment!(:rejected_count)
+      wiki_version.destroy
+      flash[:notice] = t(:rejection_saved)
+    end
+    redirect_to :action => :index
+  end
+
   private
 
   def find_changed_attributes
@@ -24,5 +41,12 @@ class AdminController < ApplicationController
       @changed_attributes << attribute.to_sym if @wiki_version.send(attribute.to_s) != @wiki_version.wiki.send(attribute.to_s)
     end
   end
+
+  def archive_and_activate(wiki_version)
+    current_active_version = WikiVersion.active_version_for(wiki_version.wiki).first
+    current_active_version.archive
+    wiki_version.activate
+  end
+
 
 end

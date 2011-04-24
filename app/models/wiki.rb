@@ -5,7 +5,8 @@ class Wiki < ActiveRecord::Base
   has_many :versions, :class_name => "WikiVersion"
 
   def create_first_version
-    self.versions << WikiVersion.new(self.attributes_for_versioning.merge(:version => 1, :state => 'active'))
+    admin_user = User.find_by_email(AppConfig.admin)
+    self.versions << WikiVersion.new(self.attributes_for_versioning.merge(:version => 1, :state => 'active', :user => admin_user))
   end
 
   def attributes_for_versioning

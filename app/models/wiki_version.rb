@@ -6,7 +6,8 @@ class WikiVersion < ActiveRecord::Base
   scope :draft, where(:state => 'draft')
   scope :active, where(:state => 'active')
 
-  scope :draft_version, lambda {|wiki, user| where("state = ? and wiki_id = ? and user_id = ?", 'draft', wiki.id, user.id)}
+  scope :draft_version_for, lambda {|wiki, user| where("state = 'draft' and wiki_id = ? and user_id = ?", wiki.id, user.id)}
+  scope :active_version_for, lambda {|wiki| where("state = 'active' and wiki_id = ?", wiki.id)}
 
   state_machine :state, :initial => :draft do
     event :archive do
@@ -36,6 +37,10 @@ class WikiVersion < ActiveRecord::Base
      "tamil_long_desc" => tamil_long_desc,
      "english_short_desc" => english_short_desc,
      "tamil_short_desc" => tamil_short_desc}
+  end
+
+  def copy_attributes_to_wiki!
+    self.wiki.update_attributes(wiki_attributes)
   end
 
 end

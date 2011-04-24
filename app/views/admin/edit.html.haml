@@ -23,14 +23,12 @@
   .clear
   = form_for @wiki_version, :url => admin_update_wiki_path(@wiki_version) do |wiki_form|
 
-    = submit_tag 'மாற்றத்தை சேமி', :class => 'save_button'
-    = submit_tag 'மாற்றத்தை மறு', :class => 'reject_button'
+    = render :partial => 'action_buttons'
 
     - [:paadal, :paadal_english, :english_short_desc, :tamil_short_desc, :tamil_long_desc].each do |attribute|
       %p.wiki_revision_attribute
         = render :partial => 'edit_with_diff', :locals => {:wiki_version => @wiki_version, :attribute => attribute.to_sym,
                                              :changed_attributes => @changed_attributes, :wiki_form => wiki_form}
 
-    = submit_tag 'மாற்றத்தை சேமி', :class => 'save_button'
-    = submit_tag 'மாற்றத்தை மறு', :class => 'reject_button'
+    = render :partial => 'action_buttons'
 

@@ -5,7 +5,7 @@ class WikisController < ApplicationController
   cache_sweeper :wiki_sweeper
 
   def edit
-    draft_version =  WikiVersion.draft_version(@wiki, current_user)
+    draft_version =  WikiVersion.draft_version_for(@wiki, current_user)
     if draft_version.present?
       @wiki.attributes = draft_version.first.wiki_attributes
       @draft = true

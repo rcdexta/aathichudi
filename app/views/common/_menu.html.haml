@@ -13,7 +13,7 @@
         |
       %li#user_login
         %img{:src => '/images/user.png'}
-        - if anybody_signed_in?
+        - if user_signed_in?
           %a{:href => "#{destroy_user_session_path}"}
             %span வெளியேறவும்
         - else
