@@ -1,5 +1,11 @@
+= javascript_include_tag 'wiki_show'
+
 - unless flash[:notice].blank?
   .notice= flash[:notice]
+
+%span.edit_button
+  %a{:href => wikis_history_path(params[:id]), :id  => 'history_button'}
+    %img.edit{:src => '/images/history.png'}
 
 %span.edit_button
   %a{:href=> edit_wiki_path(params[:id])}
@@ -21,7 +27,11 @@
   .wiki_container
     %i= @wiki.tamil_long_desc
 
+#history_container
+
 .home_link
   %a{:href=> root_path}
     %img.home{:src => '/images/home.png'}
     முதற்பக்கம்
+
+

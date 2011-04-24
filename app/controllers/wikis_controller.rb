@@ -1,7 +1,7 @@
 class WikisController < ApplicationController
 
   before_filter :authenticate_user!, :only => [:edit, :update]
-  before_filter :find_latest_active_wiki, :only => [:show, :edit]
+  before_filter :find_wiki, :only => [:show, :edit, :history]
   cache_sweeper :wiki_sweeper
 
   def edit
@@ -27,9 +27,14 @@ class WikisController < ApplicationController
     end
   end
 
+  def history
+    @wiki_versions = @wiki.versions.archived.order('updated_at desc')
+    render :layout => false
+  end
+
   private
 
-  def find_latest_active_wiki
+  def find_wiki
     @wiki = Wiki.find params[:id]
   end
 end

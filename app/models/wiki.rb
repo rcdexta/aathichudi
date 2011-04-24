@@ -14,4 +14,8 @@ class Wiki < ActiveRecord::Base
      "tamil_long_desc" => tamil_long_desc, "tamil_short_desc" => tamil_short_desc}
   end
 
+  def active_version
+    self.versions.active.first
+  end
+
 end

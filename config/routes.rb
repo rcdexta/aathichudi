@@ -7,6 +7,8 @@ Aathichudi::Application.routes.draw do
 
   resources :wikis, :only => [:show, :edit, :update]
 
+  get 'wikis/:id/history' => 'wikis#history', :as => 'wikis_history'
+
   root :to => "home#index"
 
 end

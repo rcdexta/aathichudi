@@ -242,10 +242,10 @@ div.menu {
 }
 
 .hline {
-  border-bottom: solid black;
-  border-bottom-width: 1px;
-  width: 525px;
-  padding-top: 2px;
+    border-bottom: 1px solid black;
+    margin-bottom: 2px;
+    padding-top: 3px;
+    width: 525px;
 }
 
 hr {
@@ -475,4 +475,49 @@ img.home{
 
 .clear{
     clear: both;
+}
+
+img.loading{
+    margin-top: 15px;
+    width: 48px;
+}
+
+.history_info {
+    border: 1px solid;
+    margin-right: 18px;
+    margin-top: 6px;
+    padding: 0 5px;
+    background: AntiqueWhite;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.history_data p{
+    font-size: 13px;
+    text-shadow: 0 1px 0 white, 0 0px 0 black;
+    margin: 10px 0px;
+    line-height: 100%;
+}
+
+.history_sub_heading{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 150%;
+    text-shadow: 0 1px 0 white, 0 0px 0 black;
+    margin: 10px 0px;
+}
+
+span.history_time{
+    background: url("../../images/embed/bullet.png") no-repeat scroll 0 0 transparent;
+    padding-left: 19px;
+}
+
+span.history_user{
+    background: url("../../images/embed/history_user.png") no-repeat scroll 0 0 transparent;
+    padding-left: 19px;
+}
+
+span.history_diff{
+    background: url("../../images/embed/history_diff.png") no-repeat scroll 0 0 transparent;
+    padding-left: 19px;
 }

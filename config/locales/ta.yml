@@ -22,7 +22,7 @@ ta:
     formats:
       default: "%d %b %Y"
       short: "%b %d - %H:%M"
-      long: "%B %d, %Y %H:%M"
+      long: "%b %d, %Y %H:%M"
     am: "காலை"
     pm: "மாலை"
 

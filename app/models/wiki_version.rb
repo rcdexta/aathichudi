@@ -4,6 +4,7 @@ class WikiVersion < ActiveRecord::Base
   belongs_to :wiki
 
   scope :draft, where(:state => 'draft')
+  scope :archived, where(:state => 'archived')
   scope :active, where(:state => 'active')
 
   scope :draft_version_for, lambda {|wiki, user| where("state = 'draft' and wiki_id = ? and user_id = ?", wiki.id, user.id)}

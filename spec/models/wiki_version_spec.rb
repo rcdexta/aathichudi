@@ -50,6 +50,16 @@ describe WikiVersion do
     end
   end
 
+  context "archived_version scope" do
+    it "should return the active version for a wiki" do
+      wiki = Factory(:wiki)
+      user = Factory(:user)
+      archived_version = Factory(:wiki_version, :user => user, :wiki => wiki, :state => 'archived')
+
+      WikiVersion.archived.first.should == archived_version
+    end
+  end
+
   describe "#create_next_version_for" do
     it "should copy all attributes and create the next version for wiki" do
       wiki = Factory(:wiki)
