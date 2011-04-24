@@ -7,7 +7,8 @@ Aathichudi::Application.routes.draw do
 
   resources :wikis, :only => [:show, :edit, :update]
 
-  get 'wikis/:id/history' => 'wikis#history', :as => 'wikis_history'
+  get 'wiki_versions/:wiki_id/history' => 'wiki_versions#history', :as => 'wiki_version_history'
+  get 'wiki_versions/:id/diff/' => 'wiki_versions#diff', :as => 'wiki_version_diff'
 
   root :to => "home#index"
 

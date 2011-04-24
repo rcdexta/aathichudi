@@ -96,7 +96,15 @@ describe WikiVersion do
       wiki_version = Factory(:wiki_version, :wiki => wiki, :user => user, :paadal => 'he he he')
       wiki_version.copy_attributes_to_wiki!
       wiki.reload.paadal.should == 'he he he'
+    end
+  end
 
+  describe "#previous version" do
+    it "should return the previous version relative to current" do
+      wiki = Factory(:wiki)
+      user = Factory(:user)
+      wiki_version = Factory(:wiki_version, :wiki => wiki, :user => user, :version => 2)
+      wiki_version.previous_version.should == wiki.versions.active.first
     end
   end
 

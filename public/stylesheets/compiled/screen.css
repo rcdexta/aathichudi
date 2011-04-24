@@ -628,24 +628,37 @@ button:active, button:active:visited {
   margin-top: -8px;
 }
 
-/* line 338, ../../../app/stylesheets/screen.scss */
+/* line 337, ../../../app/stylesheets/screen.scss */
+.history_button {
+  float: right;
+  margin-right: 21px;
+  margin-top: -2px;
+}
+
+/* line 343, ../../../app/stylesheets/screen.scss */
+img.history {
+  margin-top: 4px;
+  width: 61px;
+}
+
+/* line 348, ../../../app/stylesheets/screen.scss */
 .back_button {
   background: url(../../images/back.png) 1px no-repeat;
   float: left;
   padding-left: 30px;
 }
 
-/* line 344, ../../../app/stylesheets/screen.scss */
+/* line 354, ../../../app/stylesheets/screen.scss */
 button a {
   color: white;
 }
 
-/* line 348, ../../../app/stylesheets/screen.scss */
+/* line 358, ../../../app/stylesheets/screen.scss */
 button a:hover {
   font-weight: normal;
 }
 
-/* line 352, ../../../app/stylesheets/screen.scss */
+/* line 362, ../../../app/stylesheets/screen.scss */
 div.notice {
   background: url("../../images/success.png") no-repeat scroll 4px 9px #e9967a;
   margin-right: 20px;
@@ -653,7 +666,7 @@ div.notice {
   width: auto;
 }
 
-/* line 359, ../../../app/stylesheets/screen.scss */
+/* line 369, ../../../app/stylesheets/screen.scss */
 div.alert {
   background: url(../../images/alert.png) no-repeat scroll 4px 9px #e9967a;
   padding: 5px 5px 5px 32px;
@@ -661,7 +674,7 @@ div.alert {
   margin-right: 20px;
 }
 
-/* line 366, ../../../app/stylesheets/screen.scss */
+/* line 376, ../../../app/stylesheets/screen.scss */
 div.error {
   background: url("../../images/error.png") no-repeat scroll 4px 6px #e9967a;
   margin-right: 20px;
@@ -669,7 +682,7 @@ div.error {
   width: auto;
 }
 
-/* line 374, ../../../app/stylesheets/screen.scss */
+/* line 384, ../../../app/stylesheets/screen.scss */
 .tooltip {
   display: none;
   background: transparent url(/tools/img/tooltip/black_arrow.png);
@@ -680,7 +693,7 @@ div.error {
   color: #fff;
 }
 
-/* line 384, ../../../app/stylesheets/screen.scss */
+/* line 394, ../../../app/stylesheets/screen.scss */
 #sign_in {
   float: right;
   font-weight: bold;
@@ -688,18 +701,18 @@ div.error {
   margin-top: -10px;
 }
 
-/* line 391, ../../../app/stylesheets/screen.scss */
+/* line 401, ../../../app/stylesheets/screen.scss */
 #sign_in a {
   z-index: 1000;
 }
 
-/* line 395, ../../../app/stylesheets/screen.scss */
+/* line 405, ../../../app/stylesheets/screen.scss */
 .logo ul {
   margin-left: 168px;
   margin-top: 87px;
 }
 
-/* line 400, ../../../app/stylesheets/screen.scss */
+/* line 410, ../../../app/stylesheets/screen.scss */
 .logo ul li {
   font-weight: bold;
   display: inline;
@@ -707,72 +720,72 @@ div.error {
   cursor: pointer;
 }
 
-/* line 407, ../../../app/stylesheets/screen.scss */
+/* line 417, ../../../app/stylesheets/screen.scss */
 .logo ul li img {
   width: 24px;
   height: 24px;
   vertical-align: middle;
 }
 
-/* line 413, ../../../app/stylesheets/screen.scss */
+/* line 423, ../../../app/stylesheets/screen.scss */
 .hidden {
   display: none;
 }
 
-/* line 417, ../../../app/stylesheets/screen.scss */
+/* line 427, ../../../app/stylesheets/screen.scss */
 #mugavurai_content {
   font-size: 14px;
   text-align: justify;
   background: url(../../images/avvaiyar.jpg);
 }
 
-/* line 423, ../../../app/stylesheets/screen.scss */
+/* line 433, ../../../app/stylesheets/screen.scss */
 #mugavurai_content p {
   padding: 10px 5px;
 }
 
-/* line 427, ../../../app/stylesheets/screen.scss */
+/* line 437, ../../../app/stylesheets/screen.scss */
 #mugavurai_content p span.lead {
   display: inline;
   font-size: 45px;
 }
 
-/* line 432, ../../../app/stylesheets/screen.scss */
+/* line 442, ../../../app/stylesheets/screen.scss */
 #about_site_content p span.lead {
   display: inline;
   font-size: 25px;
 }
 
-/* line 437, ../../../app/stylesheets/screen.scss */
+/* line 447, ../../../app/stylesheets/screen.scss */
 #about_site_content {
   font-size: 14px;
   text-align: justify;
 }
 
-/* line 442, ../../../app/stylesheets/screen.scss */
+/* line 452, ../../../app/stylesheets/screen.scss */
 #about_site_content p {
   padding: 10px 5px;
 }
 
-/* line 447, ../../../app/stylesheets/screen.scss */
+/* line 457, ../../../app/stylesheets/screen.scss */
 .login_container {
   text-align: center;
 }
 
-/* line 451, ../../../app/stylesheets/screen.scss */
+/* line 461, ../../../app/stylesheets/screen.scss */
 img.edit {
   width: 52px;
   margin-top: 9px;
 }
 
-/* line 456, ../../../app/stylesheets/screen.scss */
+/* line 466, ../../../app/stylesheets/screen.scss */
 img.home {
   width: 32px;
   margin-right: -8px;
   vertical-align: middle;
 }
 
-/* line 463, ../../../app/stylesheets/screen.scss */
+/* line 473, ../../../app/stylesheets/screen.scss */
 .wiki_container {
   border-bottom: 1px solid;
   border-top: 1px solid;
@@ -782,23 +795,24 @@ img.home {
   width: 503px;
 }
 
-/* line 472, ../../../app/stylesheets/screen.scss */
+/* line 482, ../../../app/stylesheets/screen.scss */
 .home_link {
   margin-top: 8px;
 }
 
-/* line 476, ../../../app/stylesheets/screen.scss */
+/* line 486, ../../../app/stylesheets/screen.scss */
 .clear {
   clear: both;
 }
 
-/* line 480, ../../../app/stylesheets/screen.scss */
+/* line 490, ../../../app/stylesheets/screen.scss */
 img.loading {
-  margin-top: 15px;
+  margin-top: 5px;
+  margin-left: 12.5px;
   width: 48px;
 }
 
-/* line 485, ../../../app/stylesheets/screen.scss */
+/* line 496, ../../../app/stylesheets/screen.scss */
 .history_info {
   border: 1px solid;
   margin-right: 18px;
@@ -809,7 +823,7 @@ img.loading {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
-/* line 495, ../../../app/stylesheets/screen.scss */
+/* line 506, ../../../app/stylesheets/screen.scss */
 .history_data p {
   font-size: 13px;
   text-shadow: 0 1px 0 white, 0 0px 0 black;
@@ -817,7 +831,7 @@ img.loading {
   line-height: 100%;
 }
 
-/* line 502, ../../../app/stylesheets/screen.scss */
+/* line 513, ../../../app/stylesheets/screen.scss */
 .history_sub_heading {
   font-size: 14px;
   font-weight: bold;
@@ -826,20 +840,85 @@ img.loading {
   margin: 10px 0px;
 }
 
-/* line 510, ../../../app/stylesheets/screen.scss */
+/* line 521, ../../../app/stylesheets/screen.scss */
 span.history_time {
   background: url("../../images/embed/bullet.png") no-repeat scroll 0 0 transparent;
   padding-left: 19px;
 }
 
-/* line 515, ../../../app/stylesheets/screen.scss */
+/* line 526, ../../../app/stylesheets/screen.scss */
 span.history_user {
   background: url("../../images/embed/history_user.png") no-repeat scroll 0 0 transparent;
   padding-left: 19px;
 }
 
-/* line 520, ../../../app/stylesheets/screen.scss */
+/* line 531, ../../../app/stylesheets/screen.scss */
 span.history_diff {
   background: url("../../images/embed/history_diff.png") no-repeat scroll 0 0 transparent;
   padding-left: 19px;
+  text-decoration: underline;
+}
+
+/* line 537, ../../../app/stylesheets/screen.scss */
+span.first_version {
+  background: url("../../images/embed/first_version.png") no-repeat scroll 0 0 transparent;
+  padding-left: 19px;
+}
+
+/* line 542, ../../../app/stylesheets/screen.scss */
+#differ {
+  background: none repeat scroll 0 0 #11FF99;
+  margin-bottom: 5px;
+  padding: 0 5px;
+  width: 512px;
+}
+
+/* line 549, ../../../app/stylesheets/screen.scss */
+del.differ {
+  color: #CC0000;
+}
+
+/* line 553, ../../../app/stylesheets/screen.scss */
+ins.differ {
+  color: #000080;
+}
+
+/* line 557, ../../../app/stylesheets/screen.scss */
+.revision_user_info {
+  border: 1px solid;
+  margin-right: 18px;
+  margin-top: 6px;
+  padding: 0 5px;
+  background: AntiqueWhite;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  margin-bottom: 10px;
+}
+
+/* line 568, ../../../app/stylesheets/screen.scss */
+.profile_photo {
+  background: none repeat scroll 0 0 cyan;
+  border: 2px solid red;
+  height: 64px;
+  width: 64px;
+}
+
+/* line 575, ../../../app/stylesheets/screen.scss */
+span.photo {
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 580, ../../../app/stylesheets/screen.scss */
+.user_details {
+  margin-top: -7px;
+}
+
+/* line 584, ../../../app/stylesheets/screen.scss */
+.sub_heading {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 150%;
+  text-shadow: 0 1px 0 white, 0 0px 0 black;
+  margin: 10px 0px;
 }

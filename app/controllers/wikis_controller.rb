@@ -27,11 +27,6 @@ class WikisController < ApplicationController
     end
   end
 
-  def history
-    @wiki_versions = @wiki.versions.archived.order('updated_at desc')
-    render :layout => false
-  end
-
   private
 
   def find_wiki

@@ -18,4 +18,8 @@ class Wiki < ActiveRecord::Base
     self.versions.active.first
   end
 
+  def self.essential_attribute_names
+    [:paadal, :paadal_english, :english_short_desc, :tamil_short_desc, :tamil_long_desc]
+  end
+
 end

@@ -4,7 +4,6 @@ describe WikisController do
 
   it "should resolve routes" do
     should route(:get, '/wikis/1/edit').to(:controller => 'wikis', :action => 'edit', :id => 1)
-    should route(:get, '/wikis/1/history').to(:controller => 'wikis', :action => 'history', :id => 1)
   end
 
   before :each do
@@ -50,14 +49,6 @@ describe WikisController do
       wiki_version.should be_draft
     end
 
-  end
-
-  describe "#history" do
-    it "should get the wiki active and archived versions for a wiki in reverse chronological order" do
-      Factory(:wiki_version, :user => @user, :wiki => @wiki, :state => 'archived')
-      get :history, :id => @wiki.id
-      assigns[:wiki_versions].should == WikiVersion.archived.to_a
-    end
   end
 
 end

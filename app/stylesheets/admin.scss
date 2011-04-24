@@ -45,14 +45,6 @@ div#mainmiddle {
    border-radius: 10px;
 }
 
-.sub_heading{
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 150%;
-    text-shadow: 0 1px 0 white, 0 0px 0 black;
-    margin: 10px 0px;
-}
-
 #drafts{
     width: 685px;
 }
@@ -91,22 +83,7 @@ img.review{
     width: 24px;
 }
 
-#differ{
-    background: none repeat scroll 0 0 #FFFF00;
-    margin-bottom: 5px;
-    padding: 0 5px;
-    width: 672px;
-}
-
-del.differ{
-    color: #CC0000;
-}
-
-ins.differ{
-    color: #000080;
-}
-
-input[type='text'] {
+screinput[type='text'] {
     margin-bottom: 15px;
     width: 677px;
     background: #FFFBD0;
@@ -147,18 +124,9 @@ p.wiki_revision_attribute{
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
-.profile_photo{
-    background: none repeat scroll 0 0 cyan;
-    border: 2px solid red;
-    height: 64px;
-    width: 64px;
-}
-
-span.photo{
-    float:left;
-    margin-right: 10px;
-}
-
-.user_details{
-    margin-top: -7px;
+#differ{
+    background: none repeat scroll 0 0 #FFFF00;
+    margin-bottom: 5px;
+    padding: 0 5px;
+    width: 672px;
 }

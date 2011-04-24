@@ -52,86 +52,59 @@ div#mainmiddle {
 }
 
 /* line 48, ../../../app/stylesheets/admin.scss */
-.sub_heading {
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 150%;
-  text-shadow: 0 1px 0 white, 0 0px 0 black;
-  margin: 10px 0px;
-}
-
-/* line 56, ../../../app/stylesheets/admin.scss */
 #drafts {
   width: 685px;
 }
 
-/* line 60, ../../../app/stylesheets/admin.scss */
+/* line 52, ../../../app/stylesheets/admin.scss */
 table#drafts thead tr td {
   font-size: 12px;
   font-weight: bold;
   text-align: center;
 }
 
-/* line 66, ../../../app/stylesheets/admin.scss */
+/* line 58, ../../../app/stylesheets/admin.scss */
 table#drafts tbody tr td {
   font-size: 10px;
   text-align: center;
   overflow: hidden;
 }
 
-/* line 72, ../../../app/stylesheets/admin.scss */
+/* line 64, ../../../app/stylesheets/admin.scss */
 table#drafts tbody tr td.time {
   width: 90px;
 }
 
-/* line 76, ../../../app/stylesheets/admin.scss */
+/* line 68, ../../../app/stylesheets/admin.scss */
 table#drafts tbody tr td.paadal {
   width: 180px;
 }
 
-/* line 80, ../../../app/stylesheets/admin.scss */
+/* line 72, ../../../app/stylesheets/admin.scss */
 table#drafts tbody tr td.user {
   width: 80px;
 }
 
-/* line 84, ../../../app/stylesheets/admin.scss */
+/* line 76, ../../../app/stylesheets/admin.scss */
 table#drafts tbody tr td.view {
   width: 60px;
 }
 
-/* line 88, ../../../app/stylesheets/admin.scss */
+/* line 80, ../../../app/stylesheets/admin.scss */
 img.review {
   height: 24px;
   vertical-align: middle;
   width: 24px;
 }
 
-/* line 94, ../../../app/stylesheets/admin.scss */
-#differ {
-  background: none repeat scroll 0 0 #FFFF00;
-  margin-bottom: 5px;
-  padding: 0 5px;
-  width: 672px;
-}
-
-/* line 101, ../../../app/stylesheets/admin.scss */
-del.differ {
-  color: #CC0000;
-}
-
-/* line 105, ../../../app/stylesheets/admin.scss */
-ins.differ {
-  color: #000080;
-}
-
-/* line 109, ../../../app/stylesheets/admin.scss */
-input[type='text'] {
+/* line 86, ../../../app/stylesheets/admin.scss */
+screinput[type='text'] {
   margin-bottom: 15px;
   width: 677px;
   background: #FFFBD0;
 }
 
-/* line 115, ../../../app/stylesheets/admin.scss */
+/* line 92, ../../../app/stylesheets/admin.scss */
 textarea {
   padding: 3px;
   width: 674px;
@@ -139,7 +112,7 @@ textarea {
   background: #FFFBD0;
 }
 
-/* line 122, ../../../app/stylesheets/admin.scss */
+/* line 99, ../../../app/stylesheets/admin.scss */
 div.error {
   background: url("../../images/error.png") no-repeat scroll 4px 6px #e9967a;
   margin-right: 20px;
@@ -147,7 +120,7 @@ div.error {
   width: 642px;
 }
 
-/* line 129, ../../../app/stylesheets/admin.scss */
+/* line 106, ../../../app/stylesheets/admin.scss */
 span.alert {
   background: url(../../images/alert.png) no-repeat scroll 4px 2px #e9967a;
   padding: 5px 5px 5px 32px;
@@ -155,12 +128,12 @@ span.alert {
   margin-right: 20px;
 }
 
-/* line 136, ../../../app/stylesheets/admin.scss */
+/* line 113, ../../../app/stylesheets/admin.scss */
 p.wiki_revision_attribute {
   margin: 15px 0px;
 }
 
-/* line 140, ../../../app/stylesheets/admin.scss */
+/* line 117, ../../../app/stylesheets/admin.scss */
 .revision_user_info {
   border: 1px solid;
   margin-right: 18px;
@@ -171,21 +144,10 @@ p.wiki_revision_attribute {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
-/* line 150, ../../../app/stylesheets/admin.scss */
-.profile_photo {
-  background: none repeat scroll 0 0 cyan;
-  border: 2px solid red;
-  height: 64px;
-  width: 64px;
-}
-
-/* line 157, ../../../app/stylesheets/admin.scss */
-span.photo {
-  float: left;
-  margin-right: 10px;
-}
-
-/* line 162, ../../../app/stylesheets/admin.scss */
-.user_details {
-  margin-top: -7px;
+/* line 127, ../../../app/stylesheets/admin.scss */
+#differ {
+  background: none repeat scroll 0 0 #FFFF00;
+  margin-bottom: 5px;
+  padding: 0 5px;
+  width: 672px;
 }

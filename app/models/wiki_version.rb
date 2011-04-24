@@ -44,4 +44,8 @@ class WikiVersion < ActiveRecord::Base
     self.wiki.update_attributes(wiki_attributes)
   end
 
+  def previous_version
+    WikiVersion.first(:conditions => ['wiki_id = ? and version = ?', self.wiki.id, self.version - 1])
+  end
+
 end
