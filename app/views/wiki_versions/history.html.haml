@@ -1,4 +1,5 @@
-.history_info
+
+.history_info#history_info
   .history_sub_heading காலவரிசைப்படி இந்த பாடலுக்கான திருத்தங்கள் இதுவரை...
   .history_data
     - @wiki_versions.each do |wiki_version|
@@ -11,5 +12,7 @@
         - if wiki_version.version == 1
           %span.first_version முதல் வடிவுறு
         - else
-          %a{:href => wiki_version_diff_path(wiki_version, wiki_version.version)}
+          %a.versions_diff.hand_cursor{:url => wiki_version_diff_path(wiki_version)}
             %span.history_diff வேற்றுமைகள்
+
+#versions_diff_container.hidden{:title => 'வேற்றுமைகள்'}

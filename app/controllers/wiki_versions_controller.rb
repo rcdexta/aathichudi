@@ -1,7 +1,5 @@
 class WikiVersionsController < ApplicationController
 
-  before_filter :authenticate_user!
-
   def history
     wiki = Wiki.find(params[:wiki_id])
     @wiki_versions = wiki.versions.active
@@ -13,7 +11,7 @@ class WikiVersionsController < ApplicationController
   def diff
     @current_wiki_version = WikiVersion.find(params[:id])
     @previous_wiki_version = @current_wiki_version.previous_version
-#    render :layout => false
+    render :layout => false
   end
 
 end

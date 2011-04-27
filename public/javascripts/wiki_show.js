@@ -1,8 +1,9 @@
 $(document).ready(function(){
     $('#history_button').click(function(e){
+        e.preventDefault();
         showLoadIndicator(this);
         $.ajax({
-            url: $(this).attr('href'),
+            url: $(this).attr('url'),
             success: function(data){
                 $('#history_container').html(data);
             },
@@ -10,6 +11,6 @@ $(document).ready(function(){
                 hideLoadIndicator();
             }
         });
-        e.preventDefault();
+
     })
 });

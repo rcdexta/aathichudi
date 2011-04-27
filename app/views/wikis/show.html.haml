@@ -1,10 +1,11 @@
 = javascript_include_tag 'wiki_show'
+= javascript_include_tag 'versions_diff'
 
 - unless flash[:notice].blank?
   .notice= flash[:notice]
 
 %span.history_button
-  %a{:href => wiki_version_history_path(params[:id]), :id  => 'history_button'}
+  %a.hand_cursor{:url => wiki_version_history_path(params[:id]), :id  => 'history_button'}
     %img.history{:src => '/images/view_versions.png'}
 
 %span.edit_button

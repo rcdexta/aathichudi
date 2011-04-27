@@ -34,3 +34,8 @@ ta:
         tamil_short_desc: "பாடலின் விளக்கம்"
         english_short_desc: "பாடலின் விளக்கம் (ஆங்கிலத்தில்)"
         tamil_long_desc: "விளக்கம்"
+
+  devise:
+    sessions:
+      signed_in: ''
+      signed_out: ''

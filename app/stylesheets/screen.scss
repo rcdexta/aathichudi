@@ -22,12 +22,12 @@ label {
 input[type="text"] {
     margin-bottom: 15px;
     width: 520px;
-    background: #F7DCB4;
+    background: ivory;
 }
 
 textarea {
     padding: 3px;
-    background: #F7DCB4;
+    background: ivory;
 }
 
 fieldset,img {
@@ -414,6 +414,10 @@ div.error {
     cursor: pointer;
 }
 
+.hand_cursor {
+    cursor: pointer;
+}
+
 .logo ul li img{
     width: 24px;
     height: 24px;
@@ -494,6 +498,12 @@ img.loading{
     width: 48px;
 }
 
+img.line_loading{
+    margin-left: 4.5px;
+    margin-top: 2px;
+    width: 36px;
+}
+
 .history_info {
     border: 1px solid;
     margin-right: 18px;
@@ -545,7 +555,7 @@ span.first_version{
     background: none repeat scroll 0 0 #11FF99;
     margin-bottom: 5px;
     padding: 0 5px;
-    width: 512px;
+    width: 645px;
 }
 
 del.differ{
@@ -593,4 +603,10 @@ span.photo{
 
 .home_link {
     margin-top: 10px;
+}
+
+#versions_diff_container{
+    text-align: left;
+    padding: 15px;
+    background-color: #D2C9A8;
 }

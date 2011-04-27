@@ -1,18 +1,21 @@
 .revision_user_info
   .sub_heading கீழ்கண்ட மாற்றங்களை இயற்றியவர்
-  %span.photo
-    %img.profile_photo{:src => "#{@current_wiki_version.user.photo || '/images/default_photo.png' }"}
-  .user_details
-    %ul
-      %li
-        %b
-          = @current_wiki_version.user.name
-          = "| #{@current_wiki_version.user.email}" if @current_wiki_version.user.email.present?
-      %li
-        திருத்தங்கள்:
-        = @current_wiki_version.user.accepted_count
-      %li
-        &nbsp;
+  %table
+    %tr
+      %td
+        %span.photo
+          %img.profile_photo{:src => "#{@current_wiki_version.user.photo || '/images/default_photo.png' }"}
+      %td
+        .user_details
+          %ul
+            %li
+              = @current_wiki_version.user.name
+              = "| #{@current_wiki_version.user.email}" if @current_wiki_version.user.email.present?
+            %li
+              சமர்ப்பித்த திருத்தங்கள் :
+              = @current_wiki_version.user.accepted_count
+            %li
+              &nbsp;
 
 .sub_heading
   %u முந்திய வடிவுருடன் ஒப்புமை

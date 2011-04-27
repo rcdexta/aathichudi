@@ -15,6 +15,6 @@
         %img{:src => '/images/user.png'}
         - if user_signed_in?
           %a{:href => "#{destroy_user_session_path}"}
-            %span வெளியேறவும்
+            %span{:style => 'padding-left: 5px;'} வெளியேறவும்
         - else
           = link_to_rpx "உள்நுழைக", root_url
