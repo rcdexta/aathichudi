@@ -65,7 +65,7 @@ table#drafts thead tr td {
 
 /* line 58, ../../../app/stylesheets/admin.scss */
 table#drafts tbody tr td {
-  font-size: 10px;
+  font-size: 12px;
   text-align: center;
   overflow: hidden;
 }

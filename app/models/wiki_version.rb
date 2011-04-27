@@ -19,7 +19,7 @@ class WikiVersion < ActiveRecord::Base
       transition :draft => :active
     end
 
-    after_transition :draft => :active do |wiki_version|
+    before_transition :draft => :active do |wiki_version|
       wiki_version.set_next_version!
     end
   end
@@ -50,7 +50,7 @@ class WikiVersion < ActiveRecord::Base
   end
 
   def set_next_version!
-    recent_version = WikiVersion.where(:wiki_id => wiki.id).order('version desc').limit(1).first
+    recent_version = WikiVersion.where(["wiki_id = ? and state != 'draft'", wiki.id]).order('version desc').limit(1).first
     self.update_attribute(:version, recent_version.version + 1)
   end
 
