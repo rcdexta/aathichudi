@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 14, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 14, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -22,48 +22,48 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   vertical-align: baseline;
 }
 
-/* line 17, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
   color: black;
   background: white;
 }
 
-/* line 19, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 19, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 21, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 21, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: separate;
   border-spacing: 0;
   vertical-align: middle;
 }
 
-/* line 23, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 23, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 25, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 25, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: "" "";
 }
-/* line 96, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 96, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
 }
 
-/* line 27, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 27, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
 /* incase an inverted custom gradient isn't specified */
-/* line 177, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+/* line 177, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 .fancy-button-reset-base-class, .save_button, .reject_button {
   font-family: "Lucida Grande", Lucida, Arial, sans-serif;
   background: url('/images/button_bg.png?1302962285') repeat-x bottom left;
@@ -76,12 +76,12 @@ a img {
   border-style: solid;
   font-weight: bold;
 }
-/* line 165, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+/* line 165, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 .fancy-button-reset-base-class::-moz-focus-inner, .save_button::-moz-focus-inner, .reject_button::-moz-focus-inner {
   border: none;
   padding: 0;
 }
-/* line 168, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+/* line 168, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 .fancy-button-reset-base-class:focus, .save_button:focus, .reject_button:focus {
   outline: none;
 }
@@ -427,11 +427,11 @@ button {
   background-clip: padding-box;
   cursor: pointer;
 }
-/* line 116, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+/* line 116, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 button, button:visited {
   color: white;
 }
-/* line 31, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+/* line 31, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 button:hover, button:focus {
   background-color: #0f1633;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #636a87), color-stop(10%, #3c4152), color-stop(50%, #16171d), color-stop(50%, #0f1014), color-stop(100%, #252732));
@@ -440,11 +440,11 @@ button:hover, button:focus {
   border-color: black;
   text-shadow: black 0px 1px 1px;
 }
-/* line 116, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+/* line 116, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 button:hover, button:hover:visited, button:focus, button:focus:visited {
   color: white;
 }
-/* line 36, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+/* line 36, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 button:active {
   background-color: #080c1b;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #0f1014), color-stop(30%, #13151a), color-stop(50%, #0b0b0f), color-stop(50%, #040406), color-stop(100%, #20232c));
@@ -457,7 +457,7 @@ button:active {
   -o-box-shadow: black 0 0.08em 0.1em 1px inset;
   box-shadow: black 0 0.08em 0.1em 1px inset;
 }
-/* line 116, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+/* line 116, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 button:active, button:active:visited {
   color: white;
 }
@@ -497,11 +497,11 @@ button:active, button:active:visited {
   cursor: pointer;
   color: black;
 }
-/* line 116, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+/* line 116, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 .save_button, .save_button:visited {
   color: white;
 }
-/* line 31, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+/* line 31, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 .save_button:hover, .save_button:focus {
   background-color: #8a002e;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ff3377), color-stop(10%, #d60047), color-stop(50%, #7a0029), color-stop(50%, #6b0024), color-stop(100%, #9e0035));
@@ -510,11 +510,11 @@ button:active, button:active:visited {
   border-color: #3d0014;
   text-shadow: #0a0003 0px 1px 1px;
 }
-/* line 116, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+/* line 116, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 .save_button:hover, .save_button:hover:visited, .save_button:focus, .save_button:focus:visited {
   color: white;
 }
-/* line 36, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+/* line 36, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 .save_button:active {
   background-color: #7a0029;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #7a0029), color-stop(30%, #85002c), color-stop(50%, #700025), color-stop(50%, #610020), color-stop(100%, #a30036));
@@ -527,7 +527,7 @@ button:active, button:active:visited {
   -o-box-shadow: #4d0019 0 0.08em 0.1em 1px inset;
   box-shadow: #4d0019 0 0.08em 0.1em 1px inset;
 }
-/* line 116, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+/* line 116, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 .save_button:active, .save_button:active:visited {
   color: white;
 }
@@ -566,11 +566,11 @@ button:active, button:active:visited {
   padding: 1px 5px;
   cursor: pointer;
 }
-/* line 116, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+/* line 116, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 .reject_button, .reject_button:visited {
   color: white;
 }
-/* line 31, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+/* line 31, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 .reject_button:hover, .reject_button:focus {
   background-color: #ff02ff;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffaaff), color-stop(10%, #ff4eff), color-stop(50%, #f100f1), color-stop(50%, #e200e2), color-stop(100%, #ff16ff));
@@ -579,11 +579,11 @@ button:active, button:active:visited {
   border-color: #b400b4;
   text-shadow: #810081 0px 1px 1px;
 }
-/* line 116, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+/* line 116, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 .reject_button:hover, .reject_button:hover:visited, .reject_button:focus, .reject_button:focus:visited {
   color: white;
 }
-/* line 36, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+/* line 36, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 .reject_button:active {
   background-color: #f100f1;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #f100f1), color-stop(30%, #fc00fc), color-stop(50%, #e700e7), color-stop(50%, #d800d8), color-stop(100%, #ff1bff));
@@ -596,7 +596,7 @@ button:active, button:active:visited {
   -o-box-shadow: #c400c3 0 0.08em 0.1em 1px inset;
   box-shadow: #c400c3 0 0.08em 0.1em 1px inset;
 }
-/* line 116, ../../../../../../../../Users/RC/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+/* line 116, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 .reject_button:active, .reject_button:active:visited {
   color: white;
 }
