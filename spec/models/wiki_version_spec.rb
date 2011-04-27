@@ -27,6 +27,13 @@ describe WikiVersion do
       wiki_version.activate!
       wiki_version.should be_active
     end
+
+    it "should set next version number if activated" do
+      wiki = Factory(:wiki)
+      wiki_version = Factory(:wiki_version, :wiki => wiki)
+      wiki_version.activate!
+      wiki_version.version.should == 2
+    end
   end
 
   context "draft_version scope" do
@@ -70,7 +77,6 @@ describe WikiVersion do
       wiki.reload
       wiki.versions.should have(2).things
 
-      wiki.versions.last.version.should == 2
       wiki.versions.last.user.should == user
     end
 
@@ -99,7 +105,7 @@ describe WikiVersion do
     end
   end
 
-  describe "#previous version" do
+  describe "#previous_version" do
     it "should return the previous version relative to current" do
       wiki = Factory(:wiki)
       user = Factory(:user)
@@ -108,6 +114,14 @@ describe WikiVersion do
     end
   end
 
-
+  describe "#set_next_version" do
+    it "should set the version number as plus one relative to previous version" do
+      wiki = Factory(:wiki)
+      user = Factory(:user)
+      wiki_version = Factory(:wiki_version, :wiki => wiki, :user => user, :state => 'draft')
+      wiki_version.set_next_version!
+      wiki_version.version.should == 2
+    end
+  end
 
 end

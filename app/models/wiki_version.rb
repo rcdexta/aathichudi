@@ -18,6 +18,10 @@ class WikiVersion < ActiveRecord::Base
     event :activate do
       transition :draft => :active
     end
+
+    after_transition :draft => :active do |wiki_version|
+      wiki_version.set_next_version!
+    end
   end
 
   def self.create_or_update_next_version_for(wiki, user)
@@ -25,10 +29,7 @@ class WikiVersion < ActiveRecord::Base
      if existing_version.present?
        existing_version.update_attributes(wiki.attributes_for_versioning)
      else
-      recent_version = self.where(:wiki_id => wiki.id).order('version desc').limit(1).first
-      self.create(wiki.attributes_for_versioning.merge(:wiki_id => wiki.id,
-                                                       :user_id => user.id,
-                                                       :version => recent_version.version + 1))
+      self.create(wiki.attributes_for_versioning.merge(:wiki_id => wiki.id, :user_id => user.id))
     end
   end
 
@@ -46,6 +47,11 @@ class WikiVersion < ActiveRecord::Base
 
   def previous_version
     WikiVersion.first(:conditions => ['wiki_id = ? and version = ?', self.wiki.id, self.version - 1])
+  end
+
+  def set_next_version!
+    recent_version = WikiVersion.where(:wiki_id => wiki.id).order('version desc').limit(1).first
+    self.update_attribute(:version, recent_version.version + 1)
   end
 
 end

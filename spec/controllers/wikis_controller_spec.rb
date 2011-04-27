@@ -43,7 +43,6 @@ describe WikisController do
       wiki_version = WikiVersion.last
       wiki_version.should_not be_blank
 
-      wiki_version.version.should == 2
       wiki_version.paadal.should == "new paadal"
       wiki_version.user.should == @user
       wiki_version.should be_draft
