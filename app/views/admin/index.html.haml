@@ -23,7 +23,8 @@
       %tr{:class => "#{cycle("", "odd")}"}
         %td.time= l draft_wiki.created_at, :format => :short
         %td.paadal= draft_wiki.paadal
-        %td.user= draft_wiki.user.email.truncate(30)
+        - user_name = draft_wiki.user.name || draft_wiki.user.email.truncate(30)
+        %td.user= user_name
         %td.view
           %a{:href => admin_review_wiki_path(draft_wiki)}
             %img.review{:src => '/images/review.png'}
