@@ -1,5 +1,13 @@
 = render :partial => 'common/indic'
 
+- if current_user.accepted_count.zero?
+  :javascript
+    $(document).ready(function(){
+        control_by_cookie('pre_wiki_edit', function(){
+         apprise('#{t(:pre_wiki_edit)}');
+      });
+    });
+
 - unless flash[:alert].blank?
   .alert= flash[:alert]
 

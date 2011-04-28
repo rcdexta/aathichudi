@@ -21,3 +21,10 @@ function hideLoadIndicator(){
 function hideLineLoadIndicator(){
     hideLoadIndicator();
 }
+
+function control_by_cookie(cookie_name, call_back){
+    if (!($.cookie(cookie_name))) {
+        $.cookie(cookie_name, 'dont-show-for-one-day', {expires: 1});
+        call_back();
+    }
+}

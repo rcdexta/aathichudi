@@ -15,4 +15,6 @@ class User < ActiveRecord::Base
     end
   end
 
+  before_create { self.accepted_count = 0; self.rejected_count = 0; }
+
 end

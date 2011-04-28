@@ -1,7 +1,5 @@
 $(document).ready(function() {
-    var cookie_name = 'aathichudi_intro';
-    if (!($.cookie(cookie_name))) {
-        $.cookie(cookie_name, 'dont-show-for-one-day', {expires: 1});
+    control_by_cookie('aathichudi_intro', function(){
         $('#about_site').click();
-    }
+    });
 });
