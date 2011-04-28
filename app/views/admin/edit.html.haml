@@ -1,5 +1,8 @@
 = stylesheet_link_tag 'compiled/admin'
-= render :partial => 'common/indic'
+= render :partial => 'common/google_transliterate'
+
+:javascript
+  makeTransliteratable(['wiki_version_tamil_short_desc', 'wiki_version_tamil_long_desc']);
 
 - unless flash.now[:error].blank?
   .error= flash.now[:error]

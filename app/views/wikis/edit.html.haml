@@ -1,4 +1,6 @@
-= render :partial => 'common/indic'
+= render :partial => 'common/google_transliterate'
+:javascript
+  makeTransliteratable(['wiki_tamil_short_desc', 'wiki_tamil_long_desc']);
 
 - if current_user.accepted_count.zero?
   :javascript
@@ -17,9 +19,9 @@
 = simple_form_for @wiki, do |w|
   = w.button :submit, :class => 'save_button', :value => 'மாற்றத்தை சேமி'
   .clear
-  = w.input :paadal, :label => 'பாடல்'
-  = w.input :paadal_english, :label => "ஆங்கில எழுத்து பிரிதி", :input_html => {"MicrosoftILITWebAttach" => "false"}
+  = w.input :paadal, :label => 'பாடல்', :input_html => { :readonly => true }
+  = w.input :paadal_english, :label => "ஆங்கில எழுத்து பிரிதி"
   = w.input :tamil_short_desc, :label => "பாடலின் விளக்கம்"
-  = w.input :english_short_desc, :label => "பாடலின் விளக்கம் (ஆங்கிலத்தில்)", :input_html => {"MicrosoftILITWebAttach" => "false"}
-  = w.input :tamil_long_desc, :as => :text, :label => "விளக்கம்", :input_html => {:cols => 50}
+  = w.input :english_short_desc, :label => "பாடலின் விளக்கம் (ஆங்கிலத்தில்)"
+  = w.input :tamil_long_desc, :as => :text, :label => "விளக்கம்"
   = w.button :submit, :class => 'save_button', :value => 'மாற்றத்தை சேமி'

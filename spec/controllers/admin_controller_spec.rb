@@ -11,6 +11,7 @@ describe AdminController do
     before :each do
       @user = Factory(:user)
       @wiki = Factory(:wiki)
+      AppConfig.stubs(:admin).returns(@user.email)
       sign_in @user
     end
 
@@ -30,6 +31,7 @@ describe AdminController do
     before :each do
       @user = Factory(:user)
       @wiki = Factory(:wiki)
+      AppConfig.stubs(:admin).returns(@user.email)
       sign_in @user
     end
 
@@ -65,6 +67,7 @@ describe AdminController do
 
       @user = Factory(:user)
       @wiki = Factory(:wiki)
+      AppConfig.stubs(:admin).returns(@user.email)
       @wiki_version = Factory(:wiki_version, :user => @user,
                               :wiki => @wiki,
                               :paadal_english => 'changed version')

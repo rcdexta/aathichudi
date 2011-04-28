@@ -1,6 +1,7 @@
 class AdminController < ApplicationController
 
   before_filter :authenticate_user!
+  before_filter :check_if_admin!
 
   def index
     @draft_wikis = WikiVersion.draft.order('created_at')
@@ -48,5 +49,8 @@ class AdminController < ApplicationController
     wiki_version.activate
   end
 
+  def check_if_admin!
+    redirect_to root_path unless current_user.email == AppConfig.admin
+  end
 
 end
