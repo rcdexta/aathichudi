@@ -14,3 +14,13 @@
 = javascript_include_tag 'tooltip'
 = javascript_include_tag 'jquery.cookie'
 = javascript_include_tag 'apprise'
+
+- if params[:tamil_keyboard]
+  :javascript
+    (function() {
+      var kmwProtocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+      document.writeln(unescape("%3Cscript src='" + kmwProtocol +
+      "r.keymanweb.com/code/?domain="+location.hostname+
+      "&amp;id=474&amp;page="+encodeURIComponent(location.pathname)+
+      "' type='text/javascript' %3E%3C/script%3E"));
+    })();

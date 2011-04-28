@@ -951,3 +951,30 @@ span.photo {
   padding: 15px;
   background-color: #D2C9A8;
 }
+
+/* line 616, ../../../app/stylesheets/screen.scss */
+img.keyboard {
+  height: 32px;
+  width: 48px;
+  padding-top: 5px;
+}
+
+/* line 622, ../../../app/stylesheets/screen.scss */
+#keyboard {
+  background: url("../../images/keyboard.png") no-repeat scroll 4px -8px transparent;
+  cursor: pointer;
+  float: right;
+  font-weight: bold;
+  margin-right: 8px;
+  margin-top: 8px;
+}
+
+/* line 631, ../../../app/stylesheets/screen.scss */
+.left {
+  float: left;
+}
+
+/* line 635, ../../../app/stylesheets/screen.scss */
+.blue {
+  color: blue;
+}

@@ -612,3 +612,26 @@ span.photo{
     padding: 15px;
     background-color: #D2C9A8;
 }
+
+img.keyboard{
+  height: 32px;
+  width: 48px;
+  padding-top: 5px;
+}
+
+#keyboard{
+    background: url("../../images/keyboard.png") no-repeat scroll 4px -8px transparent;
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+    margin-right: 8px;
+    margin-top: 8px;
+}
+
+.left{
+    float: left
+}
+
+.blue{
+    color: blue;
+}
