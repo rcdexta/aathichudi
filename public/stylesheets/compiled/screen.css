@@ -777,22 +777,23 @@ div.error {
 /* line 463, ../../../app/stylesheets/screen.scss */
 .login_container {
   text-align: center;
+  padding-right: 20px;
 }
 
-/* line 467, ../../../app/stylesheets/screen.scss */
+/* line 468, ../../../app/stylesheets/screen.scss */
 img.edit {
   width: 52px;
   margin-top: 9px;
 }
 
-/* line 472, ../../../app/stylesheets/screen.scss */
+/* line 473, ../../../app/stylesheets/screen.scss */
 img.home {
   width: 32px;
   margin-right: -8px;
   vertical-align: middle;
 }
 
-/* line 479, ../../../app/stylesheets/screen.scss */
+/* line 480, ../../../app/stylesheets/screen.scss */
 .wiki_container {
   border-bottom: 1px solid;
   border-top: 1px solid;
@@ -802,33 +803,33 @@ img.home {
   width: 503px;
 }
 
-/* line 489, ../../../app/stylesheets/screen.scss */
+/* line 490, ../../../app/stylesheets/screen.scss */
 0
 
 .home_link {
   margin-top: 8px;
 }
 
-/* line 493, ../../../app/stylesheets/screen.scss */
+/* line 494, ../../../app/stylesheets/screen.scss */
 .clear {
   clear: both;
 }
 
-/* line 497, ../../../app/stylesheets/screen.scss */
+/* line 498, ../../../app/stylesheets/screen.scss */
 img.loading {
   margin-top: 5px;
   margin-left: 12.5px;
   width: 48px;
 }
 
-/* line 503, ../../../app/stylesheets/screen.scss */
+/* line 504, ../../../app/stylesheets/screen.scss */
 img.line_loading {
   margin-left: 4.5px;
   margin-top: 2px;
   width: 36px;
 }
 
-/* line 509, ../../../app/stylesheets/screen.scss */
+/* line 510, ../../../app/stylesheets/screen.scss */
 .history_info {
   border: 1px solid;
   margin-right: 18px;
@@ -840,7 +841,7 @@ img.line_loading {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
-/* line 520, ../../../app/stylesheets/screen.scss */
+/* line 521, ../../../app/stylesheets/screen.scss */
 .history_data p {
   font-size: 13px;
   text-shadow: 0 1px 0 white, 0 0px 0 black;
@@ -848,7 +849,7 @@ img.line_loading {
   line-height: 100%;
 }
 
-/* line 527, ../../../app/stylesheets/screen.scss */
+/* line 528, ../../../app/stylesheets/screen.scss */
 .history_sub_heading {
   font-size: 14px;
   font-weight: bold;
@@ -857,32 +858,32 @@ img.line_loading {
   margin: 10px 0px;
 }
 
-/* line 535, ../../../app/stylesheets/screen.scss */
+/* line 536, ../../../app/stylesheets/screen.scss */
 span.history_time {
   background: url("../../images/embed/bullet.png") no-repeat scroll 0 0 transparent;
   padding-left: 19px;
 }
 
-/* line 540, ../../../app/stylesheets/screen.scss */
+/* line 541, ../../../app/stylesheets/screen.scss */
 span.history_user {
   background: url("../../images/embed/history_user.png") no-repeat scroll 0 0 transparent;
   padding-left: 19px;
 }
 
-/* line 545, ../../../app/stylesheets/screen.scss */
+/* line 546, ../../../app/stylesheets/screen.scss */
 span.history_diff {
   background: url("../../images/embed/history_diff.png") no-repeat scroll 0 0 transparent;
   padding-left: 19px;
   text-decoration: underline;
 }
 
-/* line 551, ../../../app/stylesheets/screen.scss */
+/* line 552, ../../../app/stylesheets/screen.scss */
 span.first_version {
   background: url("../../images/embed/first_version.png") no-repeat scroll 0 0 transparent;
   padding-left: 19px;
 }
 
-/* line 556, ../../../app/stylesheets/screen.scss */
+/* line 557, ../../../app/stylesheets/screen.scss */
 #differ {
   background: none repeat scroll 0 0 #11FF99;
   margin-bottom: 5px;
@@ -890,17 +891,17 @@ span.first_version {
   width: 645px;
 }
 
-/* line 563, ../../../app/stylesheets/screen.scss */
+/* line 564, ../../../app/stylesheets/screen.scss */
 del.differ {
   color: #CC0000;
 }
 
-/* line 567, ../../../app/stylesheets/screen.scss */
+/* line 568, ../../../app/stylesheets/screen.scss */
 ins.differ {
   color: #000080;
 }
 
-/* line 571, ../../../app/stylesheets/screen.scss */
+/* line 572, ../../../app/stylesheets/screen.scss */
 .revision_user_info {
   border: 1px solid;
   margin-right: 18px;
@@ -912,7 +913,7 @@ ins.differ {
   margin-bottom: 10px;
 }
 
-/* line 582, ../../../app/stylesheets/screen.scss */
+/* line 583, ../../../app/stylesheets/screen.scss */
 .profile_photo {
   background: none repeat scroll 0 0 cyan;
   border: 2px solid red;
@@ -920,18 +921,18 @@ ins.differ {
   width: 64px;
 }
 
-/* line 589, ../../../app/stylesheets/screen.scss */
+/* line 590, ../../../app/stylesheets/screen.scss */
 span.photo {
   float: left;
   margin-right: 10px;
 }
 
-/* line 594, ../../../app/stylesheets/screen.scss */
+/* line 595, ../../../app/stylesheets/screen.scss */
 .user_details {
   margin-top: -7px;
 }
 
-/* line 598, ../../../app/stylesheets/screen.scss */
+/* line 599, ../../../app/stylesheets/screen.scss */
 .sub_heading {
   font-size: 20px;
   font-weight: bold;
@@ -940,26 +941,26 @@ span.photo {
   margin: 10px 0px;
 }
 
-/* line 606, ../../../app/stylesheets/screen.scss */
+/* line 607, ../../../app/stylesheets/screen.scss */
 .home_link {
   margin-top: 10px;
 }
 
-/* line 610, ../../../app/stylesheets/screen.scss */
+/* line 611, ../../../app/stylesheets/screen.scss */
 #versions_diff_container {
   text-align: left;
   padding: 15px;
   background-color: #D2C9A8;
 }
 
-/* line 616, ../../../app/stylesheets/screen.scss */
+/* line 617, ../../../app/stylesheets/screen.scss */
 img.keyboard {
   height: 32px;
   width: 48px;
   padding-top: 5px;
 }
 
-/* line 622, ../../../app/stylesheets/screen.scss */
+/* line 623, ../../../app/stylesheets/screen.scss */
 #keyboard {
   background: url("../../images/keyboard.png") no-repeat scroll 4px -8px transparent;
   cursor: pointer;
@@ -969,12 +970,12 @@ img.keyboard {
   margin-top: 8px;
 }
 
-/* line 631, ../../../app/stylesheets/screen.scss */
+/* line 632, ../../../app/stylesheets/screen.scss */
 .left {
   float: left;
 }
 
-/* line 635, ../../../app/stylesheets/screen.scss */
+/* line 636, ../../../app/stylesheets/screen.scss */
 .blue {
   color: blue;
 }
