@@ -1,47 +1,5 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-   "http://www.w3.org/TR/html4/strict.dtd">
-
-<html xmlns="http://www.w<p>org/1999/xhtml">
-    <head>
-      <title>ஆத்திசூடி </title>
-      <meta name="robots" content="index, follow" />
-      <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-      <meta name="author" content="RapidxHTML" />
-
-      <!--[if lte IE 7]><link href="stylesheets/iehacks.css" rel="stylesheet" type="text/css" /><![endif]-->
-
-      <%= render :partial => 'common/header' %>
 
       <%= javascript_include_tag 'intro_pop_up' %>
-
-      <!--[if IE 6]>
-      <script type="text/javascript" src="javascripts/ie6pngfix.js"></script>
-      <script type="text/javascript">
-        DD_belatedPNG.fix('img, ul, ol, li, div, p, a, h1, h2, h3, h4, h5, h6');
-        $('#logo').FontEffect({
-gradient: true
-});
-</script>
-<![endif]-->
-<script type='text/javascript'>
-</script>
-  </head>
-
-  <body id="page">
-
-    <!-- wrapper -->
-    <div class="rapidxwpr floatholder">
-
-
-      <!-- main body -->
-      <div id="middle">
-
-        <%= render :partial => 'common/menu' %>
-
-        <div id="main">
-
-          <div id="main_container" class="clearingfix">
-            <div id="mainmiddle" class="floatbox withright">
 
               <div id="intro">
               <span class='heading'>கடவுள் வாழ்த்து </span>
@@ -209,28 +167,3 @@ gradient: true
 <p> <a href='<%=wiki_path(109) %>' title="<%=tooltip_for(109) %>">  <h2>ஓ</h2>ரம் சொல்லேல்.
 </a>
         </div>
-        </div>
-      </div>
-    </div>
-    <!-- / content column -->
-
-  </div>
-  <!-- / main body -->
-
-  <!-- footer -->
-  <div id="footer">
-    &copy; 2011 | <a href="http://kanaiyaazhi.wordpress.com/">கணையாழி</a>
-  </div>
-  <!-- / footer -->
-
-</div>
-<!-- / wrapper -->
-
-    <%= javascript_include_rpx(user_session_url) %>
-
-</body>
-
-<%= render :partial => 'common/mugavurai' %>
-<%= render :partial => 'common/about_site' %>
-
-</html>
