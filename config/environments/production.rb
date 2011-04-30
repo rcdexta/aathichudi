@@ -1,3 +1,5 @@
+require File.expand_path(File.dirname(__FILE__) + '/../../app/middlewares/rack_force_domain')
+
 Aathichudi::Application.configure do
   # Settings specified here will take precedence over those in config/environment.rb
 
@@ -11,6 +13,8 @@ Aathichudi::Application.configure do
 
   # Specifies the header that your server uses for sending files
   config.action_dispatch.x_sendfile_header = "X-Sendfile"
+
+  config.middleware.use Rack::ForceDomain, ENV["DOMAIN"]
 
   # For nginx:
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect'
