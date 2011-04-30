@@ -979,3 +979,25 @@ img.keyboard {
 .blue {
   color: blue;
 }
+
+/* line 640, ../../../app/stylesheets/screen.scss */
+#left_pane {
+  background: url("../../images/box_red.png") no-repeat scroll 0px 0px transparent;
+  float: left;
+  margin-left: -230px;
+  padding: 10px;
+  width: 190px;
+}
+
+/* line 648, ../../../app/stylesheets/screen.scss */
+span.title_photo {
+  margin-right: 10px;
+}
+
+/* line 652, ../../../app/stylesheets/screen.scss */
+img.title_profile_photo {
+  background: none repeat scroll 0 0 cyan;
+  border: 2px solid red;
+  height: 64px;
+  width: 65px;
+}

@@ -8,21 +8,21 @@
   .error= flash.now[:error]
 - else
   .revision_user_info
-    .sub_heading கீழ்கண்ட மாற்றங்களை முன்வைத்தவர்
-    %span.photo
-      %img.profile_photo{:src => "#{@wiki_version.user.photo || '/images/default_photo.png' }"}
-    .user_details
-      %ul
-        %li
-          %b
-            = @wiki_version.user.name
-            = "| #{@wiki_version.user.email}" if @wiki_version.user.email.present?
-        %li
-          ஏற்றுக்கொண்ட திருத்தங்கள்:
-          = @wiki_version.user.accepted_count
-        %li
-          மறுக்கப்பட்ட திருத்தங்கள்:
-          = @wiki_version.user.rejected_count
+    .sub_heading
+      %span.photo
+        %img.profile_photo{:src => "#{user.photo || '/images/default_photo.png' }"}
+      .user_details
+        %ul
+          %li
+            %b
+              = user.name
+              = "| #{user.email}" if user.email.present?
+          %li
+            ஏற்றுக்கொண்ட திருத்தங்கள்:
+            = user.accepted_count
+          %li
+            மறுக்கப்பட்ட திருத்தங்கள்:
+            = user.rejected_count
   .clear
   = form_for @wiki_version, :url => admin_update_wiki_path(@wiki_version) do |wiki_form|
 

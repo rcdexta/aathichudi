@@ -1,0 +1,12 @@
+%span.title_photo
+  %img.title_profile_photo{:src => "#{user.photo || '/images/default_photo.png' }"}
+.user_details
+  %ul
+    %li
+      %b
+        = user.name
+    %li
+      = "#{user.email.truncate(20)}" if user.email.present?
+    %li
+      ஒப்புவித்த திருத்தங்கள்:
+      = user.accepted_count

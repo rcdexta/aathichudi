@@ -1,46 +1,54 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-    <title>ஆத்திசூடி</title>
-    <%= render :partial => 'common/header' %>
-    <%= csrf_meta_tag %>
-  </head>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+  <title>ஆத்திசூடி</title>
+  <%= render :partial => 'common/header' %>
+  <%= csrf_meta_tag %>
+</head>
 
-  <body id="page">
+<body id="page">
 
-    <!-- wrapper -->
-    <div class="rapidxwpr floatholder">
+<!-- wrapper -->
+<div class="rapidxwpr floatholder">
 
-      <!-- main body -->
-      <div id="middle">
+  <!-- main body -->
+  <div id="middle">
 
-        <%= render :partial => 'common/menu'%>
+    <%= render :partial => 'common/menu' %>
 
-        <div id='main'>
-          <div id="main_container" class="clearingfix">
-            <div id="mainmiddle" class="floatbox withright">
-              <%= yield %>
-            </div>
+    <div id='main'>
+
+      <%- if current_user %>
+          <div id="left_pane">
+            <%= render :partial => 'common/user_info', :locals => {:user => current_user} %>
           </div>
+      <%- end %>
 
+
+      <div id="main_container" class="clearingfix">
+        <div id="mainmiddle" class="floatbox withright">
+          <%= yield %>
         </div>
-
       </div>
 
     </div>
-    <!-- footer -->
-    <div id="footer">
-      &copy; 2011 | <a href="http://kanaiyaazhi.wordpress.com/">கணையாழி</a>
-    </div>
-    <!-- / footer -->
 
-    <%= javascript_include_rpx(user_session_url) %>
+  </div>
 
-    <%= render :partial => 'common/mugavurai' %>
-    <%= render :partial => 'common/about_site' %>
+</div>
+<!-- footer -->
+<div id="footer">
+  &copy; 2011 | <a href="http://kanaiyaazhi.wordpress.com/">கணையாழி</a>
+</div>
+<!-- / footer -->
+
+<%= javascript_include_rpx(user_session_url) %>
+
+<%= render :partial => 'common/mugavurai' %>
+<%= render :partial => 'common/about_site' %>
 
 
-  </body>
+</body>
 
 </html>
