@@ -2,6 +2,12 @@
 <html>
 <head>
   <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+  <meta name='title' content="அறம் செய விரும்பு"/>
+  <meta name='description' content="ஒளவையாரின் ஆத்திச்சூடி, அதற்கான எளிய விளக்கவுரை மற்றும் ஆங்கில மொழிப்பெயர்ப்பு, அதன்மீதான பயனுள்ள விவாதங்கள் மற்றும் வாசகர் கருத்துக்கள் – அனைத்தையும் ஒருங்கே பார்க்க, ரசிக்க, பங்களிக்க, பதிலளிக்க… "/>
+  <meta property='og:url' content='<%= root_url %>' />
+  <!--<meta name='image' content=image_url('/images/thp_logo.png')}-->
+
+
   <title>ஆத்திசூடி</title>
   <%= render :partial => 'common/header' %>
   <%= csrf_meta_tag %>
@@ -19,11 +25,14 @@
 
     <div id='main'>
 
-      <%- if current_user %>
-          <div id="left_pane">
-            <%= render :partial => 'common/user_info', :locals => {:user => current_user} %>
-          </div>
-      <%- end %>
+
+      <div id="left_pane">
+        <a href="http://www.facebook.com/sharer.php?u=<%= root_url %>" target='_blank'>
+           <img src='/images/facebook_share.png' />
+        </a>
+        <img src='/images/twitter_share.png' />
+        <img src='/images/mail_share.png' />
+      </div>
 
 
       <div id="main_container" class="clearingfix">
