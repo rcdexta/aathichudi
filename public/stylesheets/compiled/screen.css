@@ -930,9 +930,11 @@ span.photo {
 /* line 595, ../../../app/stylesheets/screen.scss */
 .user_details {
   margin-left: -4px;
+  margin-top: 5px;
+  line-height: 125%;
 }
 
-/* line 599, ../../../app/stylesheets/screen.scss */
+/* line 601, ../../../app/stylesheets/screen.scss */
 .sub_heading {
   font-size: 20px;
   font-weight: bold;
@@ -941,26 +943,26 @@ span.photo {
   margin: 10px 0px;
 }
 
-/* line 607, ../../../app/stylesheets/screen.scss */
+/* line 609, ../../../app/stylesheets/screen.scss */
 .home_link {
   margin-top: 10px;
 }
 
-/* line 611, ../../../app/stylesheets/screen.scss */
+/* line 613, ../../../app/stylesheets/screen.scss */
 #versions_diff_container {
   text-align: left;
   padding: 15px;
   background-color: #D2C9A8;
 }
 
-/* line 617, ../../../app/stylesheets/screen.scss */
+/* line 619, ../../../app/stylesheets/screen.scss */
 img.keyboard {
   height: 32px;
   width: 48px;
   padding-top: 5px;
 }
 
-/* line 623, ../../../app/stylesheets/screen.scss */
+/* line 625, ../../../app/stylesheets/screen.scss */
 #keyboard {
   background: url("../../images/keyboard.png") no-repeat scroll 4px -8px transparent;
   cursor: pointer;
@@ -970,17 +972,17 @@ img.keyboard {
   margin-top: 8px;
 }
 
-/* line 632, ../../../app/stylesheets/screen.scss */
+/* line 634, ../../../app/stylesheets/screen.scss */
 .left {
   float: left;
 }
 
-/* line 636, ../../../app/stylesheets/screen.scss */
+/* line 638, ../../../app/stylesheets/screen.scss */
 .blue {
   color: blue;
 }
 
-/* line 640, ../../../app/stylesheets/screen.scss */
+/* line 642, ../../../app/stylesheets/screen.scss */
 #left_pane {
   float: left;
   height: 300px;
@@ -990,12 +992,12 @@ img.keyboard {
   width: 219px;
 }
 
-/* line 649, ../../../app/stylesheets/screen.scss */
+/* line 651, ../../../app/stylesheets/screen.scss */
 span.title_photo {
   margin-right: 10px;
 }
 
-/* line 653, ../../../app/stylesheets/screen.scss */
+/* line 655, ../../../app/stylesheets/screen.scss */
 img.title_profile_photo {
   background: none repeat scroll 0 0 cyan;
   border: 2px solid red;
@@ -1003,23 +1005,25 @@ img.title_profile_photo {
   width: 65px;
 }
 
-/* line 660, ../../../app/stylesheets/screen.scss */
+/* line 662, ../../../app/stylesheets/screen.scss */
 #user_details {
-  background: url("../../images/user_details_bg.jpg") no-repeat scroll 0 0 transparent;
+  /*background: url("../../images/user_details_bg.jpg") no-repeat scroll 0 0 transparent;*/
   height: 214px;
   margin-left: -48px;
   padding-left: 6px;
-  padding-top: 35px;
   width: 300px;
   line-height: 100%;
+  padding-top: 5px;
+  color: ivory;
 }
 
-/* line 670, ../../../app/stylesheets/screen.scss */
+/* line 673, ../../../app/stylesheets/screen.scss */
 .welcome {
-  color: #191970;
-  font-size: 12px;
-  line-height: 100%;
+  color: gold;
+  font-size: 15px;
+  line-height: 125%;
   margin-left: 43px;
   margin-top: 13px;
   width: 223px;
+  text-shadow: 0 1px 0 yellow, 0 1px 0 black;
 }

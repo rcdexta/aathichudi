@@ -594,6 +594,8 @@ span.photo{
 
 .user_details{
     margin-left: -4px;
+    margin-top: 5px;
+    line-height: 125%;
 }
 
 .sub_heading{
@@ -658,20 +660,22 @@ img.title_profile_photo {
 }
 
 #user_details{
-    background: url("../../images/user_details_bg.jpg") no-repeat scroll 0 0 transparent;
+    /*background: url("../../images/user_details_bg.jpg") no-repeat scroll 0 0 transparent;*/
     height: 214px;
     margin-left: -48px;
     padding-left: 6px;
-    padding-top: 35px;
     width: 300px;
     line-height: 100%;
+    padding-top: 5px;
+    color: ivory;
 }
 
 .welcome{
-    color: #191970;
-    font-size: 12px;
-    line-height: 100%;
+    color: gold;
+    font-size: 15px;
+    line-height: 125%;
     margin-left: 43px;
     margin-top: 13px;
     width: 223px;
+    text-shadow: 0 1px 0 yellow, 0 1px 0 black;
 }
