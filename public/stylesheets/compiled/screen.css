@@ -916,7 +916,7 @@ ins.differ {
 /* line 583, ../../../app/stylesheets/screen.scss */
 .profile_photo {
   background: none repeat scroll 0 0 cyan;
-  border: 2px solid red;
+  border: 2px solid #ffefd5;
   height: 64px;
   width: 64px;
 }
@@ -929,7 +929,7 @@ span.photo {
 
 /* line 595, ../../../app/stylesheets/screen.scss */
 .user_details {
-  margin-top: -7px;
+  margin-left: -4px;
 }
 
 /* line 599, ../../../app/stylesheets/screen.scss */
@@ -984,7 +984,7 @@ img.keyboard {
 #left_pane {
   float: left;
   height: 300px;
-  margin-left: -243px;
+  margin-left: -277px;
   margin-top: -94px;
   padding: 46px 10px 10px;
   width: 219px;
@@ -1001,4 +1001,25 @@ img.title_profile_photo {
   border: 2px solid red;
   height: 64px;
   width: 65px;
+}
+
+/* line 660, ../../../app/stylesheets/screen.scss */
+#user_details {
+  background: url("../../images/user_details_bg.jpg") no-repeat scroll 0 0 transparent;
+  height: 214px;
+  margin-left: -48px;
+  padding-left: 6px;
+  padding-top: 35px;
+  width: 300px;
+  line-height: 100%;
+}
+
+/* line 670, ../../../app/stylesheets/screen.scss */
+.welcome {
+  color: #191970;
+  font-size: 12px;
+  line-height: 100%;
+  margin-left: 43px;
+  margin-top: 13px;
+  width: 223px;
 }

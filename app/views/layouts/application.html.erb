@@ -37,6 +37,32 @@
         <a href="mailto:?subject=ஆத்திச்சுடிக்கான%20புதிய%20விக்கி!!!&body=ஒளவையாரின் ஆத்திச்சூடி, அதற்கான எளிய விளக்கவுரை மற்றும் ஆங்கில மொழிப்பெயர்ப்பு, அதன்மீதான பயனுள்ள விவாதங்கள் மற்றும் வாசகர் கருத்துக்கள் – அனைத்தையும் ஒருங்கே பார்க்க, ரசிக்க, பங்களிக்க, பதிலளிக்க - www.aramseyavirumbu.com">
             <img src='/images/mail_share.png' />
         </a>
+
+        <%- if current_user %>
+            <div id="user_details">
+              <span class="title_photo"><img class="title_profile_photo" src="<%= current_user.photo || '/images/default_photo.png' %>" /></span>
+              <div class='user_details'>
+                <ul>
+                  <li>
+                    <b> <%= current_user.name.truncate(30) %> </b>
+                  </li>
+                  <li>
+                    <%= "#{current_user.email.truncate(30)}" if current_user.email.present? %>
+                  </li>
+                  <li>
+                      <%- if current_user.accepted_count && current_user.accepted_count > 0  %>
+                           பங்களிப்பு எண்:
+                           <%= current_user.accepted_count %>
+                       <%- else %>
+                            <div class='welcome'>நல்வருகை! பாடல்களை இயற்றி பங்களிப்பு மதிப்பெண்ணை கூட்டவும</div>
+                      <%- end %>
+                  </li>
+                </ul>
+              </div>
+
+
+            </div>
+        <%- end %>
       </div>
 
 
