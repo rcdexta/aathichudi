@@ -1007,17 +1007,16 @@ img.title_profile_photo {
 
 /* line 662, ../../../app/stylesheets/screen.scss */
 #user_details {
-  /*background: url("../../images/user_details_bg.jpg") no-repeat scroll 0 0 transparent;*/
   height: 214px;
   margin-left: -48px;
   padding-left: 6px;
   width: 300px;
   line-height: 100%;
-  padding-top: 5px;
+  padding-top: 20px;
   color: ivory;
 }
 
-/* line 673, ../../../app/stylesheets/screen.scss */
+/* line 672, ../../../app/stylesheets/screen.scss */
 .welcome {
   color: gold;
   font-size: 15px;
@@ -1028,7 +1027,7 @@ img.title_profile_photo {
   text-shadow: 0 1px 0 yellow, 0 1px 0 black;
 }
 
-/* line 683, ../../../app/stylesheets/screen.scss */
+/* line 682, ../../../app/stylesheets/screen.scss */
 .share_text {
   color: ivory;
   font-size: 12.5px;

@@ -12,7 +12,7 @@ function apprise(string, args, callback)
 		'verify'		:	false,		// Yes and No buttons
 		'input'			:	false, 		// Text input (can be true or string for default text)
 		'animate'		:	false,		// Groovy animation (can true or number, default is 400)
-		'textOk'		:	'சரி',		// Ok button default text
+		'textOk'		:	'ஒப்பு',		// Ok button default text
 		'textCancel'	:	'Cancel',	// Cancel button default text
 		'textYes'		:	'Yes',		// Yes button default text
 		'textNo'		:	'No'		// No button default text
@@ -68,26 +68,26 @@ function apprise(string, args, callback)
     	{
 		if(args['confirm'] || args['input'])
 			{ 
-			$('.aButtons').append('<button value="சரி">'+args['textOk']+'</button>');
+			$('.aButtons').append('<button value="ஒப்பு">'+args['textOk']+'</button>');
 			$('.aButtons').append('<button value="cancel">'+args['textCancel']+'</button>'); 
 			}
 		else if(args['verify'])
 			{
-			$('.aButtons').append('<button value="சரி">'+args['textYes']+'</button>');
+			$('.aButtons').append('<button value="ஒப்பு">'+args['textYes']+'</button>');
 			$('.aButtons').append('<button value="cancel">'+args['textNo']+'</button>');
 			}
 		else
-			{ $('.aButtons').append('<button value="சரி">'+args['textOk']+'</button>'); }
+			{ $('.aButtons').append('<button value="ஒப்பு">'+args['textOk']+'</button>'); }
 		}
     else
-    	{ $('.aButtons').append('<button value="சரி">சரி</button>'); }
+    	{ $('.aButtons').append('<button value="ஒப்பு">ஒப்பு</button>'); }
 	
 	$(document).keydown(function(e) 
 		{
 		if($('.appriseOverlay').is(':visible'))
 			{
 			if(e.keyCode == 13) 
-				{ $('.aButtons > button[value="சரி"]').click(); }
+				{ $('.aButtons > button[value="ஒப்பு"]').click(); }
 			if(e.keyCode == 27) 
 				{ $('.aButtons > button[value="cancel"]').click(); }
 			}
@@ -105,7 +105,7 @@ function apprise(string, args, callback)
     	if(callback)
     		{
 			var wButton = $(this).attr("value");
-			if(wButton=='சரி')
+			if(wButton=='ஒப்பு')
 				{ 
 				if(args)
 					{

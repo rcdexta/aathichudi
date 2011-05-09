@@ -7,7 +7,7 @@
     });
   });
 
-- if current_user.accepted_count.zero?
+- unless current_user.accepted_count and current_user.accepted_count > 0
   :javascript
     $(document).ready(function(){
         control_by_cookie('pre_wiki_edit', function(){
