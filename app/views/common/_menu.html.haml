@@ -12,9 +12,10 @@
       %li
         |
       %li#user_login
-        %img{:src => '/images/user.png'}
         - if user_signed_in?
+          %img{:src => '/images/logout.png'}
           %a{:href => "#{destroy_user_session_path}"}
             %span{:style => 'padding-left: 5px;'} வெளியேறவும்
         - else
+          %img{:src => '/images/user.png'}
           = link_to_rpx "உள்நுழைக", root_url
