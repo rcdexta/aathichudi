@@ -986,10 +986,10 @@ img.keyboard {
 #left_pane {
   float: left;
   height: 300px;
-  margin-left: -277px;
+  margin-left: -213px;
   margin-top: -94px;
-  padding: 46px 10px 10px;
-  width: 219px;
+  padding: 48px 0 0;
+  width: 213px;
 }
 
 /* line 651, ../../../app/stylesheets/screen.scss */
@@ -1021,14 +1021,14 @@ img.title_profile_photo {
   color: gold;
   font-size: 15px;
   line-height: 125%;
-  margin-left: 43px;
+  margin-left: 48px;
   margin-top: 13px;
-  width: 223px;
+  width: 209px;
   text-shadow: 0 1px 0 yellow, 0 1px 0 black;
 }
 
 /* line 682, ../../../app/stylesheets/screen.scss */
 .share_text {
   color: ivory;
-  font-size: 12.5px;
+  font-size: 12px;
 }
