@@ -10,6 +10,8 @@ class WikiVersion < ActiveRecord::Base
   scope :draft_version_for, lambda {|wiki, user| where("state = 'draft' and wiki_id = ? and user_id = ?", wiki.id, user.id)}
   scope :active_version_for, lambda {|wiki| where("state = 'active' and wiki_id = ?", wiki.id)}
 
+  after_create :notify_admin
+
   state_machine :state, :initial => :draft do
     event :archive do
       transition :active => :archived
@@ -54,4 +56,7 @@ class WikiVersion < ActiveRecord::Base
     self.update_attribute(:version, recent_version.version + 1)
   end
 
+  def notify_admin
+    AdminNotifier.notify_wiki_submission(self).deliver
+  end
 end
