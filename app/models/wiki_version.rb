@@ -57,6 +57,8 @@ class WikiVersion < ActiveRecord::Base
   end
 
   def notify_admin
-    AdminNotifier.notify_wiki_submission(self).deliver
+    Thread.new do
+      AdminNotifier.notify_wiki_submission(self).deliver
+    end
   end
 end
