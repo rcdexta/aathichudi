@@ -4,6 +4,6 @@ class AdminNotifier < ActionMailer::Base
   def notify_wiki_submission(wiki_version)
     @wiki_version = wiki_version
     mail(:to => AppConfig.admin,
-         :subject => "#{@wiki_version.paadal} - #{t(:admin_notification_subject)}")
+         :subject => t(:admin_notification_subject, :paadal => wiki_version.paadal))
   end
 end

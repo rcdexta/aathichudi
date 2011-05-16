@@ -7,6 +7,9 @@ class User < ActiveRecord::Base
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me
 
+  before_create :bootstrap_user
+  after_create :send_welcome_email
+
   def before_rpx_success(rpx_user)
     user = User.find_by_rpx_identifier(rpx_user['identifier'])
     if user.present?
@@ -15,6 +18,19 @@ class User < ActiveRecord::Base
     end
   end
 
-  before_create { self.accepted_count = 0; self.rejected_count = 0; }
+  def bootstrap_user
+    self.accepted_count = 0
+    self.rejected_count = 0
+  end
+
+  def send_welcome_email
+    Thread.new do
+      UserNotifier.welcome_mail(self).deliver
+    end
+  end
+
+  def display_name
+    self.user.name || self.email.try(:truncate, 20)
+  end
 
 end

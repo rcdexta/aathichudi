@@ -24,6 +24,9 @@ class AdminController < ApplicationController
         archive_and_activate(wiki_version)
         wiki_version.copy_attributes_to_wiki!
         wiki_version.user.increment!(:accepted_count)
+        Thread.new do
+          UserNotifier.wiki_approved_mail(wiki_version).deliver
+        end
         flash[:notice] = t(:approval_saved)
       end
     else
