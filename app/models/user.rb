@@ -30,7 +30,7 @@ class User < ActiveRecord::Base
   end
 
   def display_name
-    self.user.name || self.email.try(:truncate, 20)
+    self.name || self.email || ''
   end
 
 end
