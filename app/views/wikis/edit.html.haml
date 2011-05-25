@@ -21,6 +21,7 @@
 = javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js'
 = javascript_include_tag 'textile-editor'
 = javascript_include_tag 'textile-editor-config'
+= javascript_include_tag 'textile_preview'
 = stylesheet_link_tag 'textile-editor'
 
 :javascript
@@ -45,8 +46,17 @@
   = w.input :paadal_english, :label => "ஆங்கில எழுத்து பிரிதி"
   = w.input :tamil_short_desc, :label => "பாடலின் விளக்கம்"
   = w.input :english_short_desc, :label => "பாடலின் விளக்கம் (ஆங்கிலத்தில்)"
-  %label விளக்கம்
+  %div
+    .left
+      %label
+        விளக்கம்
+    .right
+      %span.textile_preview{:url => textile_preview_path} முன்காட்சி
+  .clear
+  %br
   = raw textile_editor 'wiki', 'tamil_long_desc', {:rows => 20, :cols => 56}
   = w.button :submit, :class => 'save_button', :value => 'மாற்றத்தை சேமி'
 
   = raw textile_editor_initialize
+
+#preview_container

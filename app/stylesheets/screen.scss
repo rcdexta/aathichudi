@@ -638,6 +638,10 @@ img.keyboard{
   float: left
 }
 
+.right{
+  float: right;
+}
+
 .blue{
   color: blue;
 }
@@ -690,3 +694,8 @@ img.title_profile_photo {
 #wiki_tamil_long_desc {
     border: none;
 }
+
+.textile_preview {
+  background: url('../../images/embed/preview.png') no-repeat;
+}
+

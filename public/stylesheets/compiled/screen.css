@@ -980,11 +980,16 @@ img.keyboard {
 }
 
 /* line 641, ../../../app/stylesheets/screen.scss */
+.right {
+  float: right;
+}
+
+/* line 645, ../../../app/stylesheets/screen.scss */
 .blue {
   color: blue;
 }
 
-/* line 645, ../../../app/stylesheets/screen.scss */
+/* line 649, ../../../app/stylesheets/screen.scss */
 #left_pane {
   float: left;
   height: 300px;
@@ -994,12 +999,12 @@ img.keyboard {
   width: 213px;
 }
 
-/* line 654, ../../../app/stylesheets/screen.scss */
+/* line 658, ../../../app/stylesheets/screen.scss */
 span.title_photo {
   margin-right: 10px;
 }
 
-/* line 658, ../../../app/stylesheets/screen.scss */
+/* line 662, ../../../app/stylesheets/screen.scss */
 img.title_profile_photo {
   background: none repeat scroll 0 0 cyan;
   border: 2px solid red;
@@ -1007,7 +1012,7 @@ img.title_profile_photo {
   width: 65px;
 }
 
-/* line 665, ../../../app/stylesheets/screen.scss */
+/* line 669, ../../../app/stylesheets/screen.scss */
 #user_details {
   height: 214px;
   margin-left: -48px;
@@ -1018,7 +1023,7 @@ img.title_profile_photo {
   color: ivory;
 }
 
-/* line 675, ../../../app/stylesheets/screen.scss */
+/* line 679, ../../../app/stylesheets/screen.scss */
 .welcome {
   color: gold;
   font-size: 15px;
@@ -1029,13 +1034,18 @@ img.title_profile_photo {
   text-shadow: 0 1px 0 yellow, 0 1px 0 black;
 }
 
-/* line 685, ../../../app/stylesheets/screen.scss */
+/* line 689, ../../../app/stylesheets/screen.scss */
 .share_text {
   color: ivory;
   font-size: 12px;
 }
 
-/* line 690, ../../../app/stylesheets/screen.scss */
+/* line 694, ../../../app/stylesheets/screen.scss */
 #wiki_tamil_long_desc {
   border: none;
+}
+
+/* line 698, ../../../app/stylesheets/screen.scss */
+.textile_preview {
+  background: url("../../images/embed/preview.png") no-repeat;
 }
