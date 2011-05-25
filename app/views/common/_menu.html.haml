@@ -1,6 +1,11 @@
 #logo-container
   .logo
     %ul
+      %li#home
+        %img{:src => '/images/home.png'}
+        முகப்பு
+      %li
+        |
       %li#mugavurai
         %img{:src => '/images/mugavurai.png'}
         வரலாறு
@@ -11,6 +16,12 @@
         இணையதளத்தை பற்றி
       %li
         |
+      - if admin_signed_in?
+        %li#admin{:url => admin_dashboard_path}
+          %img{:src => '/images/settings.png'}
+          தளப்பொறுப்பாளர்
+        %li
+          |
       %li#user_login
         - if user_signed_in?
           %img{:src => '/images/logout.png'}

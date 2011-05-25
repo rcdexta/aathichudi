@@ -26,4 +26,9 @@ $(document).ready(function(){
     $('.logo').click(function(){
         window.location = "/";
     });
+
+    $('#home').click(function(){
+        window.location = "/";
+    });
+
 });
