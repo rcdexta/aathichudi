@@ -2,8 +2,9 @@
   .logo
     %ul
       %li#home
-        %img{:src => '/images/home.png'}
-        முகப்பு
+        %a{:href => root_path}
+          %img{:src => '/images/home.png'}
+          முகப்பு
       %li
         |
       %li#mugavurai
@@ -17,9 +18,10 @@
       %li
         |
       - if admin_signed_in?
-        %li#admin{:url => admin_dashboard_path}
-          %img{:src => '/images/settings.png'}
-          தளப்பொறுப்பாளர்
+        %a{:href => admin_dashboard_path}
+          %li#admin
+            %img{:src => '/images/settings.png'}
+            தளப்பொறுப்பாளர்
         %li
           |
       %li#user_login
