@@ -1,19 +1,30 @@
+= javascript_include_tag 'jquery.autogrowtextarea'
+= render :partial => 'common/google_transliterate'
 :javascript
-  makeTransliteratable(['wiki_tamil_short_desc', 'wiki_tamil_long_desc']);
-  $(document).ready(function(){
-    $('#keyboard').click(function(){
+  jQuery.noConflict();
+  jQuery(document).ready(function(){
+    jQuery('#keyboard').click(function(){
       window.location.href = "?tamil_keyboard=true";
     });
+
+    jQuery('#wiki_tamil_long_desc').autoGrow();
   });
 
 - unless current_user.accepted_count and current_user.accepted_count > 0
   :javascript
-    $(document).ready(function(){
+    jQuery(document).ready(function(){
         control_by_cookie('pre_wiki_edit', function(){
          apprise('#{t(:pre_wiki_edit)}');
       });
     });
 
+= javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js'
+= javascript_include_tag 'textile-editor'
+= javascript_include_tag 'textile-editor-config'
+= stylesheet_link_tag 'textile-editor'
+
+:javascript
+  makeTransliteratable(['wiki_tamil_short_desc', 'wiki_tamil_long_desc']);
 
 - unless flash[:alert].blank?
   .alert= flash[:alert]
@@ -21,7 +32,6 @@
 - if @draft
   .alert இந்த பாடலுக்காக நீங்கள் சமர்பித்த  முந்திய திருத்தங்கள் ஒப்புதலுக்காக முன்வைக்க பட்டுள்ளன. தற்போது செய்யும்  மாற்றங்கள் அதனுடன் இணைக்கப்படும்...
 
-= render :partial => 'common/google_transliterate'
 
 = simple_form_for @wiki, do |w|
   = w.button :submit, :class => 'save_button', :value => 'மாற்றத்தை சேமி'
@@ -35,5 +45,8 @@
   = w.input :paadal_english, :label => "ஆங்கில எழுத்து பிரிதி"
   = w.input :tamil_short_desc, :label => "பாடலின் விளக்கம்"
   = w.input :english_short_desc, :label => "பாடலின் விளக்கம் (ஆங்கிலத்தில்)"
-  = w.input :tamil_long_desc, :as => :text, :label => "விளக்கம்", :input_html => {:class => "mceEditor"}
+  %label விளக்கம்
+  = raw textile_editor 'wiki', 'tamil_long_desc', {:rows => 20, :cols => 56}
   = w.button :submit, :class => 'save_button', :value => 'மாற்றத்தை சேமி'
+
+  = raw textile_editor_initialize

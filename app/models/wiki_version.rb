@@ -12,6 +12,8 @@ class WikiVersion < ActiveRecord::Base
 
   after_create :notify_admin
 
+  acts_as_textiled :tamil_long_desc
+
   state_machine :state, :initial => :draft do
     event :archive do
       transition :active => :archived

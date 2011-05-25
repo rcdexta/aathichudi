@@ -1,6 +1,7 @@
 class Wiki < ActiveRecord::Base
 
   after_create :create_first_version
+  acts_as_textiled :tamil_long_desc
 
   has_many :versions, :class_name => "WikiVersion"
 

@@ -26,7 +26,8 @@
 
 - unless @wiki.tamil_long_desc.blank?
   .wiki_container
-    %i= @wiki.tamil_long_desc
+    %p{:style => 'text-align: justify;'}
+      = raw @wiki.tamil_long_desc
 
 #history_container
 

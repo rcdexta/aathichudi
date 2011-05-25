@@ -1,6 +1,6 @@
-$(document).ready(function(){
-  $('#mugavurai').click(function(e){
-    $('#mugavurai_content').dialog({
+jQuery(document).ready(function(){
+  jQuery('#mugavurai').click(function(e){
+    jQuery('#mugavurai_content').dialog({
       minWidth: 700,
       maxHeight: 700,
       modal: true,
@@ -9,8 +9,8 @@ $(document).ready(function(){
     e.stopPropagation();
   });
 
-  $('#about_site').click(function(e){
-    $('#about_site_content').dialog({
+  jQuery('#about_site').click(function(e){
+    jQuery('#about_site_content').dialog({
       minWidth: 850,
       maxHeight: 700,
       modal: true,
@@ -19,13 +19,11 @@ $(document).ready(function(){
     e.stopPropagation();
   });
 
-  $('#user_login').click(function(e){
+  jQuery('#user_login').click(function(e){
     e.stopPropagation();
   });
 
-  $('.logo').click(function(){
+  jQuery('.logo').click(function(){
     window.location = "/";
   });
-
 });
-

@@ -1,0 +1,51 @@
+div.textile-toolbar span.ed_sep {
+	xposition: relative;
+	xtop: -4px;
+  padding: 0;
+  height: 6px;
+  width: 2px;
+  margin: 0 2px;
+}
+
+div.textile-toolbar button {
+	margin: 0;
+	background-color: Gainsboro;
+	background-repeat: no-repeat;
+	border: 1px solid Gainsboro;
+	padding: 2px 0;
+}
+
+div.textile-toolbar button.standard {
+	text-align: center;
+	width: 24px;
+}
+
+div.textile-toolbar button img {
+	vertical-align: text-bottom;
+}
+
+div.textile-toolbar button:hover, 
+div.textile-toolbar button.unselected:hover {
+	border: 1px solid #999;
+}
+
+div.textile-toolbar button.selected {
+	border: 1px solid #ce9100;
+	background-color: #ffffff;
+}
+
+div.textile-toolbar button.unselected {
+	border: 1px solid Gainsboro;
+	background-color: Gainsboro;
+}
+
+div.textile-toolbar button.publish {
+	padding:5px;
+	display:block;
+}
+
+div.textile-toolbar {
+	background-color: Gainsboro;
+    padding: 3px;
+    width: 511px;
+}
