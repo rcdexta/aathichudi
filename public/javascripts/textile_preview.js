@@ -4,11 +4,18 @@ jQuery(document).ready(function(){
     jQuery.ajax({
       url: jQuery(this).attr('url'),
       dataType: 'json',
+      type: 'POST',
       contentType: "application/json; charset=utf-8",
-      data: {text: textile_text},
+      data: JSON.stringify({text: textile_text}),
       complete: function(response){
         jQuery('#preview_container').html(response.responseText);
-        jQuery('#preview_container').dialog();
+        jQuery('#preview_container').dialog(
+          {
+            minWidth: 700,
+            maxHeight: 700,
+            modal: true,
+            show: 'fade'
+        });
       }
     });
   });

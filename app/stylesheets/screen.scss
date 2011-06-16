@@ -21,14 +21,14 @@ label {
 
 input[type="text"] {
   margin-bottom: 15px;
-  width: 520px;
+  width: 680px;
   background: ivory;
 }
 
 textarea {
   padding: 3px;
   background: ivory;
-  width: 513px;
+  width: 680px;
   height: 300px;
 }
 
@@ -180,9 +180,7 @@ div#main {
 }
 
 div#main_container {
-  background:url(../../images/content-bottom-big.jpg) 0 0 no-repeat;
   text-align: left;
-  padding:0 0 53px 0;
 }
 
 div#mainmiddle {
@@ -190,6 +188,11 @@ div#mainmiddle {
   background:url(../../images/content-bg-big.jpg) 0 0 repeat-y;
   padding:0px 160px 0 59px;
   width: 698px;
+}
+
+div#mainbottom{
+  background:url(../../images/content-bottom-big.jpg) 0 0 no-repeat;
+  padding:0 0 53px 0;
 }
 
 /* footer */
@@ -245,9 +248,10 @@ div.menu {
 
 .hline {
   border-bottom: 1px solid black;
-  margin-bottom: 2px;
+  margin-bottom: 5px;
+  margin-right: 18px;
   padding-top: 3px;
-  width: 525px;
+  width: auto;
 }
 
 hr {
@@ -481,12 +485,9 @@ img.home{
 
 
 .wiki_container{
-  border-bottom: 1px solid;
-  border-top: 1px solid;
   margin-bottom: 15px;
   margin-top: 18px;
-  padding: 0 10px;
-  width: 503px;
+  width: auto;
 }
 0
 
@@ -699,3 +700,7 @@ img.title_profile_photo {
   background: url('../../images/embed/preview.png') no-repeat;
 }
 
+.paadal_title{
+  font-size: 18px;
+  margin-bottom: 5px;
+}

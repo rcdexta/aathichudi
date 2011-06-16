@@ -9,7 +9,7 @@ Aathichudi::Application.routes.draw do
 
   get 'wiki_versions/:wiki_id/history' => 'wiki_versions#history', :as => 'wiki_version_history'
   get 'wiki_versions/:id/diff/' => 'wiki_versions#diff', :as => 'wiki_version_diff'
-  get 'textile_preview' => 'textile#preview', :as => 'textile_preview'
+  post 'textile_preview' => 'textile#preview', :as => 'textile_preview'
 
   root :to => "home#index"
 

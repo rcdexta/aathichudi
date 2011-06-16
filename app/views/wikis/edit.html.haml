@@ -41,7 +41,7 @@
       தட்டச்சு
   .clear
   = label(:wiki, :paadal)
-  = @wiki.paadal
+  .paadal_title= @wiki.paadal
   = w.input :paadal, :as => :hidden
   = w.input :paadal_english, :label => "ஆங்கில எழுத்து பிரிதி"
   = w.input :tamil_short_desc, :label => "பாடலின் விளக்கம்"
@@ -54,7 +54,7 @@
       %span.textile_preview{:url => textile_preview_path} முன்காட்சி
   .clear
   %br
-  = raw textile_editor 'wiki', 'tamil_long_desc', {:rows => 20, :cols => 56}
+  = raw textile_editor 'wiki', 'tamil_long_desc', {:rows => 20, :cols => 75}
   = w.button :submit, :class => 'save_button', :value => 'மாற்றத்தை சேமி'
 
   = raw textile_editor_initialize
