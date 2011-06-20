@@ -4,6 +4,8 @@
 - unless flash[:notice].blank?
   .notice= flash[:notice]
 
+#history_container
+
 %span.history_button
   %a.hand_cursor{:url => wiki_version_history_path(params[:id]), :id  => 'history_button'}
     %img.history{:src => '/images/view_versions.png'}
@@ -27,6 +29,5 @@
 - unless @wiki.tamil_long_desc.blank?
   .wiki_container
     %p{:style => 'text-align: justify;'}
-      = raw @wiki.tamil_long_desc
+      = raw @wiki.tamil_long_desc_html
 
-#history_container

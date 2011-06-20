@@ -113,14 +113,13 @@ p{
   font-weight:bold;
 }
 
-
 .heading {
-  text-shadow:#fff 0px 1px 0, #000 0 -1px 0;
-  line-height:150%;
+  display: block;
   font-size: 35px;
-  font-weight:bold;
-  color:#98989;
+  font-weight: bold;
+  line-height: 150%;
   margin-top: 10px;
+  text-shadow: 0 1px 0 white, 0 -1px 0 black;
 }
 
 .side-text{
@@ -297,7 +296,7 @@ hr {
 }
 
 .save_button {
-  @include fancy-button(#990033, 15px, 5px, 2px);
+  @include fancy-button(#ff11ff, 15px, 5px, 2px);
   margin: 10px 21px 0px 0px;
   font-size: 12px;
   float: right;
@@ -307,7 +306,7 @@ hr {
 }
 
 .reject_button {
-  @include fancy-button(#ff11ff, 15px, 5px, 2px);
+  @include fancy-button(#990033, 15px, 5px, 2px);
   margin: 10px 21px 0px 0px;
   font-size: 12px;
   float: right;
@@ -407,7 +406,7 @@ div.error {
 }
 
 .logo ul {
-  margin-left: 168px;
+  margin-left: 128px;
   margin-top: 87px;
   text-align: center;
   width: 714px;
@@ -485,9 +484,10 @@ img.home{
 .wiki_container{
   margin-bottom: 15px;
   margin-top: 18px;
+  margin-right: 15px;
   width: auto;
 }
-0
+
 
 .home_link{
   margin-top: 8px;
@@ -595,7 +595,7 @@ span.photo{
 }
 
 .user_details{
-  margin-left: -4px;
+  margin-left: -45px;
   margin-top: 5px;
   line-height: 125%;
 }
@@ -696,6 +696,9 @@ img.title_profile_photo {
 
 #wiki_tamil_long_desc {
     border: none;
+    white-space: wrap;
+    overflow-y:  scroll;
+    overflow-x:  hidden;
 }
 
 .paadal_title{
@@ -705,17 +708,13 @@ img.title_profile_photo {
 
 #preview_container{
   border: 2px dotted black;
-  clear: both;
-  height: 250px;
-  margin-left: 0;
-  margin-right: 10px;
+  max-height: 450px;
   overflow: auto;
-  padding: 5px;
+  padding: 0 5px 5px;
 }
 
-#preview_container p{ 
+#preview_container p{
   text-shadow: none !important;
-  margin: 0px !important;
 }
 
 blockquote {
@@ -723,4 +722,17 @@ blockquote {
   padding-left: 10px;
   padding-right: 10px;
 }
+
+/* diff styling */
+.diff{overflow:auto;}
+.diff ul{background:#fff;overflow:auto;font-size:13px;list-style:none;margin:0;padding:0;display:table;width:100%;}
+.diff del, .diff ins{display:block;text-decoration:none;}
+.diff li{padding:0; display:table-row;margin: 0;height:1em;}
+.diff li.ins{background:#dfd; color:#080}
+.diff li.del{background:#fee; color:#b00}
+.diff li:hover{background:#ffc}
+/* try 'whitespace:pre;' if you don't want lines to wrap */
+.diff del, .diff ins, .diff span{white-space:pre-wrap;font-family:courier;}
+.diff del strong{font-weight:normal;background:#fcc;}
+.diff ins strong{font-weight:normal;background:#9f9;}
 

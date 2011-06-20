@@ -67,6 +67,7 @@ GEM
       rpx_now (>= 0.6.23)
     diff-lcs (1.1.2)
     differ (0.1.2)
+    diffy (2.0.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
     factory_girl (1.3.3)
@@ -170,6 +171,7 @@ DEPENDENCIES
   devise
   devise_rpx_connectable
   differ
+  diffy
   factory_girl_rails
   fancy-buttons
   haml (>= 3.0.0)

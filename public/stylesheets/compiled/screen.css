@@ -152,17 +152,17 @@ p {
   font-weight: bold;
 }
 
-/* line 117, ../../../app/stylesheets/screen.scss */
+/* line 116, ../../../app/stylesheets/screen.scss */
 .heading {
-  text-shadow: white 0px 1px 0, black 0 -1px 0;
-  line-height: 150%;
+  display: block;
   font-size: 35px;
   font-weight: bold;
-  color: #98989;
+  line-height: 150%;
   margin-top: 10px;
+  text-shadow: 0 1px 0 white, 0 -1px 0 black;
 }
 
-/* line 126, ../../../app/stylesheets/screen.scss */
+/* line 125, ../../../app/stylesheets/screen.scss */
 .side-text {
   margin-left: 10px;
   margin-top: 170px;
@@ -170,13 +170,13 @@ p {
   font-size: 15px;
 }
 
-/* line 134, ../../../app/stylesheets/screen.scss */
+/* line 133, ../../../app/stylesheets/screen.scss */
 #page {
   text-align: center;
 }
 
 /* wrapper setup */
-/* line 138, ../../../app/stylesheets/screen.scss */
+/* line 137, ../../../app/stylesheets/screen.scss */
 div.rapidxwpr {
   margin-left: auto;
   margin-right: auto;
@@ -185,7 +185,7 @@ div.rapidxwpr {
 }
 
 /* header */
-/* line 146, ../../../app/stylesheets/screen.scss */
+/* line 145, ../../../app/stylesheets/screen.scss */
 div#header {
   position: relative;
   height: 150px;
@@ -194,7 +194,7 @@ div#header {
 }
 
 /* main body setup */
-/* line 154, ../../../app/stylesheets/screen.scss */
+/* line 153, ../../../app/stylesheets/screen.scss */
 div#middle {
   width: auto;
   margin: 0px 0px 0px 0px;
@@ -202,7 +202,7 @@ div#middle {
 }
 
 /* left column */
-/* line 161, ../../../app/stylesheets/screen.scss */
+/* line 160, ../../../app/stylesheets/screen.scss */
 div#left {
   width: 222px;
   position: relative;
@@ -212,7 +212,7 @@ div#left {
 }
 
 /* content column */
-/* line 170, ../../../app/stylesheets/screen.scss */
+/* line 169, ../../../app/stylesheets/screen.scss */
 div#main {
   width: auto;
   background: url(../../images/content-top-big.jpg) 0 50px no-repeat;
@@ -223,12 +223,12 @@ div#main {
   position: relative;
 }
 
-/* line 180, ../../../app/stylesheets/screen.scss */
+/* line 179, ../../../app/stylesheets/screen.scss */
 div#main_container {
   text-align: left;
 }
 
-/* line 184, ../../../app/stylesheets/screen.scss */
+/* line 183, ../../../app/stylesheets/screen.scss */
 div#mainmiddle {
   margin: 0px 0px 0px 0px;
   background: url(../../images/content-bg-big.jpg) 0 0 repeat-y;
@@ -236,14 +236,14 @@ div#mainmiddle {
   width: 698px;
 }
 
-/* line 191, ../../../app/stylesheets/screen.scss */
+/* line 190, ../../../app/stylesheets/screen.scss */
 div#mainbottom {
   background: url(../../images/content-bottom-big.jpg) 0 0 no-repeat;
   padding: 0 0 53px 0;
 }
 
 /* footer */
-/* line 197, ../../../app/stylesheets/screen.scss */
+/* line 196, ../../../app/stylesheets/screen.scss */
 div#footer {
   margin-top: -10px;
   padding-bottom: 10px;
@@ -253,18 +253,18 @@ div#footer {
   font-size: 12px;
 }
 
-/* line 206, ../../../app/stylesheets/screen.scss */
+/* line 205, ../../../app/stylesheets/screen.scss */
 div#footer a {
   color: #baac7e;
   text-decoration: none;
 }
 
-/* line 211, ../../../app/stylesheets/screen.scss */
+/* line 210, ../../../app/stylesheets/screen.scss */
 div#footer a:hover {
   text-decoration: underline;
 }
 
-/* line 215, ../../../app/stylesheets/screen.scss */
+/* line 214, ../../../app/stylesheets/screen.scss */
 .clearingfix:after {
   content: ".";
   display: block;
@@ -273,35 +273,35 @@ div#footer a:hover {
   visibility: hidden;
 }
 
-/* line 223, ../../../app/stylesheets/screen.scss */
+/* line 222, ../../../app/stylesheets/screen.scss */
 .clearingfix {
   display: block;
 }
 
-/* line 227, ../../../app/stylesheets/screen.scss */
+/* line 226, ../../../app/stylesheets/screen.scss */
 .floatbox {
   overflow: hidden;
 }
 
-/* line 231, ../../../app/stylesheets/screen.scss */
+/* line 230, ../../../app/stylesheets/screen.scss */
 div.menu {
   margin: 30px 0 0 0;
 }
 
 /* show page */
-/* line 237, ../../../app/stylesheets/screen.scss */
+/* line 236, ../../../app/stylesheets/screen.scss */
 .paadal {
   font-size: 150%;
   margin-top: -40px;
 }
 
-/* line 242, ../../../app/stylesheets/screen.scss */
+/* line 241, ../../../app/stylesheets/screen.scss */
 .paadal_english {
   font-family: 'Georgia, Tahoma, Arial';
   font-size: 165%;
 }
 
-/* line 247, ../../../app/stylesheets/screen.scss */
+/* line 246, ../../../app/stylesheets/screen.scss */
 .hline {
   border-bottom: 1px solid black;
   margin-bottom: 5px;
@@ -310,7 +310,7 @@ div.menu {
   width: auto;
 }
 
-/* line 255, ../../../app/stylesheets/screen.scss */
+/* line 254, ../../../app/stylesheets/screen.scss */
 hr {
   color: red;
   background-color: red;
@@ -318,7 +318,7 @@ hr {
   margin-right: 15px;
 }
 
-/* line 262, ../../../app/stylesheets/screen.scss */
+/* line 261, ../../../app/stylesheets/screen.scss */
 .show_heading {
   font-size: 150%;
   text-shadow: white 0px 1px 0, black 0 -1px 0;
@@ -326,7 +326,7 @@ hr {
   font-weight: bold;
 }
 
-/* line 269, ../../../app/stylesheets/screen.scss */
+/* line 268, ../../../app/stylesheets/screen.scss */
 .heading {
   text-shadow: white 0px 1px 0, black 0 -1px 0;
   line-height: 150%;
@@ -335,7 +335,7 @@ hr {
   color: #98989;
 }
 
-/* line 277, ../../../app/stylesheets/screen.scss */
+/* line 276, ../../../app/stylesheets/screen.scss */
 .desc_container {
   background-color: #c7bb90;
   padding: 5px 5px;
@@ -343,7 +343,7 @@ hr {
   margin-top: 10px;
 }
 
-/* line 284, ../../../app/stylesheets/screen.scss */
+/* line 283, ../../../app/stylesheets/screen.scss */
 .container {
   margin-top: 15px;
   background: url(../../images/paper_bg.png);
@@ -353,7 +353,7 @@ hr {
   color: black;
 }
 
-/* line 294, ../../../app/stylesheets/screen.scss */
+/* line 293, ../../../app/stylesheets/screen.scss */
 .fancy_button {
   background-color: #330f16;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #87636a), color-stop(10%, #523c41), color-stop(50%, #1d1617), color-stop(50%, #140f10), color-stop(100%, #322527));
@@ -408,78 +408,8 @@ hr {
   color: white;
 }
 
-/* line 299, ../../../app/stylesheets/screen.scss */
+/* line 298, ../../../app/stylesheets/screen.scss */
 .save_button {
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
-  font-size: 15px;
-  line-height: 1.2em;
-  padding: 0.3em 1em;
-  border-width: 2px;
-  background-color: #990033;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ff4281), color-stop(10%, #e6004c), color-stop(50%, #8a002e), color-stop(50%, #7a0029), color-stop(100%, #ad003a));
-  background-image: -moz-linear-gradient(top, #ff4281 0%, #e6004c 10%, #8a002e 50%, #7a0029 50%, #ad003a 100%);
-  background-image: linear-gradient(top, #ff4281 0%, #e6004c 10%, #8a002e 50%, #7a0029 50%, #ad003a 100%);
-  border-color: #4d0019;
-  text-shadow: #1a0008 0px 1px 1px;
-  -moz-box-shadow: rgba(255, 255, 255, 0.3) 0 0 0.1em 1px inset;
-  -webkit-box-shadow: rgba(255, 255, 255, 0.3) 0 0 0.1em 1px inset;
-  -o-box-shadow: rgba(255, 255, 255, 0.3) 0 0 0.1em 1px inset;
-  box-shadow: rgba(255, 255, 255, 0.3) 0 0 0.1em 1px inset;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding;
-  -o-background-clip: padding-box;
-  -ms-background-clip: padding-box;
-  -khtml-background-clip: padding-box;
-  background-clip: padding-box;
-  margin: 10px 21px 0px 0px;
-  font-size: 12px;
-  float: right;
-  padding: 1px 5px;
-  cursor: pointer;
-  color: black;
-}
-/* line 116, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.save_button, .save_button:visited {
-  color: white;
-}
-/* line 31, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.save_button:hover, .save_button:focus {
-  background-color: #8a002e;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ff3377), color-stop(10%, #d60047), color-stop(50%, #7a0029), color-stop(50%, #6b0024), color-stop(100%, #9e0035));
-  background-image: -moz-linear-gradient(top, #ff3377 0%, #d60047 10%, #7a0029 50%, #6b0024 50%, #9e0035 100%);
-  background-image: linear-gradient(top, #ff3377 0%, #d60047 10%, #7a0029 50%, #6b0024 50%, #9e0035 100%);
-  border-color: #3d0014;
-  text-shadow: #0a0003 0px 1px 1px;
-}
-/* line 116, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.save_button:hover, .save_button:hover:visited, .save_button:focus, .save_button:focus:visited {
-  color: white;
-}
-/* line 36, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.save_button:active {
-  background-color: #7a0029;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #7a0029), color-stop(30%, #85002c), color-stop(50%, #700025), color-stop(50%, #610020), color-stop(100%, #a30036));
-  background-image: -moz-linear-gradient(top, #7a0029 0%, #85002c 30%, #700025 50%, #610020 50%, #a30036 100%);
-  background-image: linear-gradient(top, #7a0029 0%, #85002c 30%, #700025 50%, #610020 50%, #a30036 100%);
-  border-color: #2e000f;
-  text-shadow: black 0px -1px -1px;
-  -moz-box-shadow: #4d0019 0 0.08em 0.1em 1px inset;
-  -webkit-box-shadow: #4d0019 0 0.08em 0.1em 1px inset;
-  -o-box-shadow: #4d0019 0 0.08em 0.1em 1px inset;
-  box-shadow: #4d0019 0 0.08em 0.1em 1px inset;
-}
-/* line 116, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.save_button:active, .save_button:active:visited {
-  color: white;
-}
-
-/* line 309, ../../../app/stylesheets/screen.scss */
-.reject_button {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   -o-border-radius: 5px;
@@ -511,13 +441,14 @@ hr {
   float: right;
   padding: 1px 5px;
   cursor: pointer;
+  color: black;
 }
 /* line 116, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.reject_button, .reject_button:visited {
+.save_button, .save_button:visited {
   color: white;
 }
 /* line 31, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.reject_button:hover, .reject_button:focus {
+.save_button:hover, .save_button:focus {
   background-color: #ff02ff;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffaaff), color-stop(10%, #ff4eff), color-stop(50%, #f100f1), color-stop(50%, #e200e2), color-stop(100%, #ff16ff));
   background-image: -moz-linear-gradient(top, #ffaaff 0%, #ff4eff 10%, #f100f1 50%, #e200e2 50%, #ff16ff 100%);
@@ -526,11 +457,11 @@ hr {
   text-shadow: #810081 0px 1px 1px;
 }
 /* line 116, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.reject_button:hover, .reject_button:hover:visited, .reject_button:focus, .reject_button:focus:visited {
+.save_button:hover, .save_button:hover:visited, .save_button:focus, .save_button:focus:visited {
   color: white;
 }
 /* line 36, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.reject_button:active {
+.save_button:active {
   background-color: #f100f1;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #f100f1), color-stop(30%, #fc00fc), color-stop(50%, #e700e7), color-stop(50%, #d800d8), color-stop(100%, #ff1bff));
   background-image: -moz-linear-gradient(top, #f100f1 0%, #fc00fc 30%, #e700e7 50%, #d800d8 50%, #ff1bff 100%);
@@ -543,68 +474,137 @@ hr {
   box-shadow: #c400c3 0 0.08em 0.1em 1px inset;
 }
 /* line 116, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+.save_button:active, .save_button:active:visited {
+  color: white;
+}
+
+/* line 308, ../../../app/stylesheets/screen.scss */
+.reject_button {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 15px;
+  line-height: 1.2em;
+  padding: 0.3em 1em;
+  border-width: 2px;
+  background-color: #990033;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ff4281), color-stop(10%, #e6004c), color-stop(50%, #8a002e), color-stop(50%, #7a0029), color-stop(100%, #ad003a));
+  background-image: -moz-linear-gradient(top, #ff4281 0%, #e6004c 10%, #8a002e 50%, #7a0029 50%, #ad003a 100%);
+  background-image: linear-gradient(top, #ff4281 0%, #e6004c 10%, #8a002e 50%, #7a0029 50%, #ad003a 100%);
+  border-color: #4d0019;
+  text-shadow: #1a0008 0px 1px 1px;
+  -moz-box-shadow: rgba(255, 255, 255, 0.3) 0 0 0.1em 1px inset;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.3) 0 0 0.1em 1px inset;
+  -o-box-shadow: rgba(255, 255, 255, 0.3) 0 0 0.1em 1px inset;
+  box-shadow: rgba(255, 255, 255, 0.3) 0 0 0.1em 1px inset;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  -o-background-clip: padding-box;
+  -ms-background-clip: padding-box;
+  -khtml-background-clip: padding-box;
+  background-clip: padding-box;
+  margin: 10px 21px 0px 0px;
+  font-size: 12px;
+  float: right;
+  padding: 1px 5px;
+  cursor: pointer;
+}
+/* line 116, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+.reject_button, .reject_button:visited {
+  color: white;
+}
+/* line 31, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+.reject_button:hover, .reject_button:focus {
+  background-color: #8a002e;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ff3377), color-stop(10%, #d60047), color-stop(50%, #7a0029), color-stop(50%, #6b0024), color-stop(100%, #9e0035));
+  background-image: -moz-linear-gradient(top, #ff3377 0%, #d60047 10%, #7a0029 50%, #6b0024 50%, #9e0035 100%);
+  background-image: linear-gradient(top, #ff3377 0%, #d60047 10%, #7a0029 50%, #6b0024 50%, #9e0035 100%);
+  border-color: #3d0014;
+  text-shadow: #0a0003 0px 1px 1px;
+}
+/* line 116, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+.reject_button:hover, .reject_button:hover:visited, .reject_button:focus, .reject_button:focus:visited {
+  color: white;
+}
+/* line 36, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+.reject_button:active {
+  background-color: #7a0029;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #7a0029), color-stop(30%, #85002c), color-stop(50%, #700025), color-stop(50%, #610020), color-stop(100%, #a30036));
+  background-image: -moz-linear-gradient(top, #7a0029 0%, #85002c 30%, #700025 50%, #610020 50%, #a30036 100%);
+  background-image: linear-gradient(top, #7a0029 0%, #85002c 30%, #700025 50%, #610020 50%, #a30036 100%);
+  border-color: #2e000f;
+  text-shadow: black 0px -1px -1px;
+  -moz-box-shadow: #4d0019 0 0.08em 0.1em 1px inset;
+  -webkit-box-shadow: #4d0019 0 0.08em 0.1em 1px inset;
+  -o-box-shadow: #4d0019 0 0.08em 0.1em 1px inset;
+  box-shadow: #4d0019 0 0.08em 0.1em 1px inset;
+}
+/* line 116, ../../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 .reject_button:active, .reject_button:active:visited {
   color: white;
 }
 
-/* line 319, ../../../app/stylesheets/screen.scss */
+/* line 318, ../../../app/stylesheets/screen.scss */
 .float_right {
   float: right;
 }
 
-/* line 323, ../../../app/stylesheets/screen.scss */
+/* line 322, ../../../app/stylesheets/screen.scss */
 .margin_right_10 {
   margin-right: 10px;
 }
 
-/* line 327, ../../../app/stylesheets/screen.scss */
+/* line 326, ../../../app/stylesheets/screen.scss */
 .margin_top_10 {
   margin-top: 10px;
 }
 
-/* line 331, ../../../app/stylesheets/screen.scss */
+/* line 330, ../../../app/stylesheets/screen.scss */
 .inline {
   display: inline;
 }
 
-/* line 335, ../../../app/stylesheets/screen.scss */
+/* line 334, ../../../app/stylesheets/screen.scss */
 .edit_button {
   float: right;
   margin-right: 21px;
   margin-top: -8px;
 }
 
-/* line 341, ../../../app/stylesheets/screen.scss */
+/* line 340, ../../../app/stylesheets/screen.scss */
 .history_button {
   float: right;
   margin-right: 21px;
   margin-top: -2px;
 }
 
-/* line 347, ../../../app/stylesheets/screen.scss */
+/* line 346, ../../../app/stylesheets/screen.scss */
 img.history {
   margin-top: 4px;
   width: 61px;
 }
 
-/* line 352, ../../../app/stylesheets/screen.scss */
+/* line 351, ../../../app/stylesheets/screen.scss */
 .back_button {
   background: url(../../images/back.png) 1px no-repeat;
   float: left;
   padding-left: 30px;
 }
 
-/* line 358, ../../../app/stylesheets/screen.scss */
+/* line 357, ../../../app/stylesheets/screen.scss */
 .fancy_button a {
   color: white;
 }
 
-/* line 362, ../../../app/stylesheets/screen.scss */
+/* line 361, ../../../app/stylesheets/screen.scss */
 .fancy_button a:hover {
   font-weight: normal;
 }
 
-/* line 366, ../../../app/stylesheets/screen.scss */
+/* line 365, ../../../app/stylesheets/screen.scss */
 div.notice {
   background: url("../../images/success.png") no-repeat scroll 4px 9px #e9967a;
   margin-right: 20px;
@@ -612,7 +612,7 @@ div.notice {
   width: auto;
 }
 
-/* line 373, ../../../app/stylesheets/screen.scss */
+/* line 372, ../../../app/stylesheets/screen.scss */
 div.alert {
   background: url(../../images/alert.png) no-repeat scroll 4px 9px #e9967a;
   padding: 5px 5px 5px 32px;
@@ -620,7 +620,7 @@ div.alert {
   margin-right: 20px;
 }
 
-/* line 380, ../../../app/stylesheets/screen.scss */
+/* line 379, ../../../app/stylesheets/screen.scss */
 div.error {
   background: url("../../images/error.png") no-repeat scroll 4px 6px #e9967a;
   margin-right: 20px;
@@ -628,7 +628,7 @@ div.error {
   width: auto;
 }
 
-/* line 388, ../../../app/stylesheets/screen.scss */
+/* line 387, ../../../app/stylesheets/screen.scss */
 .tooltip {
   display: none;
   background: transparent url(/tools/img/tooltip/black_arrow.png);
@@ -639,7 +639,7 @@ div.error {
   color: #fff;
 }
 
-/* line 398, ../../../app/stylesheets/screen.scss */
+/* line 397, ../../../app/stylesheets/screen.scss */
 #sign_in {
   float: right;
   font-weight: bold;
@@ -647,20 +647,20 @@ div.error {
   margin-top: -10px;
 }
 
-/* line 405, ../../../app/stylesheets/screen.scss */
+/* line 404, ../../../app/stylesheets/screen.scss */
 #sign_in a {
   z-index: 1000;
 }
 
-/* line 409, ../../../app/stylesheets/screen.scss */
+/* line 408, ../../../app/stylesheets/screen.scss */
 .logo ul {
-  margin-left: 168px;
+  margin-left: 128px;
   margin-top: 87px;
   text-align: center;
   width: 714px;
 }
 
-/* line 417, ../../../app/stylesheets/screen.scss */
+/* line 416, ../../../app/stylesheets/screen.scss */
 .logo ul li {
   font-weight: bold;
   display: inline;
@@ -668,87 +668,86 @@ div.error {
   cursor: pointer;
 }
 
-/* line 424, ../../../app/stylesheets/screen.scss */
+/* line 423, ../../../app/stylesheets/screen.scss */
 .hand_cursor {
   cursor: pointer;
 }
 
-/* line 428, ../../../app/stylesheets/screen.scss */
+/* line 427, ../../../app/stylesheets/screen.scss */
 .logo ul li img {
   width: 24px;
   height: 24px;
   vertical-align: middle;
 }
 
-/* line 434, ../../../app/stylesheets/screen.scss */
+/* line 433, ../../../app/stylesheets/screen.scss */
 .hidden {
   display: none;
 }
 
-/* line 438, ../../../app/stylesheets/screen.scss */
+/* line 437, ../../../app/stylesheets/screen.scss */
 #mugavurai_content {
   font-size: 14px;
   text-align: justify;
   background: url(../../images/avvaiyar.jpg);
 }
 
-/* line 444, ../../../app/stylesheets/screen.scss */
+/* line 443, ../../../app/stylesheets/screen.scss */
 #mugavurai_content p {
   padding: 10px 5px;
 }
 
-/* line 448, ../../../app/stylesheets/screen.scss */
+/* line 447, ../../../app/stylesheets/screen.scss */
 #mugavurai_content p span.lead {
   display: inline;
   font-size: 45px;
 }
 
-/* line 453, ../../../app/stylesheets/screen.scss */
+/* line 452, ../../../app/stylesheets/screen.scss */
 #about_site_content p span.lead {
   display: inline;
   font-size: 25px;
 }
 
-/* line 458, ../../../app/stylesheets/screen.scss */
+/* line 457, ../../../app/stylesheets/screen.scss */
 #about_site_content {
   font-size: 14px;
   text-align: justify;
 }
 
-/* line 463, ../../../app/stylesheets/screen.scss */
+/* line 462, ../../../app/stylesheets/screen.scss */
 #about_site_content p {
   padding: 10px 5px;
 }
 
-/* line 468, ../../../app/stylesheets/screen.scss */
+/* line 467, ../../../app/stylesheets/screen.scss */
 .login_container {
   text-align: center;
   padding-right: 20px;
 }
 
-/* line 473, ../../../app/stylesheets/screen.scss */
+/* line 472, ../../../app/stylesheets/screen.scss */
 img.edit {
   width: 52px;
   margin-top: 9px;
 }
 
-/* line 478, ../../../app/stylesheets/screen.scss */
+/* line 477, ../../../app/stylesheets/screen.scss */
 img.home {
   width: 32px;
   margin-right: -8px;
   vertical-align: middle;
 }
 
-/* line 485, ../../../app/stylesheets/screen.scss */
+/* line 484, ../../../app/stylesheets/screen.scss */
 .wiki_container {
   margin-bottom: 15px;
   margin-top: 18px;
+  margin-right: 15px;
   width: auto;
 }
 
 /* line 492, ../../../app/stylesheets/screen.scss */
-0
-
 .home_link {
   margin-top: 8px;
 }
@@ -872,7 +871,7 @@ span.photo {
 
 /* line 597, ../../../app/stylesheets/screen.scss */
 .user_details {
-  margin-left: -4px;
+  margin-left: -45px;
   margin-top: 5px;
   line-height: 125%;
 }
@@ -989,34 +988,101 @@ img.title_profile_photo {
 /* line 697, ../../../app/stylesheets/screen.scss */
 #wiki_tamil_long_desc {
   border: none;
+  white-space: wrap;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
-/* line 701, ../../../app/stylesheets/screen.scss */
+/* line 704, ../../../app/stylesheets/screen.scss */
 .paadal_title {
   font-size: 19px;
   margin-bottom: 5px;
 }
 
-/* line 706, ../../../app/stylesheets/screen.scss */
+/* line 709, ../../../app/stylesheets/screen.scss */
 #preview_container {
   border: 2px dotted black;
-  clear: both;
-  height: 250px;
-  margin-left: 0;
-  margin-right: 10px;
+  max-height: 450px;
   overflow: auto;
-  padding: 5px;
+  padding: 0 5px 5px;
 }
 
 /* line 716, ../../../app/stylesheets/screen.scss */
 #preview_container p {
   text-shadow: none !important;
-  margin: 0px !important;
 }
 
-/* line 721, ../../../app/stylesheets/screen.scss */
+/* line 720, ../../../app/stylesheets/screen.scss */
 blockquote {
   background-color: #EEEEEE;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+/* diff styling */
+/* line 727, ../../../app/stylesheets/screen.scss */
+.diff {
+  overflow: auto;
+}
+
+/* line 728, ../../../app/stylesheets/screen.scss */
+.diff ul {
+  background: #fff;
+  overflow: auto;
+  font-size: 13px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: table;
+  width: 100%;
+}
+
+/* line 729, ../../../app/stylesheets/screen.scss */
+.diff del, .diff ins {
+  display: block;
+  text-decoration: none;
+}
+
+/* line 730, ../../../app/stylesheets/screen.scss */
+.diff li {
+  padding: 0;
+  display: table-row;
+  margin: 0;
+  height: 1em;
+}
+
+/* line 731, ../../../app/stylesheets/screen.scss */
+.diff li.ins {
+  background: #dfd;
+  color: #080;
+}
+
+/* line 732, ../../../app/stylesheets/screen.scss */
+.diff li.del {
+  background: #fee;
+  color: #b00;
+}
+
+/* line 733, ../../../app/stylesheets/screen.scss */
+.diff li:hover {
+  background: #ffc;
+}
+
+/* try 'whitespace:pre;' if you don't want lines to wrap */
+/* line 735, ../../../app/stylesheets/screen.scss */
+.diff del, .diff ins, .diff span {
+  white-space: pre-wrap;
+  font-family: courier;
+}
+
+/* line 736, ../../../app/stylesheets/screen.scss */
+.diff del strong {
+  font-weight: normal;
+  background: #fcc;
+}
+
+/* line 737, ../../../app/stylesheets/screen.scss */
+.diff ins strong {
+  font-weight: normal;
+  background: #9f9;
 }

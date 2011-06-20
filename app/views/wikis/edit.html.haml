@@ -1,4 +1,3 @@
-= javascript_include_tag 'jquery.autogrowtextarea'
 = render :partial => 'common/google_transliterate'
 :javascript
   jQuery.noConflict();
@@ -6,8 +5,6 @@
     jQuery('#keyboard').click(function(){
       window.location.href = "?tamil_keyboard=true";
     });
-
-    //jQuery('#wiki_tamil_long_desc').autoGrow();
   });
 
 - unless current_user.accepted_count and current_user.accepted_count > 0
@@ -37,6 +34,7 @@
 
 = simple_form_for @wiki, do |w|
   = w.button :submit, :class => 'save_button', :value => 'மாற்றத்தை சேமி'
+  = submit_tag t(:reject_button), :class => 'reject_button', :name => 'commit', 'data-confirm' => "மறுத்தலை உறுதி செய்க ..."
   .keyboard_selector
     #keyboard{:title => 'தமிழ் தட்டச்சுப்பொறி', :class => "#{params[:tamil_keyboard] ? 'blue' : ''}"}
       தட்டச்சு
@@ -52,12 +50,14 @@
       %label
         விளக்கம்
   .clear
-  = raw textile_editor 'wiki', 'tamil_long_desc', {:rows => 20, :cols => 75, :wrap => 'off'}
+  = raw textile_editor 'wiki', 'tamil_long_desc', {:rows => 20, :cols => 75, :wrap => 'soft'}
   = raw textile_editor_initialize
   %br
   %label
     %span.textile_preview{:url => textile_preview_path} முன்காட்சி
-  #preview_container
-    = raw @wiki.tamil_long_desc_html
+  #preview_container.wiki_container
+    %p{:style => 'text-align: justify;'}
+      = raw @wiki.tamil_long_desc_html
 
   = w.button :submit, :class => 'save_button', :value => 'மாற்றத்தை சேமி'
+  = submit_tag t(:reject_button), :class => 'reject_button', :name => 'commit', 'data-confirm' => "மறுத்தலை உறுதி செய்க ..."

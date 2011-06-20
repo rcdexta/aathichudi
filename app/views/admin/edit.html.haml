@@ -2,7 +2,20 @@
 = render :partial => 'common/google_transliterate'
 
 :javascript
+  jQuery.noConflict();
+  jQuery(document).ready(function(){
+    jQuery('#keyboard').click(function(){
+      window.location.href = "?tamil_keyboard=true";
+    });
+  });
   makeTransliteratable(['wiki_version_tamil_short_desc', 'wiki_version_tamil_long_desc']);
+
+= javascript_include_tag 'jquery.observe_field.js'
+= javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js'
+= javascript_include_tag 'textile-editor'
+= javascript_include_tag 'textile-editor-config'
+= javascript_include_tag 'textile_preview'
+= stylesheet_link_tag 'textile-editor'
 
 - unless flash.now[:error].blank?
   .error= flash.now[:error]
