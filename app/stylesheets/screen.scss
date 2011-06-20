@@ -3,13 +3,11 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/reset";
 @import "fancy-buttons";
 
 /* reset */
 body,div,dl,dt,dd,ul,ol,li,pre,form,fieldset,input,textarea,blockquote,th,td {
   margin:0;
-  padding:0;
   font-size: 16px;
   vertical-align: top;
 }
@@ -602,6 +600,10 @@ span.photo{
   line-height: 125%;
 }
 
+.user_details ul, .user_details li{
+  list-style: none;
+}
+
 .sub_heading{
   font-size: 20px;
   font-weight: bold;
@@ -696,11 +698,29 @@ img.title_profile_photo {
     border: none;
 }
 
-.textile_preview {
-  background: url('../../images/embed/preview.png') no-repeat;
-}
-
 .paadal_title{
-  font-size: 18px;
+  font-size: 19px;
   margin-bottom: 5px;
 }
+
+#preview_container{
+  border: 2px dotted black;
+  clear: both;
+  height: 250px;
+  margin-left: 0;
+  margin-right: 10px;
+  overflow: auto;
+  padding: 5px;
+}
+
+#preview_container p{ 
+  text-shadow: none !important;
+  margin: 0px !important;
+}
+
+blockquote {
+  background-color: #EEEEEE;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+

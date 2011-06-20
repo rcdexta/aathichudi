@@ -9,9 +9,9 @@ div.textile-toolbar span.ed_sep {
 
 div.textile-toolbar button {
 	margin: 0;
-	background-color: Gainsboro;
+	background-color: transparent;
 	background-repeat: no-repeat;
-	border: 1px solid Gainsboro;
+	border: 1px solid transparent;
 	padding: 2px 0;
 }
 
@@ -35,8 +35,8 @@ div.textile-toolbar button.selected {
 }
 
 div.textile-toolbar button.unselected {
-	border: 1px solid Gainsboro;
-	background-color: Gainsboro;
+	border: 1px solid transparent;
+	background-color: transparent;
 }
 
 div.textile-toolbar button.publish {
@@ -45,7 +45,7 @@ div.textile-toolbar button.publish {
 }
 
 div.textile-toolbar {
-	background-color: Gainsboro;
+	background-color: transparent;
     padding: 3px;
     width: 682px;
 }

@@ -1,7 +1,8 @@
 class TextileController < ApplicationController
 
   def preview
-   @html= RedCloth.new(params[:text]).to_html
+   text = params[:text]
+   @html= RedCloth.new(text).to_html
    render :json => @html
   end
 

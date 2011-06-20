@@ -7,7 +7,7 @@
       window.location.href = "?tamil_keyboard=true";
     });
 
-    jQuery('#wiki_tamil_long_desc').autoGrow();
+    //jQuery('#wiki_tamil_long_desc').autoGrow();
   });
 
 - unless current_user.accepted_count and current_user.accepted_count > 0
@@ -18,6 +18,7 @@
       });
     });
 
+= javascript_include_tag 'jquery.observe_field.js'
 = javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js'
 = javascript_include_tag 'textile-editor'
 = javascript_include_tag 'textile-editor-config'
@@ -50,13 +51,13 @@
     .left
       %label
         விளக்கம்
-    .right
-      %span.textile_preview{:url => textile_preview_path} முன்காட்சி
   .clear
-  %br
-  = raw textile_editor 'wiki', 'tamil_long_desc', {:rows => 20, :cols => 75}
-  = w.button :submit, :class => 'save_button', :value => 'மாற்றத்தை சேமி'
-
+  = raw textile_editor 'wiki', 'tamil_long_desc', {:rows => 20, :cols => 75, :wrap => 'off'}
   = raw textile_editor_initialize
+  %br
+  %label
+    %span.textile_preview{:url => textile_preview_path} முன்காட்சி
+  #preview_container
+    = raw @wiki.tamil_long_desc_html
 
-#preview_container
+  = w.button :submit, :class => 'save_button', :value => 'மாற்றத்தை சேமி'

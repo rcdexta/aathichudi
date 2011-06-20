@@ -12,8 +12,6 @@ class WikiVersion < ActiveRecord::Base
 
   after_create :notify_admin
 
-  acts_as_textiled :tamil_long_desc
-
   state_machine :state, :initial => :draft do
     event :archive do
       transition :active => :archived
@@ -62,5 +60,9 @@ class WikiVersion < ActiveRecord::Base
     Thread.new do
       AdminNotifier.notify_wiki_submission(self).deliver
     end
+  end
+
+  def tamil_long_desc_html
+   RedCloth.new(tamil_long_desc).to_html
   end
 end

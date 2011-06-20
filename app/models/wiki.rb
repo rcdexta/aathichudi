@@ -1,7 +1,6 @@
 class Wiki < ActiveRecord::Base
 
   after_create :create_first_version
-  acts_as_textiled :tamil_long_desc
 
   has_many :versions, :class_name => "WikiVersion"
 
@@ -23,4 +22,7 @@ class Wiki < ActiveRecord::Base
     [:paadal, :paadal_english, :english_short_desc, :tamil_short_desc, :tamil_long_desc]
   end
 
+  def tamil_long_desc_html
+    RedCloth.new(tamil_long_desc).to_html
+  end
 end
