@@ -1,9 +1,10 @@
 jQuery(document).ready(function(){
   jQuery('#mugavurai').click(function(e){
     jQuery('#mugavurai_content').dialog({
-      minWidth: 700,
-      maxHeight: 700,
+      minWidth: 750,
+      height: 800,
       modal: true,
+      resizable: false,
       show: 'fade'
     });
     e.stopPropagation();
@@ -12,7 +13,7 @@ jQuery(document).ready(function(){
   jQuery('#about_site').click(function(e){
     jQuery('#about_site_content').dialog({
       minWidth: 850,
-      maxHeight: 700,
+      height: 720,
       modal: true,
       show: 'fade'
     });

@@ -49,7 +49,13 @@ body {
 
 /* links */
 a {
-  color:#222;
+  color: black;
+  text-decoration:none;
+  text-shadow: 0px 2px 3px #555;
+}
+
+.logo {
+  color: black;
   text-decoration:none;
   text-shadow: 0px 2px 3px #555;
 }
@@ -274,8 +280,8 @@ hr {
 }
 
 .desc_container {
-  background-color: #c7bb90;
-  padding: 5px 5px;
+  background: url('../../images/desc_strip.jpg') no-repeat;
+  padding-left: 15px;
   margin-right: 15px;
   margin-top: 10px;
 }
@@ -435,9 +441,10 @@ div.error {
 }
 
 #mugavurai_content {
-  font-size: 14px;
+  font-size: 13px;
+  font-weight: bold;
   text-align: justify;
-  background: url(../../images/avvaiyar.jpg)
+  background: url(../../images/mugavurai.jpg) repeat-y;
 }
 
 #mugavurai_content p {
@@ -457,10 +464,15 @@ div.error {
 #about_site_content {
   font-size: 14px;
   text-align: justify;
+  background: url(../../images/about-site.jpg) repeat-y;
+  padding: 40px 12px 10px 12px;
 }
 
 #about_site_content p {
-  padding: 10px 5px;
+}
+
+#about_site_content img {
+  display: block;
 }
 
 
