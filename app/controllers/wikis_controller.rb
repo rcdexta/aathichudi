@@ -17,7 +17,9 @@ class WikisController < ApplicationController
     wiki.attributes_for_versioning.keys.each do |attribute|
       wiki.send("#{attribute}=", params[:wiki][attribute])
     end
-    if wiki.changed?
+    if params[:commit] == t(:reject_button)
+      redirect_to wiki_path(params[:id])
+    elsif wiki.changed?
       WikiVersion.create_or_update_next_version_for(wiki, current_user)
       flash[:notice] = t(:saved_for_approval)
       redirect_to :action => :show

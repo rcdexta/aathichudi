@@ -3,7 +3,12 @@
   jQuery.noConflict();
   jQuery(document).ready(function(){
     jQuery('#keyboard').click(function(){
-      window.location.href = "?tamil_keyboard=true";
+      if (jQuery(this).hasClass('blue')){
+        window.location.href = window.location.href.replace(/\?.*$/,'');
+      }
+      else {
+        window.location.href = "?tamil_keyboard=true";
+      }
     });
   });
 
