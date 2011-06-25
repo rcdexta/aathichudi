@@ -6,6 +6,7 @@
 
 #history_container
 
+
 %span.history_button
   %a.hand_cursor{:url => wiki_version_history_path(params[:id]), :id  => 'history_button'}
     %img.history{:src => '/images/view_versions.png'}
@@ -13,6 +14,10 @@
 %span.edit_button
   %a{:href=> edit_wiki_path(params[:id])}
     %img.edit{:src => '/images/edit.png'}
+
+%span.edit_button
+  %a{:href=> root_path}
+    %img.edit{:src => '/images/first.png'}
 
 .clear
 .paadal

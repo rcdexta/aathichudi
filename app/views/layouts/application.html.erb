@@ -48,9 +48,6 @@
                     <b> <%= current_user.name.truncate(30) %> </b>
                   </li>
                   <li>
-                    <%= "#{current_user.email.truncate(30)}" if current_user.email.present? %>
-                  </li>
-                  <li>
                       <%- if current_user.accepted_count && current_user.accepted_count > 0  %>
                            பங்களிப்பு எண்:
                            <%= current_user.accepted_count %>

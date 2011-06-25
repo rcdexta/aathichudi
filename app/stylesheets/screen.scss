@@ -68,8 +68,11 @@ a:hover {
 
 a:hover h2 {
   font-weight: bold;
-  /*color:#008cff;*/
-  /*text-decoration:underline;*/
+}
+
+
+a:hover .h2 {
+  font-weight: bold;
 }
 /* page setup */
 
@@ -77,8 +80,9 @@ h2, h3 {
   display: inline;
 }
 
-h2 {
+h2, .h2 {
   font-size: 175%;
+  font-weight: bold;
 }
 
 
@@ -631,7 +635,7 @@ span.photo{
 #versions_diff_container{
   text-align: left;
   padding: 15px;
-  background-color: #D2C9A8;
+  background: url('../../images/diff-back.jpg') no-repeat;
 }
 
 img.keyboard{

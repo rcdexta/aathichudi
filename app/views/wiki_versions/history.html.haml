@@ -1,7 +1,8 @@
-
 .history_info#history_info
-  .history_sub_heading காலவரிசைப்படி இந்த பாடலுக்கான திருத்தங்கள் இதுவரை...
-  .history_data
+  .history_sub_heading.left காலவரிசைப்படி இந்த பாடலுக்கான திருத்தங்கள் இதுவரை...
+  .right.close_button.hand_cursor
+    %img{:src => '/images/close.png'}
+  .history_data.clear
     - @wiki_versions.each do |wiki_version|
       %p
         %span.history_time ##{wiki_version.version}

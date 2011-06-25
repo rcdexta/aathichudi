@@ -7,10 +7,11 @@ $(document).ready(function(){
             $('#versions_diff_container').dialog({
                 position: 'top',
                 minWidth: 700,
-                maxHeight: 500,
+                height: 700,
                 show: 'fade'
             });
         });
 
     });
+
 });

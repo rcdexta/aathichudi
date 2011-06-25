@@ -11,6 +11,9 @@ $(document).ready(function(){
                 hideLoadIndicator();
             }
         });
-
     })
+
+    $('#history_container').delegate('div.close_button', 'click', function(){
+      $('#history_container').html('');
+    });
 });
