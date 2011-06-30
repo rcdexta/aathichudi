@@ -445,14 +445,16 @@ div.error {
 }
 
 #mugavurai_content {
-  font-size: 13px;
-  font-weight: bold;
+  font-size: 14px;
+  font-weight: normal;
   text-align: justify;
   background: url(../../images/mugavurai.jpg) repeat-y;
+  padding: 10px !important;
 }
 
 #mugavurai_content p {
-  padding: 10px 5px;
+  padding: 10px 10px;
+  text-shadow: none !important;
 }
 
 #mugavurai_content p span.lead{
