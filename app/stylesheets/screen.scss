@@ -8,7 +8,7 @@
 /* reset */
 body,div,dl,dt,dd,ul,ol,li,pre,form,fieldset,input,textarea,blockquote,th,td {
   margin:0;
-  font-size: 16px;
+  font-size: 14px;
   vertical-align: top;
 }
 
@@ -105,9 +105,10 @@ p{
 }
 
 #logo-container {
-  background:url(../../images/content-heading_with_title.jpg) 125px 5px no-repeat;
+  background:url(../../images/content-heading_with_title.jpg) 5px 5px no-repeat;
   height: 191px;
   text-align: center;
+  margin-left: 50px;
 }
 
 .logo {
@@ -147,7 +148,7 @@ p{
 div.rapidxwpr {
   margin-left: auto;
   margin-right: auto;
-  width:960px;
+  width:760px;
   background:url(../../images/wrapper-bg.png) 0 0 no-repeat;
 }
 
@@ -179,8 +180,8 @@ div#left {
 div#main {
   width:auto;
   background:url(../../images/content-top-big.jpg) 0 50px no-repeat;
-  margin:0px -10px 0px 125px;
-  padding:99px 0 0 0;
+  margin:0px -10px 0px 55px;
+  padding: 99px 0 0 0;
   z-index:100;
   top: -36px;
   position:relative;
@@ -416,11 +417,10 @@ div.error {
 }
 
 .logo ul {
-  margin-left: 128px;
-  margin-top: 87px;
-  text-align: center;
-  width: 714px;
-
+ margin-left: -15px;
+    margin-top: 87px;
+    text-align: center;
+    width: 622px;  
 }
 
 .logo ul li{
@@ -708,6 +708,7 @@ img.title_profile_photo {
 .share_text{
     color: ivory;
     font-size: 12px;
+    margin-left: 28px;
 }
 
 #wiki_tamil_long_desc {
@@ -737,6 +738,10 @@ blockquote {
   background-color: #EEEEEE;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+#left_pane img{
+  margin-right: -10px;
 }
 
 /* diff styling */
