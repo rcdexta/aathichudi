@@ -1,40 +1,4 @@
 /* line 1, ../../../app/stylesheets/admin.scss */
-div.rapidxwpr {
-  background: url("../../images/wrapper-bg.png") no-repeat scroll 0 0 transparent;
-  margin-left: auto;
-  margin-right: auto;
-  width: 950px;
-}
-
-/* line 8, ../../../app/stylesheets/admin.scss */
-div#main {
-  width: auto;
-  background: url(../../images/content-top-big.jpg) 0 50px no-repeat;
-  margin: 0px -10px 0px 125px;
-  padding: 99px 0 0 0;
-  z-index: 100;
-  top: -35px;
-  position: relative;
-  width: 800px;
-}
-
-/* line 19, ../../../app/stylesheets/admin.scss */
-div#main_container {
-  background: url(../../images/content-bottom-big.jpg) 0 100% no-repeat;
-  padding: 0 0 53px 0;
-  text-align: left;
-  width: 800px;
-}
-
-/* line 26, ../../../app/stylesheets/admin.scss */
-div#mainmiddle {
-  margin: 0px 0px 0px 0px;
-  background: url(../../images/content-bg-big.jpg) 0 0 repeat-y;
-  padding: 0px 160px 0 55px;
-  width: 710px;
-}
-
-/* line 33, ../../../app/stylesheets/admin.scss */
 .dashboard_title {
   font-size: 20px;
   font-weight: bold;
@@ -43,7 +7,7 @@ div#mainmiddle {
   margin-bottom: 10px;
 }
 
-/* line 41, ../../../app/stylesheets/admin.scss */
+/* line 9, ../../../app/stylesheets/admin.scss */
 .dashboard_title .sub_title {
   background: none repeat scroll 0 0 DarkSalmon;
   padding: 5px 8px;
@@ -51,60 +15,60 @@ div#mainmiddle {
   border-radius: 10px;
 }
 
-/* line 48, ../../../app/stylesheets/admin.scss */
+/* line 16, ../../../app/stylesheets/admin.scss */
 #drafts {
   width: 685px;
 }
 
-/* line 52, ../../../app/stylesheets/admin.scss */
+/* line 20, ../../../app/stylesheets/admin.scss */
 table#drafts thead tr td {
   font-size: 12px;
   font-weight: bold;
   text-align: center;
 }
 
-/* line 58, ../../../app/stylesheets/admin.scss */
+/* line 26, ../../../app/stylesheets/admin.scss */
 table#drafts tbody tr td {
   font-size: 12px;
   text-align: center;
   overflow: hidden;
 }
 
-/* line 64, ../../../app/stylesheets/admin.scss */
+/* line 32, ../../../app/stylesheets/admin.scss */
 table#drafts tbody tr td.time {
   width: 90px;
 }
 
-/* line 68, ../../../app/stylesheets/admin.scss */
+/* line 36, ../../../app/stylesheets/admin.scss */
 table#drafts tbody tr td.paadal {
   width: 180px;
 }
 
-/* line 72, ../../../app/stylesheets/admin.scss */
+/* line 40, ../../../app/stylesheets/admin.scss */
 table#drafts tbody tr td.user {
   width: 80px;
 }
 
-/* line 76, ../../../app/stylesheets/admin.scss */
+/* line 44, ../../../app/stylesheets/admin.scss */
 table#drafts tbody tr td.view {
   width: 60px;
 }
 
-/* line 80, ../../../app/stylesheets/admin.scss */
+/* line 48, ../../../app/stylesheets/admin.scss */
 img.review {
   height: 24px;
   vertical-align: middle;
   width: 24px;
 }
 
-/* line 86, ../../../app/stylesheets/admin.scss */
+/* line 54, ../../../app/stylesheets/admin.scss */
 screinput[type='text'] {
   margin-bottom: 15px;
   width: 677px;
   background: #FFFBD0;
 }
 
-/* line 92, ../../../app/stylesheets/admin.scss */
+/* line 60, ../../../app/stylesheets/admin.scss */
 textarea {
   padding: 3px;
   width: 674px;
@@ -112,7 +76,7 @@ textarea {
   background: #FFFBD0;
 }
 
-/* line 99, ../../../app/stylesheets/admin.scss */
+/* line 67, ../../../app/stylesheets/admin.scss */
 div.error {
   background: url("../../images/error.png") no-repeat scroll 4px 6px #e9967a;
   margin-right: 20px;
@@ -120,7 +84,7 @@ div.error {
   width: 642px;
 }
 
-/* line 106, ../../../app/stylesheets/admin.scss */
+/* line 74, ../../../app/stylesheets/admin.scss */
 span.alert {
   background: url(../../images/alert.png) no-repeat scroll 4px 2px #e9967a;
   padding: 5px 5px 5px 32px;
@@ -128,12 +92,12 @@ span.alert {
   margin-right: 20px;
 }
 
-/* line 113, ../../../app/stylesheets/admin.scss */
+/* line 81, ../../../app/stylesheets/admin.scss */
 p.wiki_revision_attribute {
   margin: 15px 0px;
 }
 
-/* line 117, ../../../app/stylesheets/admin.scss */
+/* line 85, ../../../app/stylesheets/admin.scss */
 .revision_user_info {
   border: 1px solid;
   margin-right: 18px;
@@ -144,7 +108,7 @@ p.wiki_revision_attribute {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
-/* line 127, ../../../app/stylesheets/admin.scss */
+/* line 95, ../../../app/stylesheets/admin.scss */
 #differ {
   background: none repeat scroll 0 0 #FFFF00;
   margin-bottom: 5px;
@@ -152,7 +116,7 @@ p.wiki_revision_attribute {
   width: 672px;
 }
 
-/* line 134, ../../../app/stylesheets/admin.scss */
+/* line 102, ../../../app/stylesheets/admin.scss */
 .wiki_container {
   margin-right: 25px;
 }

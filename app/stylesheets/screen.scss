@@ -19,15 +19,16 @@ label {
 
 input[type="text"] {
   margin-bottom: 15px;
-  width: 680px;
+  width: 545px;
   background: ivory;
 }
 
 textarea {
   padding: 3px;
   background: ivory;
-  width: 680px;
+  width: 543px;
   height: 300px;
+  margin-bottom: 10px;
 }
 
 fieldset,img {
@@ -194,8 +195,8 @@ div#main_container {
 div#mainmiddle {
   margin:0px 0px 0px 0px;
   background:url(../../images/content-bg-big.jpg) 0 0 repeat-y;
-  padding:0px 160px 0 59px;
-  width: 698px;
+  padding:0px 160px 0 50px;
+  width: 550px;
 }
 
 div#mainbottom{
@@ -417,10 +418,11 @@ div.error {
 }
 
 .logo ul {
- margin-left: -15px;
-    margin-top: 87px;
-    text-align: center;
-    width: 622px;  
+  margin-left: -36px;
+  margin-top: 87px;
+  text-align: center;
+  width: 654px;
+
 }
 
 .logo ul li{
@@ -485,6 +487,7 @@ div.error {
 .login_container{
   text-align: center;
   padding-right: 20px;
+  margin-right: 132px;
 }
 
 img.edit {
