@@ -2,7 +2,6 @@
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    margin-left: -50px;
     margin-bottom: 10px;
 }
 
@@ -14,7 +13,7 @@
 }
 
 #drafts{
-    width: 685px;
+    width: 550px;
 }
 
 table#drafts thead tr td {
@@ -59,7 +58,7 @@ screinput[type='text'] {
 
 textarea{
     padding: 3px;
-    width: 674px;
+    width: 545px;
     display: block;
     background: #FFFBD0;
 }
@@ -83,6 +82,7 @@ p.wiki_revision_attribute{
 }
 
 .revision_user_info {
+    height: 82px;
     border: 1px solid;
     margin-right: 18px;
     margin-top: 6px;
@@ -96,7 +96,7 @@ p.wiki_revision_attribute{
     background: none repeat scroll 0 0 #FFFF00;
     margin-bottom: 5px;
     padding: 0 5px;
-    width: 672px;
+    width: 545px;
 }
 
 .wiki_container {

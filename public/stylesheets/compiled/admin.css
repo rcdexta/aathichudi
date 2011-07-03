@@ -3,11 +3,10 @@
   font-size: 20px;
   font-weight: bold;
   text-align: center;
-  margin-left: -50px;
   margin-bottom: 10px;
 }
 
-/* line 9, ../../../app/stylesheets/admin.scss */
+/* line 8, ../../../app/stylesheets/admin.scss */
 .dashboard_title .sub_title {
   background: none repeat scroll 0 0 DarkSalmon;
   padding: 5px 8px;
@@ -15,68 +14,68 @@
   border-radius: 10px;
 }
 
-/* line 16, ../../../app/stylesheets/admin.scss */
+/* line 15, ../../../app/stylesheets/admin.scss */
 #drafts {
-  width: 685px;
+  width: 550px;
 }
 
-/* line 20, ../../../app/stylesheets/admin.scss */
+/* line 19, ../../../app/stylesheets/admin.scss */
 table#drafts thead tr td {
   font-size: 12px;
   font-weight: bold;
   text-align: center;
 }
 
-/* line 26, ../../../app/stylesheets/admin.scss */
+/* line 25, ../../../app/stylesheets/admin.scss */
 table#drafts tbody tr td {
   font-size: 12px;
   text-align: center;
   overflow: hidden;
 }
 
-/* line 32, ../../../app/stylesheets/admin.scss */
+/* line 31, ../../../app/stylesheets/admin.scss */
 table#drafts tbody tr td.time {
   width: 90px;
 }
 
-/* line 36, ../../../app/stylesheets/admin.scss */
+/* line 35, ../../../app/stylesheets/admin.scss */
 table#drafts tbody tr td.paadal {
   width: 180px;
 }
 
-/* line 40, ../../../app/stylesheets/admin.scss */
+/* line 39, ../../../app/stylesheets/admin.scss */
 table#drafts tbody tr td.user {
   width: 80px;
 }
 
-/* line 44, ../../../app/stylesheets/admin.scss */
+/* line 43, ../../../app/stylesheets/admin.scss */
 table#drafts tbody tr td.view {
   width: 60px;
 }
 
-/* line 48, ../../../app/stylesheets/admin.scss */
+/* line 47, ../../../app/stylesheets/admin.scss */
 img.review {
   height: 24px;
   vertical-align: middle;
   width: 24px;
 }
 
-/* line 54, ../../../app/stylesheets/admin.scss */
+/* line 53, ../../../app/stylesheets/admin.scss */
 screinput[type='text'] {
   margin-bottom: 15px;
   width: 677px;
   background: #FFFBD0;
 }
 
-/* line 60, ../../../app/stylesheets/admin.scss */
+/* line 59, ../../../app/stylesheets/admin.scss */
 textarea {
   padding: 3px;
-  width: 674px;
+  width: 545px;
   display: block;
   background: #FFFBD0;
 }
 
-/* line 67, ../../../app/stylesheets/admin.scss */
+/* line 66, ../../../app/stylesheets/admin.scss */
 div.error {
   background: url("../../images/error.png") no-repeat scroll 4px 6px #e9967a;
   margin-right: 20px;
@@ -84,7 +83,7 @@ div.error {
   width: 642px;
 }
 
-/* line 74, ../../../app/stylesheets/admin.scss */
+/* line 73, ../../../app/stylesheets/admin.scss */
 span.alert {
   background: url(../../images/alert.png) no-repeat scroll 4px 2px #e9967a;
   padding: 5px 5px 5px 32px;
@@ -92,13 +91,14 @@ span.alert {
   margin-right: 20px;
 }
 
-/* line 81, ../../../app/stylesheets/admin.scss */
+/* line 80, ../../../app/stylesheets/admin.scss */
 p.wiki_revision_attribute {
   margin: 15px 0px;
 }
 
-/* line 85, ../../../app/stylesheets/admin.scss */
+/* line 84, ../../../app/stylesheets/admin.scss */
 .revision_user_info {
+  height: 82px;
   border: 1px solid;
   margin-right: 18px;
   margin-top: 6px;
@@ -113,7 +113,7 @@ p.wiki_revision_attribute {
   background: none repeat scroll 0 0 #FFFF00;
   margin-bottom: 5px;
   padding: 0 5px;
-  width: 672px;
+  width: 545px;
 }
 
 /* line 102, ../../../app/stylesheets/admin.scss */

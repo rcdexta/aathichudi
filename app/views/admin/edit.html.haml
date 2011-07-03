@@ -8,7 +8,6 @@
       window.location.href = "?tamil_keyboard=true";
     });
   });
-  makeTransliteratable(['wiki_version_tamil_short_desc', 'wiki_version_tamil_long_desc']);
 
 = javascript_include_tag 'jquery.observe_field.js'
 = javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js'
@@ -30,13 +29,12 @@
           %li
             %b
               = user.name
-              = "| #{user.email}" if user.email.present?
           %li
-            ஏற்றுக்கொண்ட திருத்தங்கள்:
+            சமர்பித்தவை:
+            = user.accepted_count + user.rejected_count
+          %li
+            பிரசுரிக்கப்பட்டவை:
             = user.accepted_count
-          %li
-            மறுக்கப்பட்ட திருத்தங்கள்:
-            = user.rejected_count
   .clear
   = form_for @wiki_version, :url => admin_update_wiki_path(@wiki_version) do |wiki_form|
 
@@ -48,4 +46,13 @@
                                              :changed_attributes => @changed_attributes, :wiki_form => wiki_form}
 
     = render :partial => 'action_buttons'
+
+:javascript
+  var transliterable_elements = [];
+  jQuery.each(['wiki_version_tamil_short_desc', 'wiki_version_tamil_long_desc'], function(index,value){
+    if (jQuery('#' + value).length){
+      transliterable_elements.push(value);
+    }
+  });
+  makeTransliteratable(transliterable_elements);
 
