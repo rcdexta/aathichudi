@@ -26,8 +26,10 @@
           |
       %li#user_login
         - if user_signed_in?
+          = javascript_include_tag 'logout'
           %img{:src => '/images/logout.png'}
-          %a{:href => "#{destroy_user_session_path}"}
+          %input{:type => 'hidden', :name => 'provider_signout_url', :value => "#{generate_logout_link}"}
+          %a{:href => "#{destroy_user_session_path}", :id => 'logout_link'}
             %span{:style => 'padding-left: 5px;'} விடைபெறுக 
         - else
           %img{:src => '/images/user.png'}
