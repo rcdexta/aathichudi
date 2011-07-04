@@ -30,10 +30,10 @@
             %b
               = user.name
           %li
-            சமர்பித்தவை:
+            சமர்ப்பித்தவை:
             = user.accepted_count + user.rejected_count
           %li
-            பிரசுரிக்கப்பட்டவை:
+            பிரசுரமானவை:
             = user.accepted_count
   .clear
   = form_for @wiki_version, :url => admin_update_wiki_path(@wiki_version) do |wiki_form|

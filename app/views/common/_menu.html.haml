@@ -14,7 +14,7 @@
         |
       %li#about_site
         %img{:src => '/images/about.png'}
-        இணையதளத்தை பற்றி
+        = t(:about_site) 
       %li
         |
       - if admin_signed_in?
@@ -28,7 +28,7 @@
         - if user_signed_in?
           %img{:src => '/images/logout.png'}
           %a{:href => "#{destroy_user_session_path}"}
-            %span{:style => 'padding-left: 5px;'} வெளியேறவும்
+            %span{:style => 'padding-left: 5px;'} விடைபெறுக 
         - else
           %img{:src => '/images/user.png'}
           = link_to_rpx "உள்நுழைக", root_url

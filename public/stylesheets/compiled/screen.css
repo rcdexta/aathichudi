@@ -581,7 +581,7 @@ hr {
 }
 
 /* line 346, ../../../app/stylesheets/screen.scss */
-.edit_button {
+.action_button {
   float: right;
   margin-right: 21px;
   margin-top: -8px;
@@ -761,35 +761,34 @@ img.home {
 .wiki_container {
   margin-bottom: 15px;
   margin-top: 18px;
-  margin-right: 15px;
   width: auto;
 }
 
-/* line 512, ../../../app/stylesheets/screen.scss */
+/* line 511, ../../../app/stylesheets/screen.scss */
 .home_link {
   margin-top: 8px;
 }
 
-/* line 516, ../../../app/stylesheets/screen.scss */
+/* line 515, ../../../app/stylesheets/screen.scss */
 .clear {
   clear: both;
 }
 
-/* line 520, ../../../app/stylesheets/screen.scss */
+/* line 519, ../../../app/stylesheets/screen.scss */
 img.loading {
   margin-top: 5px;
   margin-left: 12.5px;
   width: 48px;
 }
 
-/* line 526, ../../../app/stylesheets/screen.scss */
+/* line 525, ../../../app/stylesheets/screen.scss */
 img.line_loading {
   margin-left: 4.5px;
   margin-top: 2px;
   width: 36px;
 }
 
-/* line 532, ../../../app/stylesheets/screen.scss */
+/* line 531, ../../../app/stylesheets/screen.scss */
 .history_info {
   border: 1px solid;
   margin-right: 18px;
@@ -801,7 +800,7 @@ img.line_loading {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
-/* line 543, ../../../app/stylesheets/screen.scss */
+/* line 542, ../../../app/stylesheets/screen.scss */
 .history_data p {
   font-size: 13px;
   text-shadow: 0 1px 0 white, 0 0px 0 black;
@@ -809,7 +808,7 @@ img.line_loading {
   line-height: 100%;
 }
 
-/* line 550, ../../../app/stylesheets/screen.scss */
+/* line 549, ../../../app/stylesheets/screen.scss */
 .history_sub_heading {
   font-size: 14px;
   font-weight: bold;
@@ -818,32 +817,32 @@ img.line_loading {
   margin: 10px 0px;
 }
 
-/* line 558, ../../../app/stylesheets/screen.scss */
+/* line 557, ../../../app/stylesheets/screen.scss */
 span.history_time {
   background: url("../../images/embed/bullet.png") no-repeat scroll 0 0 transparent;
   padding-left: 19px;
 }
 
-/* line 563, ../../../app/stylesheets/screen.scss */
+/* line 562, ../../../app/stylesheets/screen.scss */
 span.history_user {
   background: url("../../images/embed/history_user.png") no-repeat scroll 0 0 transparent;
   padding-left: 19px;
 }
 
-/* line 568, ../../../app/stylesheets/screen.scss */
+/* line 567, ../../../app/stylesheets/screen.scss */
 span.history_diff {
   background: url("../../images/embed/history_diff.png") no-repeat scroll 0 0 transparent;
   padding-left: 19px;
   text-decoration: underline;
 }
 
-/* line 574, ../../../app/stylesheets/screen.scss */
+/* line 573, ../../../app/stylesheets/screen.scss */
 span.first_version {
   background: url("../../images/embed/first_version.png") no-repeat scroll 0 0 transparent;
   padding-left: 19px;
 }
 
-/* line 579, ../../../app/stylesheets/screen.scss */
+/* line 578, ../../../app/stylesheets/screen.scss */
 #differ {
   background: none repeat scroll 0 0 #11FF99;
   margin-bottom: 5px;
@@ -851,17 +850,17 @@ span.first_version {
   width: 645px;
 }
 
-/* line 586, ../../../app/stylesheets/screen.scss */
+/* line 585, ../../../app/stylesheets/screen.scss */
 del.differ {
   color: #CC0000;
 }
 
-/* line 590, ../../../app/stylesheets/screen.scss */
+/* line 589, ../../../app/stylesheets/screen.scss */
 ins.differ {
   color: #000080;
 }
 
-/* line 594, ../../../app/stylesheets/screen.scss */
+/* line 593, ../../../app/stylesheets/screen.scss */
 .revision_user_info {
   border: 1px solid;
   margin-right: 18px;
@@ -873,7 +872,7 @@ ins.differ {
   margin-bottom: 10px;
 }
 
-/* line 605, ../../../app/stylesheets/screen.scss */
+/* line 604, ../../../app/stylesheets/screen.scss */
 .profile_photo {
   background: none repeat scroll 0 0 cyan;
   border: 2px solid #ffefd5;
@@ -881,25 +880,25 @@ ins.differ {
   width: 64px;
 }
 
-/* line 612, ../../../app/stylesheets/screen.scss */
+/* line 611, ../../../app/stylesheets/screen.scss */
 span.photo {
   float: left;
   margin-right: 10px;
 }
 
-/* line 617, ../../../app/stylesheets/screen.scss */
+/* line 616, ../../../app/stylesheets/screen.scss */
 .user_details {
   margin-left: -45px;
   margin-top: 5px;
   line-height: 125%;
 }
 
-/* line 623, ../../../app/stylesheets/screen.scss */
+/* line 622, ../../../app/stylesheets/screen.scss */
 .user_details ul, .user_details li {
   list-style: none;
 }
 
-/* line 627, ../../../app/stylesheets/screen.scss */
+/* line 626, ../../../app/stylesheets/screen.scss */
 .sub_heading {
   font-size: 20px;
   font-weight: bold;
@@ -908,51 +907,51 @@ span.photo {
   margin: 10px 0px;
 }
 
-/* line 635, ../../../app/stylesheets/screen.scss */
+/* line 634, ../../../app/stylesheets/screen.scss */
 .home_link {
   margin-top: 10px;
 }
 
-/* line 639, ../../../app/stylesheets/screen.scss */
+/* line 638, ../../../app/stylesheets/screen.scss */
 #versions_diff_container {
   text-align: left;
   padding: 15px;
   background: url("../../images/diff-back.jpg") no-repeat;
 }
 
-/* line 645, ../../../app/stylesheets/screen.scss */
+/* line 644, ../../../app/stylesheets/screen.scss */
 img.keyboard {
   height: 32px;
   width: 48px;
   padding-top: 5px;
 }
 
-/* line 651, ../../../app/stylesheets/screen.scss */
+/* line 650, ../../../app/stylesheets/screen.scss */
 #keyboard {
   background: url("../../images/keyboard.png") no-repeat scroll 4px -8px transparent;
   cursor: pointer;
   float: right;
   font-weight: bold;
-  margin-right: 8px;
+  margin-right: 20px;
   margin-top: 8px;
 }
 
-/* line 660, ../../../app/stylesheets/screen.scss */
+/* line 659, ../../../app/stylesheets/screen.scss */
 .left {
   float: left;
 }
 
-/* line 664, ../../../app/stylesheets/screen.scss */
+/* line 663, ../../../app/stylesheets/screen.scss */
 .right {
   float: right;
 }
 
-/* line 668, ../../../app/stylesheets/screen.scss */
+/* line 667, ../../../app/stylesheets/screen.scss */
 .blue {
   color: blue;
 }
 
-/* line 672, ../../../app/stylesheets/screen.scss */
+/* line 671, ../../../app/stylesheets/screen.scss */
 #left_pane {
   float: left;
   height: 300px;
@@ -962,12 +961,12 @@ img.keyboard {
   width: 213px;
 }
 
-/* line 681, ../../../app/stylesheets/screen.scss */
+/* line 680, ../../../app/stylesheets/screen.scss */
 span.title_photo {
   margin-right: 10px;
 }
 
-/* line 685, ../../../app/stylesheets/screen.scss */
+/* line 684, ../../../app/stylesheets/screen.scss */
 img.title_profile_photo {
   background: none repeat scroll 0 0 cyan;
   border: 2px solid red;
@@ -975,7 +974,7 @@ img.title_profile_photo {
   width: 65px;
 }
 
-/* line 692, ../../../app/stylesheets/screen.scss */
+/* line 691, ../../../app/stylesheets/screen.scss */
 #user_details {
   height: 214px;
   margin-left: -48px;
@@ -986,7 +985,7 @@ img.title_profile_photo {
   color: ivory;
 }
 
-/* line 702, ../../../app/stylesheets/screen.scss */
+/* line 701, ../../../app/stylesheets/screen.scss */
 .welcome {
   color: gold;
   font-size: 15px;
@@ -997,14 +996,14 @@ img.title_profile_photo {
   text-shadow: 0 1px 0 yellow, 0 1px 0 black;
 }
 
-/* line 712, ../../../app/stylesheets/screen.scss */
+/* line 711, ../../../app/stylesheets/screen.scss */
 .share_text {
   color: ivory;
   font-size: 12px;
   margin-left: 28px;
 }
 
-/* line 718, ../../../app/stylesheets/screen.scss */
+/* line 717, ../../../app/stylesheets/screen.scss */
 #wiki_tamil_long_desc {
   border: none;
   white-space: wrap;
@@ -1012,13 +1011,13 @@ img.title_profile_photo {
   overflow-x: hidden;
 }
 
-/* line 725, ../../../app/stylesheets/screen.scss */
+/* line 724, ../../../app/stylesheets/screen.scss */
 .paadal_title {
-  font-size: 19px;
-  margin-bottom: 5px;
+  font-size: 150%;
+  margin-bottom: 0px;
 }
 
-/* line 730, ../../../app/stylesheets/screen.scss */
+/* line 729, ../../../app/stylesheets/screen.scss */
 #preview_container {
   border: 2px dotted black;
   max-height: 450px;
@@ -1026,30 +1025,37 @@ img.title_profile_photo {
   padding: 0 5px 5px;
 }
 
-/* line 737, ../../../app/stylesheets/screen.scss */
+/* line 736, ../../../app/stylesheets/screen.scss */
 #preview_container p {
   text-shadow: none !important;
 }
 
-/* line 741, ../../../app/stylesheets/screen.scss */
+/* line 740, ../../../app/stylesheets/screen.scss */
 blockquote {
   background-color: #EEEEEE;
   padding-left: 10px;
   padding-right: 10px;
 }
 
-/* line 747, ../../../app/stylesheets/screen.scss */
+/* line 746, ../../../app/stylesheets/screen.scss */
 #left_pane img {
   margin-right: -10px;
 }
 
+/* line 750, ../../../app/stylesheets/screen.scss */
+img.back_to_show {
+  width: 26px;
+  height: 26px;
+  margin-top: 16px;
+}
+
 /* diff styling */
-/* line 752, ../../../app/stylesheets/screen.scss */
+/* line 757, ../../../app/stylesheets/screen.scss */
 .diff {
   overflow: auto;
 }
 
-/* line 753, ../../../app/stylesheets/screen.scss */
+/* line 758, ../../../app/stylesheets/screen.scss */
 .diff ul {
   background: #fff;
   overflow: auto;
@@ -1061,13 +1067,13 @@ blockquote {
   width: 100%;
 }
 
-/* line 754, ../../../app/stylesheets/screen.scss */
+/* line 759, ../../../app/stylesheets/screen.scss */
 .diff del, .diff ins {
   display: block;
   text-decoration: none;
 }
 
-/* line 755, ../../../app/stylesheets/screen.scss */
+/* line 760, ../../../app/stylesheets/screen.scss */
 .diff li {
   padding: 0;
   display: table-row;
@@ -1075,37 +1081,37 @@ blockquote {
   height: 1em;
 }
 
-/* line 756, ../../../app/stylesheets/screen.scss */
+/* line 761, ../../../app/stylesheets/screen.scss */
 .diff li.ins {
   background: #dfd;
   color: #080;
 }
 
-/* line 757, ../../../app/stylesheets/screen.scss */
+/* line 762, ../../../app/stylesheets/screen.scss */
 .diff li.del {
   background: #fee;
   color: #b00;
 }
 
-/* line 758, ../../../app/stylesheets/screen.scss */
+/* line 763, ../../../app/stylesheets/screen.scss */
 .diff li:hover {
   background: #ffc;
 }
 
 /* try 'whitespace:pre;' if you don't want lines to wrap */
-/* line 760, ../../../app/stylesheets/screen.scss */
+/* line 765, ../../../app/stylesheets/screen.scss */
 .diff del, .diff ins, .diff span {
   white-space: pre-wrap;
   font-family: courier;
 }
 
-/* line 761, ../../../app/stylesheets/screen.scss */
+/* line 766, ../../../app/stylesheets/screen.scss */
 .diff del strong {
   font-weight: normal;
   background: #fcc;
 }
 
-/* line 762, ../../../app/stylesheets/screen.scss */
+/* line 767, ../../../app/stylesheets/screen.scss */
 .diff ins strong {
   font-weight: normal;
   background: #9f9;

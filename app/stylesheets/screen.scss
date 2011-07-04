@@ -343,7 +343,7 @@ hr {
   display: inline;
 }
 
-.edit_button {
+.action_button {
   float: right;
   margin-right: 21px;
   margin-top: -8px;
@@ -504,7 +504,6 @@ img.home{
 .wiki_container{
   margin-bottom: 15px;
   margin-top: 18px;
-  margin-right: 15px;
   width: auto;
 }
 
@@ -653,7 +652,7 @@ img.keyboard{
   cursor: pointer;
   float: right;
   font-weight: bold;
-  margin-right: 8px;
+  margin-right: 20px;
   margin-top: 8px;
 }
 
@@ -723,8 +722,8 @@ img.title_profile_photo {
 }
 
 .paadal_title{
-  font-size: 19px;
-  margin-bottom: 5px;
+  font-size: 150%;
+  margin-bottom: 0px;
 }
 
 #preview_container{
@@ -746,6 +745,12 @@ blockquote {
 
 #left_pane img{
   margin-right: -10px;
+}
+
+img.back_to_show{
+  width: 26px;
+  height: 26px;
+  margin-top: 16px;
 }
 
 /* diff styling */
