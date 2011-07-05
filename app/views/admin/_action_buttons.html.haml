@@ -1,2 +1,5 @@
 = submit_tag t(:save_button), :class => 'save_button', :name => 'commit', 'data-confirm' => "பாடல் ஒப்புதலை உறுதி செய்க ..."
 = submit_tag t(:reject_button), :class => 'reject_button', :name => 'commit', 'data-confirm' => "மறுத்தலை உறுதி செய்க ..."
+%span.action_button
+  %a{:href=> admin_dashboard_path}
+    %img.back_to_show{:src => '/images/first.png'}
