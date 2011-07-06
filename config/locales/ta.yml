@@ -13,6 +13,7 @@ ta:
   admin_notification_subject: "பொறுப்பாளர் கவனத்திற்கு: பகுதி '%{paadal}' திருத்தப்பட்டுள்ளது"
   welcome_mail_subject: "அறம்செயவிரும்பு.com தங்களை வரவேற்கிறது"
   wiki_accepted_mail_subject: "வாசகர் கவனத்திற்கு: '%{paadal}' திருத்தங்கள் ஏற்கப்பட்டது"
+  comment_notification_mail_subject: "வாசகர் கருத்துக்கள்"
   about_site: "நோக்கம்"
 
   date:

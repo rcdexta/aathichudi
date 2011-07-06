@@ -1,0 +1,5 @@
+= simple_form_for :comment, :url => comments_path, :remote => true do |c|
+  = c.input :name, :label => 'பெயர்/Name'
+  = c.input :email, :label => 'மின்னஞ்சல்/Email', :required => false 
+  = c.input :comment, :as => :text, :label => 'கருத்துரை/Comments'
+  = c.button :submit, :class => 'save_button', :value => t(:save_button)

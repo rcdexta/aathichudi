@@ -1,3 +1,4 @@
+= javascript_include_tag 'contact_us'
 #logo-container
   .logo
     %ul
@@ -22,6 +23,10 @@
           %li#admin
             %img{:src => '/images/settings.png'}
             தளப்பொறுப்பாளர்
+      - else
+        %li#contact_us{:url => new_comment_path}
+          %img{:src => '/images/contact.png'}
+          தொடர்பு
         %li
           |
       %li#user_login
@@ -34,3 +39,5 @@
         - else
           %img{:src => '/images/user.png'}
           = link_to_rpx "உள்நுழைக", root_url
+
+#comments_form.hidden{:title => 'அறம்செயவிரும்பு.com பற்றி உங்களுடைய கருத்துக்கள்'}

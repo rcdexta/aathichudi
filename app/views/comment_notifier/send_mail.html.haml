@@ -1,0 +1,24 @@
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+  %body
+    %p
+      தமிழ் அன்பரே,
+    %p
+      வணக்கம்.
+    %p
+      சற்று முன் பதிவு செய்ய பட்ட வாசகரின் கருத்து:
+    %p
+      பெயர்: #{@comment.name}
+      %br
+      - if @comment.email.present?
+        மின்னஞ்சல்: #{@comment.email}
+    %p
+      கருத்து: <br/>
+      = @comment.comment
+    %p
+      நன்றியுடன்,
+      %br
+      தளப் பொறுப்பாளர்கள்.
+      %br
+      = link_to "அறம்செயவிரும்பு.com", root_url
