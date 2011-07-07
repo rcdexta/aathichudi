@@ -3,8 +3,8 @@ $(document).ready(function(){
     $.get($(this).attr('url'), function(data){
       $('#comments_form').html(data);
       $('#comments_form').dialog({
-        minWidth: 600,
-        height: 600,
+        minWidth: 650,
+        height: 700,
         modal: true,
         resizable: false,
         show: 'fade'

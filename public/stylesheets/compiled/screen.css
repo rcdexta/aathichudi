@@ -1078,15 +1078,20 @@ img.back_to_show {
 /* line 755, ../../../app/stylesheets/screen.scss */
 #comments_form {
   text-align: left;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: justify;
+  background: url(../../images/contact_us.jpg) repeat-y;
+  padding: 10px !important;
 }
 
 /* diff styling */
-/* line 760, ../../../app/stylesheets/screen.scss */
+/* line 767, ../../../app/stylesheets/screen.scss */
 .diff {
   overflow: auto;
 }
 
-/* line 761, ../../../app/stylesheets/screen.scss */
+/* line 768, ../../../app/stylesheets/screen.scss */
 .diff ul {
   background: #fff;
   overflow: auto;
@@ -1098,13 +1103,13 @@ img.back_to_show {
   width: 100%;
 }
 
-/* line 762, ../../../app/stylesheets/screen.scss */
+/* line 769, ../../../app/stylesheets/screen.scss */
 .diff del, .diff ins {
   display: block;
   text-decoration: none;
 }
 
-/* line 763, ../../../app/stylesheets/screen.scss */
+/* line 770, ../../../app/stylesheets/screen.scss */
 .diff li {
   padding: 0;
   display: table-row;
@@ -1112,13 +1117,13 @@ img.back_to_show {
   height: 1em;
 }
 
-/* line 764, ../../../app/stylesheets/screen.scss */
+/* line 771, ../../../app/stylesheets/screen.scss */
 .diff li.ins {
   background: yellow;
   color: #080;
 }
 
-/* line 765, ../../../app/stylesheets/screen.scss */
+/* line 772, ../../../app/stylesheets/screen.scss */
 .diff li.del {
   background: BurlyWood;
   color: #b00;
@@ -1126,19 +1131,19 @@ img.back_to_show {
 
 /*.diff li:hover{background:#ffc}*/
 /* try 'whitespace:pre;' if you don't want lines to wrap */
-/* line 768, ../../../app/stylesheets/screen.scss */
+/* line 775, ../../../app/stylesheets/screen.scss */
 .diff del, .diff ins, .diff span {
   white-space: pre-wrap;
   font-family: courier;
 }
 
-/* line 769, ../../../app/stylesheets/screen.scss */
+/* line 776, ../../../app/stylesheets/screen.scss */
 .diff del strong {
   font-weight: normal;
   background: #fcc;
 }
 
-/* line 770, ../../../app/stylesheets/screen.scss */
+/* line 777, ../../../app/stylesheets/screen.scss */
 .diff ins strong {
   font-weight: normal;
   background: #9f9;

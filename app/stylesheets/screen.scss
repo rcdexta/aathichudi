@@ -754,7 +754,14 @@ img.back_to_show{
 
 #comments_form{
   text-align: left;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: justify;
+  background: url(../../images/contact_us.jpg) repeat-y;
+  padding: 10px !important;
 }
+
+
 
 /* diff styling */
 .diff{overflow:auto;}
