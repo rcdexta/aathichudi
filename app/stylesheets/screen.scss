@@ -704,7 +704,6 @@ img.title_profile_photo {
   margin-left: 48px;
   margin-top: 13px;
   width: 209px;
-  text-shadow: 0 1px 0 yellow, 0 1px 0 black;
 }
 
 .share_text{
@@ -761,7 +760,12 @@ img.back_to_show{
   padding: 15px !important;
 }
 
-
+img.hand{
+  height: 24px;
+  margin-right: 2px !important;
+  vertical-align: middle;
+  width: 24px;
+} 
 
 /* diff styling */
 .diff{overflow:auto;}

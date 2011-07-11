@@ -1019,17 +1019,16 @@ img.title_profile_photo {
   margin-left: 48px;
   margin-top: 13px;
   width: 209px;
-  text-shadow: 0 1px 0 yellow, 0 1px 0 black;
 }
 
-/* line 710, ../../../app/stylesheets/screen.scss */
+/* line 709, ../../../app/stylesheets/screen.scss */
 .share_text {
   color: ivory;
   font-size: 12px;
   margin-left: 28px;
 }
 
-/* line 716, ../../../app/stylesheets/screen.scss */
+/* line 715, ../../../app/stylesheets/screen.scss */
 #wiki_tamil_long_desc {
   border: none;
   white-space: wrap;
@@ -1037,13 +1036,13 @@ img.title_profile_photo {
   overflow-x: hidden;
 }
 
-/* line 723, ../../../app/stylesheets/screen.scss */
+/* line 722, ../../../app/stylesheets/screen.scss */
 .paadal_title {
   font-size: 150%;
   margin-bottom: 0px;
 }
 
-/* line 728, ../../../app/stylesheets/screen.scss */
+/* line 727, ../../../app/stylesheets/screen.scss */
 #preview_container {
   border: 2px dotted black;
   max-height: 450px;
@@ -1051,31 +1050,31 @@ img.title_profile_photo {
   padding: 0 5px 5px;
 }
 
-/* line 735, ../../../app/stylesheets/screen.scss */
+/* line 734, ../../../app/stylesheets/screen.scss */
 #preview_container p {
   text-shadow: none !important;
 }
 
-/* line 739, ../../../app/stylesheets/screen.scss */
+/* line 738, ../../../app/stylesheets/screen.scss */
 blockquote {
   background-color: #EEEEEE;
   padding-left: 10px;
   padding-right: 10px;
 }
 
-/* line 745, ../../../app/stylesheets/screen.scss */
+/* line 744, ../../../app/stylesheets/screen.scss */
 #left_pane img {
   margin-right: -10px;
 }
 
-/* line 749, ../../../app/stylesheets/screen.scss */
+/* line 748, ../../../app/stylesheets/screen.scss */
 img.back_to_show {
   width: 26px;
   height: 26px;
   margin-top: 16px;
 }
 
-/* line 755, ../../../app/stylesheets/screen.scss */
+/* line 754, ../../../app/stylesheets/screen.scss */
 #comments_form {
   text-align: left;
   font-size: 14px;
@@ -1085,13 +1084,21 @@ img.back_to_show {
   padding: 15px !important;
 }
 
+/* line 763, ../../../app/stylesheets/screen.scss */
+img.hand {
+  height: 24px;
+  margin-right: 2px !important;
+  vertical-align: middle;
+  width: 24px;
+}
+
 /* diff styling */
-/* line 767, ../../../app/stylesheets/screen.scss */
+/* line 771, ../../../app/stylesheets/screen.scss */
 .diff {
   overflow: auto;
 }
 
-/* line 768, ../../../app/stylesheets/screen.scss */
+/* line 772, ../../../app/stylesheets/screen.scss */
 .diff ul {
   background: #fff;
   overflow: auto;
@@ -1103,13 +1110,13 @@ img.back_to_show {
   width: 100%;
 }
 
-/* line 769, ../../../app/stylesheets/screen.scss */
+/* line 773, ../../../app/stylesheets/screen.scss */
 .diff del, .diff ins {
   display: block;
   text-decoration: none;
 }
 
-/* line 770, ../../../app/stylesheets/screen.scss */
+/* line 774, ../../../app/stylesheets/screen.scss */
 .diff li {
   padding: 0;
   display: table-row;
@@ -1117,13 +1124,13 @@ img.back_to_show {
   height: 1em;
 }
 
-/* line 771, ../../../app/stylesheets/screen.scss */
+/* line 775, ../../../app/stylesheets/screen.scss */
 .diff li.ins {
   background: yellow;
   color: #080;
 }
 
-/* line 772, ../../../app/stylesheets/screen.scss */
+/* line 776, ../../../app/stylesheets/screen.scss */
 .diff li.del {
   background: BurlyWood;
   color: #b00;
@@ -1131,19 +1138,19 @@ img.back_to_show {
 
 /*.diff li:hover{background:#ffc}*/
 /* try 'whitespace:pre;' if you don't want lines to wrap */
-/* line 775, ../../../app/stylesheets/screen.scss */
+/* line 779, ../../../app/stylesheets/screen.scss */
 .diff del, .diff ins, .diff span {
   white-space: pre-wrap;
   font-family: courier;
 }
 
-/* line 776, ../../../app/stylesheets/screen.scss */
+/* line 780, ../../../app/stylesheets/screen.scss */
 .diff ins strong {
   font-weight: normal;
   background: #fcc;
 }
 
-/* line 777, ../../../app/stylesheets/screen.scss */
+/* line 781, ../../../app/stylesheets/screen.scss */
 .diff del strong {
   font-weight: normal;
   background: #9f9;
