@@ -1,7 +1,7 @@
 module ApplicationHelper
 
   def generate_diff(current, original)
-    Diffy::Diff.new(current, original).to_s(:html)
+    Diffy::Diff.new(original, current).to_s(:html)
   end
 
   def admin_signed_in?

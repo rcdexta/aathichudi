@@ -24,14 +24,14 @@ function apprise(string, args, callback)
 			{ if(typeof args[index] == "undefined") args[index] = default_args[index]; } 
 		}
 	
-	var aHeight = $(document).height();
-	var aWidth = $(document).width();
-	$('body').append('<div class="appriseOverlay" id="aOverlay"></div>');
-	$('.appriseOverlay').css('height', aHeight).css('width', aWidth).fadeIn(100);
-	$('body').append('<div class="appriseOuter"></div>');
-	$('.appriseOuter').append('<div class="appriseInner"></div>');
-	$('.appriseInner').append(string);
-    $('.appriseOuter').css("left", ( $(window).width() - $('.appriseOuter').width() ) / 2+$(window).scrollLeft() + "px");
+	var aHeight = jQuery(document).height();
+	var aWidth = jQuery(document).width();
+	jQuery('body').append('<div class="appriseOverlay" id="aOverlay"></div>');
+	jQuery('.appriseOverlay').css('height', aHeight).css('width', aWidth).fadeIn(100);
+	jQuery('body').append('<div class="appriseOuter"></div>');
+	jQuery('.appriseOuter').append('<div class="appriseInner"></div>');
+	jQuery('.appriseInner').append(string);
+    jQuery('.appriseOuter').css("left", ( jQuery(window).width() - jQuery('.appriseOuter').width() ) / 2+jQuery(window).scrollLeft() + "px");
     
     if(args)
 		{
@@ -39,13 +39,13 @@ function apprise(string, args, callback)
 			{ 
 			var aniSpeed = args['animate'];
 			if(isNaN(aniSpeed)) { aniSpeed = 400; }
-			$('.appriseOuter').css('top', '-200px').show().animate({top:"100px"}, aniSpeed);
+			jQuery('.appriseOuter').css('top', '-200px').show().animate({top:"100px"}, aniSpeed);
 			}
 		else
-			{ $('.appriseOuter').css('top', '100px').fadeIn(200); }
+			{ jQuery('.appriseOuter').css('top', '100px').fadeIn(200); }
 		}
 	else
-		{ $('.appriseOuter').css('top', '100px').fadeIn(200); }
+		{ jQuery('.appriseOuter').css('top', '100px').fadeIn(200); }
     
     if(args)
     	{
@@ -53,58 +53,58 @@ function apprise(string, args, callback)
     		{
     		if(typeof(args['input'])=='string')
     			{
-    			$('.appriseInner').append('<div class="aInput"><input type="text" class="aTextbox" t="aTextbox" value="'+args['input']+'" /></div>');
+    			jQuery('.appriseInner').append('<div class="aInput"><input type="text" class="aTextbox" t="aTextbox" value="'+args['input']+'" /></div>');
     			}
     		else
     			{
-				$('.appriseInner').append('<div class="aInput"><input type="text" class="aTextbox" t="aTextbox" /></div>');
+				jQuery('.appriseInner').append('<div class="aInput"><input type="text" class="aTextbox" t="aTextbox" /></div>');
 				}
-			$('.aTextbox').focus();
+			jQuery('.aTextbox').focus();
     		}
     	}
     
-    $('.appriseInner').append('<div class="aButtons"></div>');
+    jQuery('.appriseInner').append('<div class="aButtons"></div>');
     if(args)
     	{
 		if(args['confirm'] || args['input'])
 			{ 
-			$('.aButtons').append('<button value="ஒப்பு">'+args['textOk']+'</button>');
-			$('.aButtons').append('<button value="cancel">'+args['textCancel']+'</button>'); 
+			jQuery('.aButtons').append('<button value="ஒப்பு">'+args['textOk']+'</button>');
+			jQuery('.aButtons').append('<button value="cancel">'+args['textCancel']+'</button>'); 
 			}
 		else if(args['verify'])
 			{
-			$('.aButtons').append('<button value="ஒப்பு">'+args['textYes']+'</button>');
-			$('.aButtons').append('<button value="cancel">'+args['textNo']+'</button>');
+			jQuery('.aButtons').append('<button value="ஒப்பு">'+args['textYes']+'</button>');
+			jQuery('.aButtons').append('<button value="cancel">'+args['textNo']+'</button>');
 			}
 		else
-			{ $('.aButtons').append('<button value="ஒப்பு">'+args['textOk']+'</button>'); }
+			{ jQuery('.aButtons').append('<button value="ஒப்பு">'+args['textOk']+'</button>'); }
 		}
     else
-    	{ $('.aButtons').append('<button value="ஒப்பு">ஒப்பு</button>'); }
+    	{ jQuery('.aButtons').append('<button value="ஒப்பு">ஒப்பு</button>'); }
 	
-	$(document).keydown(function(e) 
+	jQuery(document).keydown(function(e) 
 		{
-		if($('.appriseOverlay').is(':visible'))
+		if(jQuery('.appriseOverlay').is(':visible'))
 			{
 			if(e.keyCode == 13) 
-				{ $('.aButtons > button[value="ஒப்பு"]').click(); }
+				{ jQuery('.aButtons > button[value="ஒப்பு"]').click(); }
 			if(e.keyCode == 27) 
-				{ $('.aButtons > button[value="cancel"]').click(); }
+				{ jQuery('.aButtons > button[value="cancel"]').click(); }
 			}
 		});
 	
-	var aText = $('.aTextbox').val();
+	var aText = jQuery('.aTextbox').val();
 	if(!aText) { aText = false; }
-	$('.aTextbox').keyup(function()
-    	{ aText = $(this).val(); });
+	jQuery('.aTextbox').keyup(function()
+    	{ aText = jQuery(this).val(); });
    
-    $('.aButtons > button').click(function()
+    jQuery('.aButtons > button').click(function()
     	{
-    	$('.appriseOverlay').remove();
-		$('.appriseOuter').remove();
+    	jQuery('.appriseOverlay').remove();
+		jQuery('.appriseOuter').remove();
     	if(callback)
     		{
-			var wButton = $(this).attr("value");
+			var wButton = jQuery(this).attr("value");
 			if(wButton=='ஒப்பு')
 				{ 
 				if(args)

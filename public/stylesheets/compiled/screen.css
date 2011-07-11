@@ -1138,13 +1138,13 @@ img.back_to_show {
 }
 
 /* line 776, ../../../app/stylesheets/screen.scss */
-.diff del strong {
+.diff ins strong {
   font-weight: normal;
   background: #fcc;
 }
 
 /* line 777, ../../../app/stylesheets/screen.scss */
-.diff ins strong {
+.diff del strong {
   font-weight: normal;
   background: #9f9;
   text-decoration: line-through;

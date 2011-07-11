@@ -773,6 +773,6 @@ img.back_to_show{
 /*.diff li:hover{background:#ffc}*/
 /* try 'whitespace:pre;' if you don't want lines to wrap */
 .diff del, .diff ins, .diff span{white-space:pre-wrap;font-family:courier;}
-.diff del strong{font-weight:normal;background:#fcc;}
-.diff ins strong{font-weight:normal;background:#9f9;text-decoration: line-through;}
+.diff ins strong{font-weight:normal;background:#fcc;}
+.diff del strong{font-weight:normal;background:#9f9;text-decoration: line-through;}
 

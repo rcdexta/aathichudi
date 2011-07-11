@@ -20,6 +20,9 @@
       });
     });
 
+:javascript
+  makeTransliteratable(['wiki_tamil_short_desc', 'wiki_tamil_long_desc']);
+
 = javascript_include_tag 'jquery.observe_field.js'
 = javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js'
 = javascript_include_tag 'textile-editor'
@@ -27,8 +30,6 @@
 = javascript_include_tag 'textile_preview'
 = stylesheet_link_tag 'textile-editor'
 
-:javascript
-  makeTransliteratable(['wiki_tamil_short_desc', 'wiki_tamil_long_desc']);
 
 - unless flash[:alert].blank?
   .alert= flash[:alert]
