@@ -1,5 +1,15 @@
 module ApplicationHelper
 
+  def generate_paadal_heading(id, html)
+    content_tag(:a, :href => wiki_path(id), :title => tooltip_for(2), :id => id) do
+      "#{id} #{html}"
+    end
+  end
+
+  def go_back_path(id)
+    "#{root_path}##{id}"
+  end
+
   def generate_diff(current, original)
     Diffy::Diff.new(original, current).to_s(:html)
   end

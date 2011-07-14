@@ -16,7 +16,7 @@
     %img.edit{:src => '/images/edit.png'}
 
 %span.action_button
-  %a{:href=> root_path}
+  %a{:href=> go_back_path(params[:id].to_i)}
     %img.edit{:src => '/images/first.png'}
 
 .clear
