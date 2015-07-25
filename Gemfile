@@ -15,6 +15,7 @@ gem 'RedCloth'
 gem 'diffy'
 gem 'pg'
 gem 'newrelic_rpm'
+gem 'puma'
 
 group :test do
   gem 'rspec-rails', '>= 2.0.1', :group => [:development, :test]
