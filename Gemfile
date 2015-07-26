@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-ruby '2.0.0'
+ruby '2.1.3'
 
 gem 'rails', '3.0.0'
 gem 'haml', '>= 3.0.0'
@@ -18,6 +18,7 @@ gem 'diffy'
 gem 'pg'
 gem 'newrelic_rpm'
 gem 'puma'
+gem 'dalli'
 
 group :test do
   gem 'rspec-rails', '>= 2.0.1', :group => [:development, :test]

@@ -57,6 +57,7 @@ GEM
       capybara (>= 1.0.0)
       cucumber (~> 1.0.0)
       nokogiri (>= 1.4.6)
+    dalli (2.7.4)
     devise (1.4.2)
       bcrypt-ruby (~> 2.1.2)
       orm_adapter (~> 0.0.3)
@@ -169,6 +170,7 @@ DEPENDENCIES
   capybara
   compass
   cucumber-rails
+  dalli
   devise
   devise_rpx_connectable
   diffy
