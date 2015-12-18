@@ -1,7 +1,7 @@
 module ApplicationHelper
 
   def generate_paadal_heading(id, html)
-    content_tag(:a, :href => wiki_path(id), :title => tooltip_for(2), :id => id) do
+    content_tag(:a, :href => wiki_path(id), :title => tooltip_for(id), :id => id) do
       "#{id} #{html}"
     end
   end
