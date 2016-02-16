@@ -6,6 +6,7 @@ class WikisController < ApplicationController
 
   def edit
     draft_version =  WikiVersion.draft_version_for(@wiki, current_user)
+    p draft_version
     if draft_version.present?
       @wiki.attributes = draft_version.first.wiki_attributes
       @draft = true

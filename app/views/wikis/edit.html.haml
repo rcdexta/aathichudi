@@ -37,7 +37,7 @@
 - if @draft
   .alert இந்த பாடலுக்காக நீங்கள் சமர்பித்த  முந்திய திருத்தங்கள் ஒப்புதலுக்காக முன்வைக்க பட்டுள்ளன. தற்போது செய்யும்  மாற்றங்கள் அதனுடன் இணைக்கப்படும்...
 
-= simple_form_for @wiki, do |w|
+= simple_form_for @wiki do |w|
   = w.button :submit, :class => 'save_button', :value => t(:save_button)
   = submit_tag t(:reject_button), :class => 'reject_button', :name => 'commit', 'data-confirm' => "மறுத்தலை உறுதி செய்க ..."
 
@@ -53,7 +53,7 @@
   .paadal_title= @wiki.paadal
   .hline
   = w.input :paadal, :as => :hidden
-  = w.input :paadal_english, :label => "ஆங்கில எழுத்து பிரதி" 
+  = w.input :paadal_english, :label => "ஆங்கில எழுத்து பிரதி"
   = w.input :tamil_short_desc, :label => "பாடலின் விளக்கம்"
   = w.input :english_short_desc, :label => "பாடலின் விளக்கம் (ஆங்கிலத்தில்)"
   %div

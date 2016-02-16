@@ -6,10 +6,10 @@ Devise.setup do |config|
   config.mailer_sender = "admin@aramseyavirumbu.com"
 
   # rpx
-  config.rpx_application_name = 'aramseyavirumbu'
-  config.rpx_additional_user_data = [:verifiedEmail, :url, :providerName, :photo]
-
-  RPXNow.api_key = 'f3a2c7de48ca8f4a02fef1d87b63a7dc7e775f0d'
+  # config.rpx_application_name = 'aramseyavirumbu'
+  # config.rpx_additional_user_data = [:verifiedEmail, :url, :providerName, :photo]
+  #
+  # RPXNow.api_key = 'f3a2c7de48ca8f4a02fef1d87b63a7dc7e775f0d'
 
   # Configure the class responsible to send e-mails.
   # config.mailer = "Devise::Mailer"

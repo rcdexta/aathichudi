@@ -46,7 +46,7 @@
               <div class='user_details'>
                 <ul>
                   <li>
-                    <b> <%= current_user.name.truncate(30) %> </b>
+                    <b> <%= current_user.email %> </b>
                   </li>
                   <li>
                       <%- if current_user.accepted_count && current_user.accepted_count > 0  %>
@@ -88,7 +88,6 @@
   &copy; 2011 | கணையாழி
 </div>
  <!--/ footer-->
-<%= javascript_include_rpx(user_session_url) %>
 
 <%= render :partial => 'common/mugavurai' %>
 <%= render :partial => 'common/about_site' %>

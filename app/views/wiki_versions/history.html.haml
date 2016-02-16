@@ -8,7 +8,7 @@
         %span.history_time ##{wiki_version.version}
         = l wiki_version.created_at, :format => :long
         |
-        %span.history_user= wiki_version.user.name || wiki_version.user.email
+        %span.history_user= wiki_version.user.try(:name) || wiki_version.user.try(:email)
         |
         - if wiki_version.version == 1
           %span.first_version முதல் வடிவுறு

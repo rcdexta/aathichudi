@@ -1,0 +1,23 @@
+<div class="login_container">
+  <h2>உள்நுழைக</h2>
+  <p>இந்த இணையத் தளத்தில் உங்கள் பங்களிப்பு அவசியம். மின்னஞ்சல் மற்றும் கடவுச்சொல் கொடுத்து  உள்நுழையவும்.  புதிய உறுப்பினர் எனில்  <button onclick="window.location.href='/users/sign_up'"> பதிவு செய்க </button></p>
+</div>
+<form accept-charset="UTF-8" action="/users/sign_in" class="user_new" id="user_new" method="post">
+  <div style="margin:0;padding:0;display:inline">
+    <input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="k3c/QXvLA3GJD6CzCQBggPppafQpiWU4dhtsKdHRamo=">
+  </div>
+  <p><label for="user_email">மின்னஞ்சல் முகவரி </label>
+    <input id="user_email" name="user[email]" size="30" type="email"></p>
+
+  <p><label for="user_password">கடவுச்சொல் </label>
+    <input id="user_password" name="user[password]" size="30" type="password"></p>
+
+  <p>
+      <input id="user_submit" name="commit" type="submit" value="உள்நுழைக ">
+  </p>
+</form>
+
+<br>
+
+</div>
+
