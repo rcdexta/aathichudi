@@ -112,6 +112,11 @@ GEM
       activesupport (= 3.0.0)
       bundler (~> 1.10.0)
       railties (= 3.0.0)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
     railties (3.0.0)
       actionpack (= 3.0.0)
       activesupport (= 3.0.0)
@@ -178,6 +183,7 @@ DEPENDENCIES
   pg
   puma
   rails (= 3.0.0)
+  rails_12factor
   rspec-rails (>= 2.0.1)
   ruby_parser
   shoulda

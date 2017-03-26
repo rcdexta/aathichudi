@@ -18,6 +18,7 @@ gem 'pg'
 gem 'newrelic_rpm'
 gem 'puma'
 gem 'dalli'
+gem 'rails_12factor'
 
 group :test do
   gem 'rspec-rails', '>= 2.0.1', :group => [:development, :test]
@@ -28,4 +29,3 @@ group :test do
   gem 'factory_girl_rails'
   gem 'timecop'
 end
-
