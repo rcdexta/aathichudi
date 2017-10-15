@@ -1,8 +1,8 @@
 source 'http://rubygems.org'
 
-ruby '2.1.3'
+ruby '2.2.1'
 
-gem 'rails', '3.0.0'
+gem 'rails', '4.0.0'
 gem 'haml', '>= 3.0.0'
 gem 'haml-rails'
 gem 'compass'
@@ -19,6 +19,8 @@ gem 'newrelic_rpm'
 gem 'puma'
 gem 'dalli'
 gem 'rails_12factor'
+gem 'rails4_upgrade', github: 'alindeman/rails4_upgrade'
+gem 'protected_attributes'
 
 group :test do
   gem 'rspec-rails', '>= 2.0.1', :group => [:development, :test]
