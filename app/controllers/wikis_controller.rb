@@ -2,7 +2,7 @@ class WikisController < ApplicationController
 
   before_filter :authenticate_user!, :only => [:edit, :update]
   before_filter :find_wiki, :only => [:show, :edit, :history]
-  cache_sweeper :wiki_sweeper
+  # cache_sweeper :wiki_sweeper
 
   def edit
     draft_version =  WikiVersion.draft_version_for(@wiki, current_user)
