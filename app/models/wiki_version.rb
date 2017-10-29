@@ -3,9 +3,9 @@ class WikiVersion < ActiveRecord::Base
   belongs_to :user
   belongs_to :wiki
 
-  scope :draft, where(:state => 'draft')
-  scope :archived, where(:state => 'archived')
-  scope :active, where(:state => 'active')
+  scope :draft, -> {where(:state => 'draft')}
+  scope :archived, -> {where(:state => 'archived')}
+  scope :active, -> {where(:state => 'active')}
 
   scope :draft_version_for, lambda {|wiki, user| where("state = 'draft' and wiki_id = ? and user_id = ?", wiki.id, user.id)}
   scope :active_version_for, lambda {|wiki| where("state = 'active' and wiki_id = ?", wiki.id)}
@@ -27,20 +27,20 @@ class WikiVersion < ActiveRecord::Base
   end
 
   def self.create_or_update_next_version_for(wiki, user)
-     existing_version = WikiVersion.first(:conditions => {:wiki_id => wiki.id, :user_id => user.id, :state => 'draft'})
-     if existing_version.present?
-       existing_version.update_attributes(wiki.attributes_for_versioning)
-     else
+    existing_version = WikiVersion.first(:conditions => {:wiki_id => wiki.id, :user_id => user.id, :state => 'draft'})
+    if existing_version.present?
+      existing_version.update_attributes(wiki.attributes_for_versioning)
+    else
       self.create(wiki.attributes_for_versioning.merge(:wiki_id => wiki.id, :user_id => user.id))
     end
   end
 
   def wiki_attributes
-    {"paadal" => paadal,
-     "paadal_english" => paadal_english,
-     "tamil_long_desc" => tamil_long_desc,
-     "english_short_desc" => english_short_desc,
-     "tamil_short_desc" => tamil_short_desc}
+    {'paadal' => paadal,
+     'paadal_english' => paadal_english,
+     'tamil_long_desc' => tamil_long_desc,
+     'english_short_desc' => english_short_desc,
+     'tamil_short_desc' => tamil_short_desc}
   end
 
   def copy_attributes_to_wiki!
@@ -63,6 +63,6 @@ class WikiVersion < ActiveRecord::Base
   end
 
   def tamil_long_desc_html
-   RedCloth.new(tamil_long_desc).to_html
+    RedCloth.new(tamil_long_desc).to_html
   end
 end
