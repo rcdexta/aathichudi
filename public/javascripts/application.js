@@ -28,3 +28,5 @@ function control_by_cookie(cookie_name, call_back){
         call_back();
     }
 }
+
+console.log('loaded application.js')
