@@ -249,7 +249,7 @@ DEPENDENCIES
   timecop
 
 RUBY VERSION
-   ruby 2.2.1p85
+   ruby 3.0.2p107
 
 BUNDLED WITH
    1.15.4
