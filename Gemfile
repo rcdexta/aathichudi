@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 ruby '3.0.2'
 
-gem 'rails', '4.0.0'
+gem 'rails', '4.0.6'
 gem 'haml', '>= 3.0.0'
 gem 'haml-rails'
 gem 'compass'
