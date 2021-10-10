@@ -19,7 +19,6 @@ gem 'newrelic_rpm'
 gem 'puma'
 gem 'dalli'
 gem 'rails_12factor'
-gem 'rails4_upgrade', github: 'alindeman/rails4_upgrade'
 gem 'protected_attributes'
 
 group :test do
