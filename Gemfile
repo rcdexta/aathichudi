@@ -1,10 +1,10 @@
 source 'http://rubygems.org'
 
-ruby '3.0.2'
+ruby '2.6.8'
 
-gem 'rails', '4.0.6'
+gem 'rails', '4.0.0'
 gem 'haml', '>= 3.0.0'
-gem 'haml-rails'
+gem 'haml-rails', '0.4.0'
 gem 'compass'
 gem 'fancy-buttons'
 gem 'state_machine'
