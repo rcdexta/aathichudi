@@ -16,6 +16,8 @@ Aathichudi::Application.configure do
 
   config.middleware.use Rack::ForceDomain, ENV["DOMAIN"]
 
+  config.eager_load = true
+
   # For nginx:
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect'
 

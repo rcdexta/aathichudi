@@ -7,3 +7,5 @@ tmp/**/*
 .rake_tasks~
 .sass-cache
 /tags
+
+public/assets
