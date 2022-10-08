@@ -20,7 +20,7 @@ gem 'puma'
 gem 'dalli'
 gem 'rails_12factor'
 gem 'protected_attributes'
-gem 'rake', '< 11.0'
+gem 'rake', '< 13.0'
 
 group :test do
   gem 'rspec-rails', '2.0.1', :group => [:development, :test]
