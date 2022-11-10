@@ -10,9 +10,7 @@ services:
     numInstances: 1
     domains: # custom domains
       - 'aramseyavirumbu.com'
-      - 'www.aramseyavirumbu.com'
-      - 'www.அறம்செயவிரும்பு.com'
-      - 'அறம்செயவிரும்பு.com'
+      - 'www.aramseyavirumbu.com'      
     envVars:
       - key: LANG # Imported from Heroku app
         value: en_US.UTF-8
