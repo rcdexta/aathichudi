@@ -18,7 +18,7 @@
 # performance.
 
 ARG RUBY_VERSION=2.6.8
-ARG VARIANT=jemalloc-slim
+ARG VARIANT=jemalloc-bullseye-slim
 FROM quay.io/evl.ms/fullstaq-ruby:${RUBY_VERSION}-${VARIANT} as base
 
 LABEL fly_launch_runtime="rails"
@@ -95,7 +95,7 @@ COPY . .
 
 # Adjust binstubs to run on Linux and set current working directory
 RUN chmod +x /app/bin/* && \
-    sed -i 's/ruby.exe/ruby/' /app/bin/* && \
+    sed -i 's/ruby.exe\r*/ruby/' /app/bin/* && \
     sed -i '/^#!/aDir.chdir File.expand_path("..", __dir__)' /app/bin/*
 
 # The following enable assets to precompile on the build server.  Adjust
