@@ -27,7 +27,7 @@
 }
 
 html {
-font-size: calc(60% + 0.8vmin);
+font-size: calc(80% + 0.8vmin);
 }
 
 * {
@@ -49,6 +49,7 @@ font-size: 1.3rem;
       display: none;
     }
 }
+
 
 /* reset */
 /* line 9, ../../../app/stylesheets/screen.scss */
@@ -373,7 +374,7 @@ hr {
 
 /* line 287, ../../../app/stylesheets/screen.scss */
 .desc_container {
-    background: url("../../images/desc_strip.jpg") no-repeat;
+    background: url("../../images/desc_strip.jpg") repeat-y;
     padding-left: 15px;
     margin-right: 15px;
     margin-top: 10px;
