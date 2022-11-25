@@ -106,11 +106,11 @@ ENV SECRET_KEY_BASE 1
 # ENV AWS_SECRET_ACCESS_KEY=1
 
 # Run build task defined in lib/tasks/fly.rake
-ARG BUILD_COMMAND="bin/rails fly:build"
+ARG BUILD_COMMAND="bin/rake fly:build"
 RUN ${BUILD_COMMAND}
 
 # Default server start instructions.  Generally Overridden by fly.toml.
 ENV PORT 8080
-ARG SERVER_COMMAND="bin/rails fly:server"
+ARG SERVER_COMMAND="bin/rake fly:server"
 ENV SERVER_COMMAND ${SERVER_COMMAND}
 CMD ${SERVER_COMMAND}
