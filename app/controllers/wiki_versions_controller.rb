@@ -1,10 +1,10 @@
 class WikiVersionsController < ApplicationController
 
   def history
-    wiki = Wiki.find(params[:wiki_id])
-    @wiki_versions = wiki.versions.active
-    @wiki_versions << wiki.versions.archived.order('updated_at desc')
-    @wiki_versions.flatten!
+    wiki = Wiki.includes(:versions).find(params[:wiki_id])
+    versions = wiki.versions.active
+    versions << wiki.versions.archived.order('updated_at desc')
+    @wiki_versions = versions.to_a.flatten    
     render :layout => false
   end
 

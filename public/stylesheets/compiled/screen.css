@@ -48,6 +48,12 @@ font-size: 1.3rem;
     #left_pane {
       display: none;
     }
+    div#left {
+      display: none;
+    }
+    body {
+        zoom: 130%;
+    }
 }
 
 
@@ -107,7 +113,7 @@ body {
 a {
     color: black;
     text-decoration: none;
-    text-shadow: 0px 2px 3px #555;
+    /* text-shadow: 0px 2px 3px #555; */
 }
 
 /* line 58, ../../../app/stylesheets/screen.scss */
@@ -158,12 +164,12 @@ body {
 
 /* line 99, ../../../app/stylesheets/screen.scss */
 p {
-    text-shadow: 0px 2px 3px #555;
+    /* text-shadow: 0px 2px 3px #555; */
 }
 
 /* line 103, ../../../app/stylesheets/screen.scss */
 .prayer {
-    text-shadow: 0px 2px 3px #555;
+    /* text-shadow: 0px 2px 3px #555; */
 }
 
 /* line 107, ../../../app/stylesheets/screen.scss */
@@ -374,7 +380,7 @@ hr {
 
 /* line 287, ../../../app/stylesheets/screen.scss */
 .desc_container {
-    background: url("../../images/desc_strip.jpg") repeat-y;
+    background: url("../../images/desc_strip.jpeg") repeat-y;
     padding-left: 15px;
     margin-right: 15px;
     margin-top: 10px;
@@ -853,7 +859,7 @@ img.line_loading {
 
 /* line 541, ../../../app/stylesheets/screen.scss */
 .history_data p {
-    font-size: 13px;
+    font-size: 1em;
     text-shadow: 0 1px 0 white, 0 0px 0 black;
     margin: 10px 0px;
     line-height: 100%;
@@ -878,12 +884,14 @@ span.history_time {
 span.history_user {
     background: url("../../images/embed/history_user.png") no-repeat scroll 0 0 transparent;
     padding-left: 19px;
+    font-size: 1em;
 }
 
 /* line 566, ../../../app/stylesheets/screen.scss */
 span.history_diff {
     background: url("../../images/embed/history_diff.png") no-repeat scroll 0 0 transparent;
     padding-left: 19px;
+    font-size: 1em;
     text-decoration: underline;
 }
 

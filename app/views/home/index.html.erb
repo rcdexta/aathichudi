@@ -1,5 +1,8 @@
 
-      <%= javascript_include_tag 'intro_pop_up' %>
+      <% if device != "mobile" %>
+        <%= javascript_include_tag 'intro_pop_up'  %>      
+      <% end %>
+      
       <%= javascript_include_tag 'heading_highlight' %>
 
               <div id="intro">

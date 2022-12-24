@@ -48,7 +48,7 @@ class WikiVersion < ActiveRecord::Base
   end
 
   def previous_version
-    WikiVersion.first(:conditions => ['wiki_id = ? and version = ?', self.wiki.id, self.version - 1])
+    WikiVersion.where(wiki_id: self.wiki.id, version: self.version - 1).first
   end
 
   def set_next_version!

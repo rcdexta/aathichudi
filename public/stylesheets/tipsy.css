@@ -1,5 +1,5 @@
 .tipsy { padding: 5px; font-size: 10px; position: absolute; z-index: 100000; font-weight: bold; }
-.tipsy-inner { padding: 2px 8px 2px 10px; background: url('../images/desc_strip.jpg') repeat-y; color: black; text-align: center; }
+.tipsy-inner { padding: 2px 8px 2px 10px; background: url('../images/desc_strip.jpeg') repeat-y; color: black; text-align: center; }
 .tipsy-inner { border-radius: 5px; -moz-border-radius:5px; -webkit-border-radius:5px; }
 /*.tipsy-arrow { position: absolute; background: url('../images/tipsy.gif') no-repeat top left; width: 9px; height: 5px; }*/
 .tipsy-n .tipsy-arrow { top: 0; left: 50%; margin-left: -4px; }

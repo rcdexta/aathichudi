@@ -1,9 +1,16 @@
 module ApplicationHelper
 
   def generate_paadal_heading(id, html)
-    content_tag(:a, :href => wiki_path(id), :title => tooltip_for(id), :id => id) do
+    content_tag(:a, :href => wiki_path(id), :title => (device != 'mobile' ? tooltip_for(id) : nil), :id => id) do
       "#{id} #{html}".html_safe
     end
+  end
+
+  def device
+    agent = request.user_agent
+    return "tablet" if agent =~ /(tablet|ipad)|(android(?!.*mobile))/i
+    return "mobile" if agent =~ /Mobile/
+    return "desktop"
   end
 
   def go_back_path(id)
